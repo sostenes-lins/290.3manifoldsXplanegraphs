@@ -16,7 +16,7 @@
    id="svg5792"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="FennRourkeMove.svg">
+   sodipodi:docname="FennRourkeAndKauffmanMove.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.84620712"
-     inkscape:cx="861.78923"
-     inkscape:cy="780.05327"
+     inkscape:zoom="12.964441"
+     inkscape:cx="502.05013"
+     inkscape:cy="759.6592"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -88,7 +88,7 @@
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <path
-       d="m 197.8719,244.10964 0.87869,89.6054"
+       d="m 198.09007,245.20048 0.87869,89.6054"
        style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path56"
        inkscape:connector-curvature="0"
@@ -814,10 +814,10 @@
        inkscape:connector-curvature="0"
        id="path4777-7"
        style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.53770995;stroke-opacity:1;stroke-dasharray:none"
-       d="m 548.56028,304.08235 c 15.42432,24.17973 5.62329,28.57352 0.52683,37.11045" />
+       d="m 548.56028,304.39089 c 18.04688,23.71692 5.62329,28.26498 0.52683,36.80191" />
     <g
        id="g5057"
-       transform="matrix(1.2145324,0,0,1.2145324,244.99052,74.103913)"
+       transform="matrix(1.2145324,0,0,1.2145324,240.97955,77.65208)"
        ns0:preamble=""
        ns0:text="$n \\ge 0$">
       <defs
@@ -923,5 +923,11 @@
         </g>
       </g>
     </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 530.83149,284.52928 10.80904,9.95401"
+       id="path4169-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

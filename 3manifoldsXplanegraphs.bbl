@@ -5,6 +5,17 @@ R.~Fenn and C.~Rourke.
 \newblock On {K}irby's calculus of links.
 \newblock {\em Topology}, 18(1):1--15, 1979.
 
+\bibitem{kauffman1991knots}
+L.H. Kauffman.
+\newblock {\em Knots and physics}, volume~1.
+\newblock World Scientific Publishing Company, 1991.
+
+\bibitem{kauffman1994tlr}
+L.H. Kauffman and S.~Lins.
+\newblock {Temperley-Lieb Recoupling Theory and Invariants of 3-manifolds}.
+\newblock {\em Annals of Mathematical Studies, Princeton University Press},
+  134:1--296, 1994.
+
 \bibitem{kirby1978calculus}
 R.~Kirby.
 \newblock A calculus for framed links in ${S}^3$.
@@ -19,6 +30,11 @@ W.B.R. Lickorish.
 B.~Martelli.
 \newblock A finite set of local moves for kirby calculus.
 \newblock {\em Journal of Knot Theory and Its Ramifications}, 21(14), 2012.
+
+\bibitem{rolfsen2003knots}
+D.~Rolfsen.
+\newblock {\em Knots and links}.
+\newblock American Mathematical Society, 2003.
 
 \bibitem{wallace1960modifications}
 A.H. Wallace.

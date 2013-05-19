@@ -80,17 +80,13 @@ This paper proves the following theorem:
  \includegraphics[width=16cm]{A.figs/blinkcalculus.pdf} 
   \end{center}
   \end{theorem}
- There are 64 local configurations divided into 32 pairs of left-right configurations.
- A move replaces the left (right) sub-blink of a pair by its right (left) counterpart.
- The exterior sub-blink to a fixed configuration is completely arbitrary, provided
- its intersection with the corresponding configurations are 
- the attachment vertices shown in the boundary of the shaded disk. These vertices
- are shown as shown as small white circles in the boundary of the shaded disk (or pinched disk
- in the case of $\rho_2$) wherem the configuration lies. 
- The number of such attachment vertices is the index of the 
- label for the move.
-
-
+ There are 64 local configurations divided into 32 pairs of left-right configurations,
+ each one named a {\em coin}. A move replaces the left (right) coin of a pair by its right (left) 
+ coin. The complementary sub-blink in the exterior a coin is completely arbitrary;
+ its intersection with the corresponding internal coin is the set of 
+ attachment vertices shown in the boundary of the disk (or pinched disk, in the case of $\rho_2$)
+ where the coin lies. The number of such attachment vertices (one of 0,1,2,3,4) 
+ is the subscript for the label of the move.
 
 \section{Lickorish and moves by Kirby, Fenn-Rourke, Kauffman, Martelli}
 
@@ -115,7 +111,7 @@ each closed orientable 3-manifold $\mathbb{M}^3$ can be encoded by a link in $\m
 where each one of its $k$ components
 is endowed with an irreducible fraction (the framing) $\frac {\pm p}{q}$ 
 where $q$ could be 0, and in the case $p$ must be 1 and the fraction
-becomes $\pm \infty$. To construct the 3-manifold $\mathbb{M}^3$ 
+becomes $\pm \infty$. To construct $\mathbb{M}^3$ 
 from the framed link we act as follows: after removing from $\mathbb{M}^3$
 an $\epsilon$-neighborhood $(\mathbb{S}^ 1 \times \mathbb{D}^2)_i$ of the $i$-th link we are left with 
 $\mathbb{M}^ 3\backslash \bigcup_{i=1}^k (\mathbb{S}^ 1 \times \mathbb{D}^2)_i=
@@ -134,25 +130,55 @@ by A. H. Wallace \cite{wallace1960modifications} by using differential geometry.
 it was the purely topological flavor of Lickorish's proof that spurs the subsequent developments.
   
 In 1978 R. Kirby published his, to become famous, calculus of framed links, \cite{kirby1978calculus}.
-The gist of this paper is that a finite number of two types of moves 
+The gist of this paper is that two types of moves 
 are enough to go from any framed
 link inducing a closed oriented 3-manifold to any other such link inducing the same manifold.
 One of the moves is absolutelly local: creating or cancellating a an unknot with frame in
-$\{+1,-1,\infty,-\infty\}$. The other, {\em the band move} is non-local and infinite in number.
+$\{\infty,-\infty\}$. The other type of move, 
+{\em the band move (\cite{kauffman1991knots}) (or handle sliding)} is non-local and infinite in number.
+
+
 Shortly after in 1979 R. Fenn and C. Rourke (\cite{fenn1979kirby}) show that Kirby's moves could 
 be replaced by an infinite number a single type of moves parametrized by $n$. This has been
 a very useful reformulation with many applications, including Martelli's calculus (soon to be treated)
-which uses it instead of the direct moves of Kirby.
- 
+which uses it instead of the direct moves of Kirby. 
 
-In a recent paper B. Martelli \cite{martelli2012finite} presented a reformulation of
-the Fenn-Rourke version (\cite{fenn1979kirby}) of Kirby's calculus \cite{kirby1978calculus}.
+In the beginning of the 1990's L. Kauffman
+presented (\cite{kauffman1991knots}) a completely plane diagramatic way to deal with the 
+calculus of Kirby and of Fenn-Rourke. The basic idea comes from the fact that every 3-manifold is
+induced by surgery on a framed link which has {\em only finite integer framings}, which D. Rolfsen call
+{\em by honest surgery}, \cite{rolfsen2003knots}. The proof of this result uses that it is possible to
+modify the framed link maintaining the induced 3-manifold so that every component becomes unknotted. 
+A proof of this fact appears in Rolfsen's book. It also apears in page 137 of Kauffman-Lins monography,
+\cite{kauffman1994tlr}. If a component is unknotted then 
+it is simple to modify the link so that each component gets an integer framing, without 
+distub the integrality of the framing of other components. So, without loss of
+generality we may supose that all the components have finite integers as framings. Kauffman's proceeds
+by adjusting each component by attaching to it a judicious number of curls so that the required framing of
+a component coincides with the algebraic sum of its self-crossings. 
+By specifying that the link is {\em blackboard framed}, we no longer need the framings.
+In this work we only use blackboard framed links.
+
+In an important recent paper B. Martelli \cite{martelli2012finite} presented a local finite reformulation of
+the Fenn-Rourke version (\cite{fenn1979kirby}) of Kirby's calculus \cite{kirby1978calculus}. It remains
+to be seen the consequences of Martelli' s result for obtaining new 3-manifold invariants.
 Our objective here is to further reformulate Martelli's moves so as to obtain a calculus
 of blinks, which is an exact combinatorial counterpart for factorizing homeomorphisms of
 closed orientable 3-manifolds. This goal is desirable because it has the consequence that each 3-manifold
 become a subtle class of plane graphs. Our exposition is complete and elementary seeking
-to reach both audiences: topologists and combinatorialists.
+to reach both audiences: topologists and combinatorialists. We feel that this result may be interesting
+for Combinatorics as well as to Topology and may enhance both areas. Plane graphs are one of the most 
+studied objects in mathematics. Some of their properties could be used in 3-manifolds and vice-versa. 
+At any rate I am using here a recipe of Conway, \cite{hk}.
 
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=16.5cm]{A.figs/somenotation.pdf} 
+\caption{\sf Some notation}
+\label{fig:somenotation}
+\end{center}
+\end{figure} 
 
 
 \begin{figure}[!h]
@@ -165,10 +191,17 @@ to reach both audiences: topologists and combinatorialists.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.5cm]{A.figs/FennRourkeMartelliBlackboard.pdf} 
-\caption{\sf Fenn-Rourke infinite 1-parametrized blown-down moves 
-and Martelli's moves in blackboard framed form}
-\label{fig:FennRourkeMartelliBlackboard}
+\includegraphics[width=13.5cm]{A.figs/FennRourkeAndKauffmanMove.pdf} 
+\caption{\sf Fenn-Rourke infinite sequence of blown-down moves 
+and their counterpart in Kauffman's blackboard framed links. These are
+infinite sequence of local moves. Cases $n=0$ of these moves replace
+an isolated $\pm 1$-framed component or the unknot with one crossing by nothing.
+Martelli replaced the infinite sequence by the first three and two simple
+moves which we call {\em 2- and 3- cable engulfing}, denoted by $A_3$ and $A_4$
+shortly to be described. In our final form of the blink-coin calculus 
+we use a revised versions of $A_3$ and $A_4$: the moves $a_3$ and $a_4$,
+which seem substantially simpler to put on the blink-coin calculus}
+\label{fig:FennRourkeAndKauffmanMove}
 \end{center}
 \end{figure} 
 
