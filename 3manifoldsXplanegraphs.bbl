@@ -10,9 +10,19 @@ R.~Kirby.
 \newblock A calculus for framed links in ${S}^3$.
 \newblock {\em Inventiones Mathematicae}, 45(1):35--56, 1978.
 
+\bibitem{lickorish1962representation}
+W.B.R. Lickorish.
+\newblock A representation of orientable combinatorial 3-manifolds.
+\newblock {\em Annals of Mathematics}, 76(3):531--540, 1962.
+
 \bibitem{martelli2012finite}
 B.~Martelli.
 \newblock A finite set of local moves for kirby calculus.
 \newblock {\em Journal of Knot Theory and Its Ramifications}, 21(14), 2012.
+
+\bibitem{wallace1960modifications}
+A.H. Wallace.
+\newblock Modifications and cobounding manifolds.
+\newblock {\em Canad. J. Math}, 12:503--528, 1960.
 
 \end{thebibliography}
