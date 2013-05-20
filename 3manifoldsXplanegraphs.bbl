@@ -26,6 +26,12 @@ W.B.R. Lickorish.
 \newblock A representation of orientable combinatorial 3-manifolds.
 \newblock {\em Annals of Mathematics}, 76(3):531--540, 1962.
 
+\bibitem{lins2007blink}
+L.D. Lins.
+\newblock Blink: a language to view, recognize, classify and manipulate
+  3{D}-spaces.
+\newblock {\em Arxiv preprint math/0702057}, 2007.
+
 \bibitem{martelli2012finite}
 B.~Martelli.
 \newblock A finite set of local moves for kirby calculus.

@@ -251,7 +251,7 @@ studied objects in Combinatorics. Some of their properties could be used in 3-ma
 As an example of an interesting question relating the two areas is this: 
 which 3-manifolds correspond to the class of 3-connected monochromatic blinks?
 We have reasons to believe that the blink itself is a complete invariant for these manifolds. A catalogue of
-all the 242 blinks which are $3$-connected, monochromatic and have up to 16 edges appear in \cite{lins2007blink}.
+all the 242 blinks which are $3$-connected monochromatic and have up to 16 edges appear in \cite{lins2007blink}.
 %At any rate I am using here a recipe of Conway, \cite{hk}.
 
 \section{Proof of the Theorem}
