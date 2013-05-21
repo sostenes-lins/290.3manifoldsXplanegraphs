@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt,twoside]{article}
+\documentclass[a4paper,12pt,twoside]{article}
 
 %===========PACOTES
 \usepackage[body={170mm,235mm}]{geometry}
@@ -85,8 +85,30 @@ This paper proves the following theorem:
  coin. The complementary sub-blink in the exterior a coin is completely arbitrary;
  its intersection with the corresponding internal coin is the set of 
  attachment vertices shown in the boundary of the disk (or pinched disk, in the case of $\rho_2$)
- where the coin lies. The number $k$ of such attachment vertices satisfies $k\in \{0,1,2,3,4\}$.
+ where the coin lies as small white circles. 
+ The number $k$ of such attachment vertices satisfies $k\in \{0,1,2,3,4\}$. Vertices internal
+ to the coin are shown as small black disks.
 
+In his Appendix to part 0, J.H.Conway in his famous book {\em On Numbers and Games}, 
+\cite{onnumbersandgames}, says: {\em ``This appendix is in fact a cry for a Mathematician
+Liberation Movement!
+
+Among the permissible kinds of constructions we should have:\\
+(i) Objects may be created from earlier objects in any reasonable constructive fashion.\\
+(ii) Equality among the created objects can be any desirable equivalence relation.''
+} 
+ 
+This paper is in confluency of two deep research passions of the author, apparently very far apart:
+the topological study of closed orientable 3-manifolds and the combinatorial study of plane 
+graphs.  The result proved here provides a hint, in the spirit of Conway's quotation, to effectively
+enumerate once each closed orientable 3-manifolds. 
+Blinks are easy to constuct, their isomorphism problem can be solved by a polynomial
+algorithm (by finding by means of a few fixed conventions (lexicography), a numerical {\em code} for it). 
+Our {\em canonical form of a closed oriented
+3-manifold} is defined to be the blink inducing it which has
+a minimum number of edges and minimum code.
+
+ 
 \section{A brief historical review: a result by Lickorish 
 and consequences by Kirby, Fenn-Rourke, Kauffman and Martelli}
 
@@ -171,8 +193,8 @@ Framings are modified in a judicious way.
 The situation loses no generality and becomes 
 particularly simple if we have a blackboard framed link (shortly to be defined). 
 More details in Kauffman's book, \cite{kauffman1991knots}. 
-In blackboard framed language, this move
-is conveniently depicted via the heiroglyph shown above. See Section 12.3 of \cite{kauffman1994tlr}
+In blackboard framed language (BFL), this move
+is conveniently depicted via the hieroglyph shown above. See Section 12.3 of \cite{kauffman1994tlr}
 .}
 \label{fig:handleslide}
 \end{center}
@@ -203,10 +225,15 @@ In the beginning of the 1990's L. Kauffman
 presented (\cite{kauffman1991knots}) a completely planar diagramatic way to deal with the 
 calculus of Kirby and its reformulation by Fenn and Rourke.
 The basic idea comes from the fact that every 3-manifold is
-induced by surgery on a framed link which has {\em only finite integer framings}, which D. Rolfsen call
-{\em by honest surgery}, \cite{rolfsen2003knots}. The proof of this result uses that it is possible to
+induced by surgery on a framed link which has {\em only finite integer framings}. 
+This characterize the {\em handle surgeries}. According to 
+Rolfsen Lickorish call each of these a
+{\em honest surgery}, page 262 of \cite{rolfsen2003knots}.
+The proof we can get any manifold by surgery on integer framed links 
+uses, as a lemma,  the fact that it is possible to
 modify the framed link maintaining the induced 3-manifold so that every component becomes unknotted. 
-A proof of this fact appears in Rolfsen's book. It also apears in page 137 of Kauffman-Lins monography,
+A proof of this lemma appears in Rolfsen's book. 
+It also apears in page 137 of Kauffman-Lins monography,
 \cite{kauffman1994tlr}. If a component is unknotted then 
 it is simple to modify the link so that each component gets an integer framing, without 
 distub the integrality of the framing of other components. So, without loss of
@@ -283,7 +310,7 @@ blink moves which are redraw up to isotopy in the lower part of the figure.
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[scale=0.7]{A.figs/blinkandlinktogether.pdf}
-\caption{Blackboard framed version of Martelli's revised calculus with $a_3$, $a_4$ replacing $A_3$, $A_4$. 
+\caption{\sf Blackboard framed version of Martelli's revised calculus with $a_3$, $a_4$ replacing $A_3$, $A_4$. 
 In the upper part of the figure, links \& blinks are superimposed implying 
 moves for the blink-coin calculus in the lower part of the figure, 
 concluding the proof of the Theorem 1.1}
@@ -291,39 +318,68 @@ concluding the proof of the Theorem 1.1}
 \end{center}
 \end{figure}
 
+\section{The role of ribbon moves  $\pm \mu_{11}^{\pm 1}$}
+Moves $\pm\mu_{11}^{\pm 1}$ are redundant because Martelli's calculus is in $\mathbb{R}^3$. We include them 
+in our blackboard framed link calculus because with their inclusions all the dual moves,
+except $\mu_{20}^\star$ and $\mu_{02}^\star$, become redundant.
+\begin{theorem}
+ The blink-coin calculus can be simplified to include only the following set of 36 moves
+ $ \{\pm \mu_{20}, \pm \mu_{02}, \pm \mu_{20}^\star, \pm \mu_{02}^\star, 
+ \pm \mu_{33}^{\pm1}, \pm \mu_{01}, \pm \mu_{01},  \pm \mu_{11}^{\pm -1}, \pm \mu_{31},  \pm \mu_{13},  
+ \pm \mu_{54},  \pm \mu_{45}, \pm \mu_{66}^{\pm},\pm \mu_{99}^{\pm}\}.$
+\end{theorem}
+\begin{proof}
+ We work not a the blink level, but at the level of its associated blackboard framed link.
+ Moves corresponding to $(\pm \mu_{11}^{\pm1})^\star$ and  $(\pm \mu_{33}^{\pm1})^\star$ are redundant 
+ because $\pm \mu_{11}^{\pm1}$  $\pm \mu_{33}^{\pm1}$ are self dual. 
+ Moves $\pm\mu_{10}^\star$ and  $\pm\mu_{01}^\star$ are implied by a combination of moves 
+ $\pm \mu_{10}$,  $\pm \mu_{01}$,  $\pm \mu_{11}$ and $(\pm \mu_{11})^{-1}$. 
+ In particular, all the Reidemeister 2 and 3 moves (regular isotopy) 
+ are at our disposal. We can use this fact to change the external face of
+ the link diagram to become any chosen adjacent face by using regular isotopy at the cost of creating two 
+ curls with distinct sign and the same rotation number. Use the the appropriate ribbon move to
+ obtain two curls with the distinct signs and distinct rotation number. Now apply Whitney's trick
+ (see page 30 of \cite{lins2007blink}) to cancel these curls. The net effect in the correponding blink
+ is that it is obtained from the initial blink by dualizing and interchanging black and gray
+ edges. Having this double involutions at our disposal it
+ is straighforward to obtain all the remaining dual moves.
+\end{proof}
+In Fig. \ref{fig:reducedblinkcalculus} we present the 36 moves of the final reduced coin-blink calculus.
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[scale=0.93]{A.figs/reducedblinkcalculus.pdf}
+\caption{\sf Reduced 36 move blink-coin calculus}
+\label{fig:reducedblinkcalculus}
+\end{center}
+\end{figure}
 
-% \begin{figure}[!h]
-% \begin{center}
-% \includegraphics[width=12.5cm]{A.figs/seconddoubtB.pdf}
-% \caption{\sf Finding presentations for the fundamental groups of $M^ 3[2125]$ and $M^ 3[2165]$}
-% \label{fig:seconddoubtB}
-% \end{center}
-% \end{figure}
+
+\include{refaf}
 
 %-----------------------------------
-\bibliographystyle{plain}
-%\bibliographystyle{is-alpha}
-%\addcontentsline{toc}{bibliografia}{\MakeTextUppercase{Referências Bibliográficas}}
-%\bibliography{d:/slsl\3.DadosSostenes.35.ArtigosLivros.bibtexGoogleScholar/bibtexIndex.bib} % bib file is slsl.bib
-%\bibliography{~/home/ricardo/Dropbox/35.ArtigosLivros.bibtexGoogleScholar/bibtexIndex.bib}
-\bibliography{bibtexIndex.bib}
-%\bibliography{slsl}
+% \bibliographystyle{plain}
+% %\bibliographystyle{is-alpha}
+% %\addcontentsline{toc}{bibliografia}{\MakeTextUppercase{Referências Bibliográficas}}
+% %\bibliography{d:/slsl\3.DadosSostenes.35.ArtigosLivros.bibtexGoogleScholar/bibtexIndex.bib} % bib file is slsl.bib
+% %\bibliography{~/home/ricardo/Dropbox/35.ArtigosLivros.bibtexGoogleScholar/bibtexIndex.bib}
+% \bibliography{bibtexIndex.bib}
+% %\bibliography{slsl}
+% 
+% 
+% \vspace{5mm}
+% \begin{center}
+% \hspace{7mm}
+% \begin{tabular}{l}
+%    S\'ostenes L. Lins\\
+%    Centro de Inform\'atica, UFPE \\
+%    Av. Jornalista Anibal Fernandes s/n\\
+%    Recife, PE 50740-560 \\
+%    Brazil\\
+%    sostenes@cin.ufpe.br
+% \end{tabular}
+% 
 
-
-\vspace{5mm}
-\begin{center}
-\hspace{7mm}
-\begin{tabular}{l}
-   S\'ostenes L. Lins\\
-   Centro de Inform\'atica, UFPE \\
-   Av. Jornalista Anibal Fernandes s/n\\
-   Recife, PE 50740-560 \\
-   Brazil\\
-   sostenes@cin.ufpe.br
-\end{tabular}
-
-
-\end{center}
+%\end{center}
 
 
 \end{document}
