@@ -62,9 +62,10 @@ appears in a concrete list of 64 moves: they organize in 8 types,
 each beeing essentlially the same move on 8 simply related configurations. 
 The size of the list can be substantially
 decreased at the cost of loosing symmetry, just by keeping a very simple move,
-the {\em ribbon move} denoted $\mu_{11}$ (which is in principle redundant). Using  $\mu_{11}$
-makes all the moves coming from plane duality (the starred moves), except for $\mu_{20}^\star$,
-redundant.
+the {\em ribbon moves} denoted $\pm \mu_{11}^{\pm}$ (which is in principle redundant). 
+Including these imples that
+all the moves coming from plane duality (the starred moves), except for $\mu_{20}^\star$
+and $\mu_{02}^\star$, redundant and the blink-coin calculus is reduced to 36 moves.
 \end{abstract}
 
 
@@ -87,9 +88,11 @@ This paper proves the following theorem:
  attachment vertices shown in the boundary of the disk (or pinched disk, in the case of $\rho_2$)
  where the coin lies as small white circles. 
  The number $k$ of such attachment vertices satisfies $k\in \{0,1,2,3,4\}$. Vertices internal
- to the coin are shown as small black disks.
+ to the coin are shown as small black disks. A reduced form of this blink-coin 
+ calculus having 36 moves is depicted in Fig. \ref{fig:reducedblinkcalculus}.
 
-In his Appendix to part 0, J.H.Conway in his famous book {\em On Numbers and Games}, 
+ \section{Motivation}
+In his Appendix to part 0, J. H. Conway in his famous book {\em On Numbers and Games}, 
 \cite{onnumbersandgames}, says: {\em ``This appendix is in fact a cry for a Mathematician
 Liberation Movement!
 
@@ -98,16 +101,15 @@ Among the permissible kinds of constructions we should have:\\
 (ii) Equality among the created objects can be any desirable equivalence relation.''
 } 
  
-This paper is in confluency of two deep research passions of the author, apparently very far apart:
+This paper is in the confluency of two deep research passions of the author, apparently very far apart:
 the topological study of closed orientable 3-manifolds and the combinatorial study of plane 
-graphs.  The result proved here provides a hint, in the spirit of Conway's quotation, to effectively
+graphs.  The result proved here provides a glimpse, in the spirit of Conway's quotation, to effectively
 enumerate once each closed orientable 3-manifolds. 
-Blinks are easy to constuct, their isomorphism problem can be solved by a polynomial
-algorithm (by finding by means of a few fixed conventions (lexicography), a numerical {\em code} for it). 
-Our {\em canonical form of a closed oriented
-3-manifold} is defined to be the blink inducing it which has
-a minimum number of edges and minimum code.
-
+Blinks are easy to construct from simpler blinks, and their isomorphism problem can be solved by a polynomial
+algorithm which finds, via a few fixed conventions (lexicography), a numerical {\em code} for it). 
+What can be more desirable than an equivalence relation on such simple mathematical 
+objects that captures the subtle and difficult computational topological notion of
+homeomorphism between two closed oriented 3-manifolds?
  
 \section{A brief historical review: a result by Lickorish 
 and consequences by Kirby, Fenn-Rourke, Kauffman and Martelli}
@@ -286,13 +288,16 @@ all the 242 blinks which are $3$-connected, monochromatic and have up to 16 edge
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=14cm]{A.figs/proofequivalencea3A3a4A4.pdf} 
-\caption{\sf A proof that in the presence of $\pm r_2^{\pm 1}$, $a_3 \equiv A_3$ and $a_4 \equiv A_4$ }
+\caption{\sf A proof that in the presence of 
+$\pm \mu_{20}, \pm \mu_{02}, \pm \mu_{20}^\star, \pm \mu_{02}^\star,  
+a_3 \equiv A_3$ and $a_4 \equiv A_4$ }
 \label{fig:proofequivalencea3A3a4A4}
 \end{center}
 \end{figure} 
 \begin{lemma}
- In the presence of  $r_2^{\pm 1}$, moves $\pm a_3$ and $\pm A_3$ are equivalent and so are
- $\pm a_4$ and $\pm A_4$.
+ In the presence of Reidemeister moves 2, generaly denoted by $\pm r_2^{\pm -1}$,
+ moves $\pm a_3$ and $\pm A_3$ are equivalent and so are
+ moves $\pm a_4$ and $\pm A_4$.
 \end{lemma}
 \begin{proof}
  We refer to  Fig. \ref{fig:proofequivalencea3A3a4A4}. Its first line proves that $\pm a_3 \Rightarrow \pm A_3$.
@@ -302,24 +307,28 @@ all the 242 blinks which are $3$-connected, monochromatic and have up to 16 edge
 
 \begin{proof} ({\bf of Theorem \ref{theo:theorem}})\\
 In Fig. \ref{fig:blinkandlinktogether} we draw all the moves for the revised Martelli's moves in a blackboard framing
-language and the respective blinks superimposed. The result follows by removing the superimposed moves leaving only the
-blink moves which are redraw up to isotopy in the lower part of the figure.
+language and the respective blinks superimposed. The result follows by removing the 
+superimposed moves leaving only the
+blink moves which are shown again up to isotopy in the lower part of the figure.
 \end{proof}
 
 
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[scale=0.7]{A.figs/blinkandlinktogether.pdf}
-\caption{\sf Blackboard framed version of Martelli's revised calculus with $a_3$, $a_4$ replacing $A_3$, $A_4$. 
+\caption{\sf Blackboard framed version of Martelli's revised calculus with 
+$a_3$, $a_4$ replacing $A_3$, $A_4$. 
 In the upper part of the figure, links \& blinks are superimposed implying 
-moves for the blink-coin calculus in the lower part of the figure, 
-concluding the proof of the Theorem 1.1}
+the moves for the blink-coin calculus in the lower part of the figure, 
+concluding the proof of the Theorem 1.1.}
 \label{fig:blinkandlinktogether}
 \end{center}
 \end{figure}
 
 \section{The role of ribbon moves  $\pm \mu_{11}^{\pm 1}$}
-Moves $\pm\mu_{11}^{\pm 1}$ are redundant because Martelli's calculus is in $\mathbb{R}^3$. We include them 
+The counterpart of the ribbon moves in the blink-coin calculus, 
+(also called ribbon moves) $\pm\mu_{11}^{\pm 1}$ are redundant 
+because Martelli's calculus is in $\mathbb{R}^3$. We include them 
 in our blackboard framed link calculus because with their inclusions all the dual moves,
 except $\mu_{20}^\star$ and $\mu_{02}^\star$, become redundant.
 \begin{theorem}
@@ -329,7 +338,7 @@ except $\mu_{20}^\star$ and $\mu_{02}^\star$, become redundant.
  \pm \mu_{54},  \pm \mu_{45}, \pm \mu_{66}^{\pm},\pm \mu_{99}^{\pm}\}.$
 \end{theorem}
 \begin{proof}
- We work not a the blink level, but at the level of its associated blackboard framed link.
+ We work with the language of blackboard framed links which corresponds to the various coins.
  Moves corresponding to $(\pm \mu_{11}^{\pm1})^\star$ and  $(\pm \mu_{33}^{\pm1})^\star$ are redundant 
  because $\pm \mu_{11}^{\pm1}$  $\pm \mu_{33}^{\pm1}$ are self dual. 
  Moves $\pm\mu_{10}^\star$ and  $\pm\mu_{01}^\star$ are implied by a combination of moves 
@@ -337,10 +346,10 @@ except $\mu_{20}^\star$ and $\mu_{02}^\star$, become redundant.
  In particular, all the Reidemeister 2 and 3 moves (regular isotopy) 
  are at our disposal. We can use this fact to change the external face of
  the link diagram to become any chosen adjacent face by using regular isotopy at the cost of creating two 
- curls with distinct sign and the same rotation number. Use the the appropriate ribbon move to
+ curls adjacent in the same component with distinct sign and the same rotation number. Use the the appropriate ribbon move to
  obtain two curls with the distinct signs and distinct rotation number. Now apply Whitney's trick
- (see page 30 of \cite{lins2007blink}) to cancel these curls. The net effect in the correponding blink
- is that it is obtained from the initial blink by dualizing and interchanging black and gray
+ (see page 30 of \cite{lins2007blink}) to cancel these curls. The net effect in the correponding 
+ final blink  is that it is obtained from the initial blink by dualizing and interchanging black and gray
  edges. Having this double involutions at our disposal it
  is straighforward to obtain all the remaining dual moves.
 \end{proof}
@@ -348,7 +357,7 @@ In Fig. \ref{fig:reducedblinkcalculus} we present the 36 moves of the final redu
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[scale=0.93]{A.figs/reducedblinkcalculus.pdf}
-\caption{\sf Reduced 36 move blink-coin calculus}
+\caption{\sf The 36 moves forming the reduced blink-coin calculus}
 \label{fig:reducedblinkcalculus}
 \end{center}
 \end{figure}
