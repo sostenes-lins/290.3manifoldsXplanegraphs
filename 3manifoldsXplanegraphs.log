@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  21 MAY 2013 16:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  22 MAY 2013 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -194,7 +194,7 @@ Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 
 
 Writing index file 3manifoldsXplanegraphs.idx
-(./3manifoldsXplanegraphs.aux (./refaf.aux))
+(./3manifoldsXplanegraphs.aux)
 \openout1 = `3manifoldsXplanegraphs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -332,81 +332,74 @@ Underfull \vbox (badness 5548) has occurred while \output is active []
 File: A.figs/somenotation.pdf Graphic file (type pdf)
 
 <use A.figs/somenotation.pdf>
-Package pdftex.def Info: A.figs/somenotation.pdf used on input line 134.
+Package pdftex.def Info: A.figs/somenotation.pdf used on input line 139.
 (pdftex.def)             Requested size: 469.47046pt x 98.62614pt.
 
 <A.figs/linkblink.pdf, id=27, 312.61783pt x 261.38635pt>
 File: A.figs/linkblink.pdf Graphic file (type pdf)
 
 <use A.figs/linkblink.pdf>
-Package pdftex.def Info: A.figs/linkblink.pdf used on input line 143.
+Package pdftex.def Info: A.figs/linkblink.pdf used on input line 148.
 (pdftex.def)             Requested size: 199.16928pt x 166.53288pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<A.figs/handleslide.pdf, id=28, 508.02364pt x 168.93962pt>
+ [3 <./A.figs/somenotation.pdf>]
+<A.figs/handleslide.pdf, id=42, 508.02364pt x 168.93962pt>
 File: A.figs/handleslide.pdf Graphic file (type pdf)
 
 <use A.figs/handleslide.pdf>
-Package pdftex.def Info: A.figs/handleslide.pdf used on input line 190.
+Package pdftex.def Info: A.figs/handleslide.pdf used on input line 195.
 (pdftex.def)             Requested size: 398.33858pt x 132.46837pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 205.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 210.
 
 
-[3 <./A.figs/somenotation.pdf>] [4 <./A.figs/linkblink.pdf> <./A.figs/handlesli
-de.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/handleslide.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
->] <A.figs/FennRourkeAndKauffmanMove.pdf, id=50, 315.4461pt x 91.1685pt>
+<A.figs/FennRourkeAndKauffmanMove.pdf, id=43, 315.4461pt x 91.1685pt>
 File: A.figs/FennRourkeAndKauffmanMove.pdf Graphic file (type pdf)
 
 <use A.figs/FennRourkeAndKauffmanMove.pdf>
 Package pdftex.def Info: A.figs/FennRourkeAndKauffmanMove.pdf used on input lin
-e 220.
+e 225.
 (pdftex.def)             Requested size: 384.1122pt x 111.01671pt.
 
-<A.figs/Martelli.pdf, id=51, 427.88182pt x 64.8777pt>
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [4 <./A.figs/linkblink.pdf>] [5 <./A.figs/handleslide.pdf> <./A.figs/FennRourk
+eAndKauffmanMove.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/FennRourkeAndKauffmanMove.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>] <A.figs/Martelli.pdf, id=56, 427.88182pt x 64.8777pt>
 File: A.figs/Martelli.pdf Graphic file (type pdf)
 
 <use A.figs/Martelli.pdf>
-Package pdftex.def Info: A.figs/Martelli.pdf used on input line 262.
+Package pdftex.def Info: A.figs/Martelli.pdf used on input line 267.
 (pdftex.def)             Requested size: 469.47046pt x 71.1845pt.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 273.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 278.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 273.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 278.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./A.figs/FennRourkeAndKauffmanMove.pdf>]
-<A.figs/proofequivalencea3A3a4A4.pdf, id=57, 428.2031pt x 425.7877pt>
+[6 <./A.figs/Martelli.pdf>]
+<A.figs/proofequivalencea3A3a4A4.pdf, id=62, 428.2031pt x 425.7877pt>
 File: A.figs/proofequivalencea3A3a4A4.pdf Graphic file (type pdf)
 
 <use A.figs/proofequivalencea3A3a4A4.pdf>
 Package pdftex.def Info: A.figs/proofequivalencea3A3a4A4.pdf used on input line
- 297.
+ 335.
 (pdftex.def)             Requested size: 398.33858pt x 396.10191pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<A.figs/blinkandlinktogether.pdf, id=58, 566.51653pt x 818.22215pt>
+<A.figs/blinkandlinktogether.pdf, id=63, 566.51653pt x 818.22215pt>
 File: A.figs/blinkandlinktogether.pdf Graphic file (type pdf)
 
 <use A.figs/blinkandlinktogether.pdf>
-Package pdftex.def Info: A.figs/blinkandlinktogether.pdf used on input line 325
+Package pdftex.def Info: A.figs/blinkandlinktogether.pdf used on input line 363
 .
 (pdftex.def)             Requested size: 396.55885pt x 572.7516pt.
- [6 <./A.figs/Martelli.pdf>]
-Overfull \hbox (1.17065pt too wide) in paragraph at lines 342--346
+
+Overfull \hbox (1.17065pt too wide) in paragraph at lines 380--384
 \OT1/cmr/m/it/12 moves $\OMS/cmsy/m/n/12 f^^F\OML/cmm/m/it/12 ^^V[]; \OMS/cmsy/
 m/n/12 ^^F\OML/cmm/m/it/12 ^^V[]; \OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^V[]; \
 OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^V[]; \OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12
@@ -418,61 +411,76 @@ m/m/it/12 ^^V[]; \OMS/cmsy/m/n/12 ^^F\OML/cmm/m/it/12 ^^V[]; \OMS/cmsy/m/n/12 ^
 2 ^^V[]\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 :$ 
  []
 
-[7 <./A.figs/proofequivalencea3A3a4A4.pdf>]
-
-LaTeX Warning: Text page 8 contains only floats.
-
-
-Overfull \vbox (0.94516pt too high) has occurred while \output is active []
-
-
-[8 <./A.figs/blinkandlinktogether.pdf>]
-<A.figs/reducedblinkcalculus.pdf, id=77, 514.33775pt x 135.22809pt>
+[7] [8 <./A.figs/proofequivalencea3A3a4A4.pdf>] [9 <./A.figs/blinkandlinktogeth
+er.pdf>] <A.figs/reducedblinkcalculus.pdf, id=80, 514.33775pt x 135.22809pt>
 File: A.figs/reducedblinkcalculus.pdf Graphic file (type pdf)
 
 <use A.figs/reducedblinkcalculus.pdf>
-Package pdftex.def Info: A.figs/reducedblinkcalculus.pdf used on input line 366
+Package pdftex.def Info: A.figs/reducedblinkcalculus.pdf used on input line 404
 .
 (pdftex.def)             Requested size: 478.32918pt x 125.76082pt.
- [9 <./A.figs/reducedblinkcalculus.pdf>]
-\openout2 = `refaf.aux'.
+ (./3manifoldsXplanegraphs.bbl
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \newblock Lehmanâ€
+                       ™s switching game and a theorem of tutte and nash-wil...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
 
 
-(./refaf.tex (./3manifoldsXplanegraphs.bbl)) [10
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
 
-] (./3manifoldsXplanegraphs.aux (./refaf.aux)) ) 
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \newblock Lehmanâ€™
+                        s switching game and a theorem of tutte and nash-wil...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+[10 <./A.figs/reducedblinkcalculus.pdf>]) [11] (./3manifoldsXplanegraphs.aux) )
+ 
 Here is how much of TeX's memory you used:
- 3485 strings out of 493485
- 46822 string characters out of 3143526
- 116079 words of memory out of 3000000
- 6706 multiletter control sequences out of 15000+200000
+ 3489 strings out of 493485
+ 46950 string characters out of 3143526
+ 113863 words of memory out of 3000000
+ 6717 multiletter control sequences out of 15000+200000
  19109 words of font info for 73 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,8n,31p,1211b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on 3manifoldsXplanegraphs.pdf (10 pages, 776925 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on 3manifoldsXplanegraphs.pdf (11 pages, 782535 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 153 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

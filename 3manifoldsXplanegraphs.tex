@@ -55,7 +55,7 @@
 
 \begin{abstract}
 A {\em blink} is a plane graph with an arbitrary bipartition of its edges.
-As a consequence of a recent result of Martelli, we show that the homeomorphisms classes
+As a consequence of a recent result of Martelli, I show that the homeomorphisms classes
 of closed oriented 3-manifolds are in 1-1 correspondence with classes of blinks. Two blinks
 are equivalent if they are linked by a finite sequence of local moves, where each one
 appears in a concrete list of 64 moves: they organize in 8 types,
@@ -63,9 +63,9 @@ each beeing essentlially the same move on 8 simply related configurations.
 The size of the list can be substantially
 decreased at the cost of loosing symmetry, just by keeping a very simple move,
 the {\em ribbon moves} denoted $\pm \mu_{11}^{\pm}$ (which is in principle redundant). 
-Including these imples that
-all the moves coming from plane duality (the starred moves), except for $\mu_{20}^\star$
-and $\mu_{02}^\star$, redundant and the blink-coin calculus is reduced to 36 moves.
+The inclusion of $\pm \mu_{11}^{\pm}$  implies that
+all the moves corresponding to plane duality (the starred moves), except for $\mu_{20}^\star$
+and $\mu_{02}^\star$, are redundant and the blink-coin calculus is reduced to 36 moves.
 \end{abstract}
 
 
@@ -84,12 +84,17 @@ This paper proves the following theorem:
  There are 64 local configurations divided into 8 families of 8 simply related
  configurations and also divided into 32 pairs of left-right configurations,
  each one named a {\em coin}. A move replaces the left (right) coin of a pair by its right (left) 
- coin. The complementary sub-blink in the exterior a coin is completely arbitrary;
+ coin.  Vertices internal  to the coins are shown as small black disks. 
+  The complementary sub-blink in the exterior a coin is completely arbitrary; 
  its intersection with the corresponding internal coin is the set of 
- attachment vertices shown in the boundary of the disk (or pinched disk, in the case of the right coin of
- $\mu_{20}$) where the coin lies as small white circles. 
- The number $k$ of such attachment vertices satisfies $k\in \{0,1,2,3,4\}$. Vertices internal
- to the coin are shown as small black disks. A reduced form of this blink-coin 
+ attachment vertices shown in the boundary of the coin. The support of the coins
+ are disks, except in the the right coin  of $\mu_{20}$, case in which is a pinched disk. 
+ The attachment vertices are represented by small white circles 
+ in the boundary of the coin. If an attachment vertex is not
+ reached by the external sub-blink at the exterior of the coin, 
+ then it recedes to the interior becoming an internal vertex, a black
+ small disk. The number $k$ of such attachment vertices satisfies $k\in \{0,1,2,3,4\}$. 
+ A reduced form of this blink-coin 
  calculus having 36 moves is depicted in Fig. \ref{fig:reducedblinkcalculus}.
 
  \section{Motivation}
@@ -129,7 +134,7 @@ of which strand is the upper one, usually by removing a piece of the lower stran
 we use another way to decorate the link projections: the images of the link components are thich black curves
 and the upper strands are indicated by a thinner white segment inside the thich black curve at the crossing.
 
-\begin{figure}[!h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=16.5cm]{A.figs/somenotation.pdf} 
 \caption{\sf Notation for special disk neighborhoods of general position decorated link projections}
@@ -138,7 +143,7 @@ and the upper strands are indicated by a thinner white segment inside the thich 
 \end{figure} 
 
 
-\begin{figure}[!h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=7cm]{A.figs/linkblink.pdf} 
 \caption{\sf The projection of any link can be 2-face colorable into white and gray with the infinite
@@ -185,7 +190,7 @@ component with frame $\pm 1$ separated from the rest of the link by an $\mathbb{
 The other type of move, {\em the band move}, \cite{kirby1978calculus, 
 kauffman1991knots}) {\em (or handle sliding)} is non-local and infinite in number.
 
-\begin{figure}[!h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{A.figs/handleslide.pdf} 
 \caption{\sf Kirby's handle slide move, also known as the band move. Given $K$ and $K'$ two distinct components of a
@@ -215,7 +220,7 @@ This has been a very useful reformulation with many applications,
 including Martelli's calculus (soon to be treated)
 which uses it instead of the direct moves of Kirby. 
 
-\begin{figure}[!h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=13.5cm]{A.figs/FennRourkeAndKauffmanMove.pdf} 
 \caption{\sf Fenn-Rourke infinite sequence of blown-down moves 
@@ -282,17 +287,50 @@ which is an exact combinatorial counterpart for factorizing homeomorphisms of
 closed orientable 3-manifolds. This goal is desirable because it has the consequence that each 3-manifold
 become a subtle class of plane graphs. Our exposition is complete and elementary seeking
 to reach both audiences: topologists and combinatorialists. We feel that this result may be interesting
-for Combinatorics as well as to Topology and may enhance both areas. Plane graphs are one of the most 
-studied objects in Combinatorics. Some of their properties could be used in 3-manifolds and vice-versa.
-As an example of an interesting question relating the two areas is this: 
-which 3-manifolds correspond to the class of 3-connected monochromatic blinks?
-We have reasons to believe that the blink itself is a complete invariant for these manifolds. A catalogue of
+for Combinatorics as well as to Topology and may enhance both areas: conceivably, some 
+deep properties of plane graphs could be used to elucidate aspects of 
+3-manifolds and vice-versa. 
+
+Plane graphs are one of the most 
+studied objects in Combinatorics. The role of planarity in finding polynomial efficient algorithm
+is well established. For instance, the Max Cut Problem, an NP-complete problem, becomes polynomial,
+if the graph is in the plane. This was a consequence of J. Edmonds's optimal 
+maximum matching theory polyhedral theory: \cite{Edmonds1965, edmonds1973matching}. 
+Also well established is the
+the role of plane graphs motivating and permitting useful generalizations 
+in matroid theory, \cite{tutte1965lectures}.
+Matroids are a source of polynomial algorithms. A. Lehman used this theory 
+to provide a solution for the Shannon Switching Game \cite{lehman1964solution}. 
+This solution was enhanced to a polynomial algorithm by J. Edmonds in \cite{edmonds1965lehman}.
+Plane graphs and this paper were the motivation for his unexpected and amazing algorithm for polynomially 
+finding a matroid partition into indepedent subsets, \cite{edmonds1968matroid}, with its 
+various applications to scheduling problems. Yes, I do believe in {\em One Mathematics}, as advocated by 
+L. Lovasz, in his famous essay, \cite{lovasz1998om}. The area of combinatorics, particularly
+the area of efficient polynomial algorithms based on polyhedral methods had, ten years ago,
+its maturity declared by means of the publication of its {\em Magnum Opus}, in three volumes with more than
+1800 mathematically dense pages, by A. Schrijver, 
+\cite{schrijver2003cop1, schrijver2003cop2, schrijver2003cop3}.
+
+Two interesting open questions relating plane graphs and 3-manifolds are: 
+(1) Which 3-manifolds correspond to the class of 3-connected monochromatic blinks?
+We have reasons to believe that the blink itself (and its graphic matroid) 
+is a complete invariant for these manifolds. A catalogue of
 all the 242 blinks which are $3$-connected, monochromatic and have up to 16 edges appear in \cite{lins2007blink}.
 %At any rate I am using here a recipe of Conway, \cite{hk}.
+(2) The theorem established in this work brings closer of being true an old quest of mine: 
+is there a way to define a matroidal invariant to a 3-manifold?
+
+Eleven years ago, I. Agol, J. Hass and W. Thurston proved that {\em 3-manifold knot genus is NP-complete}, \cite{agol2002}.
+There seems to be relatively few results along this line. This one in particular suffer from the fact
+that it is very difficult combinatorially to work and visualize a knot in an arbitrary 3-manifold. I think that
+discovering more NP-complete problems in 3-manifolds could arise from the result here presented.
+After all NP-complete problems abound in plane graphs. In my wildest dreams I see myself 
+showing that reformulating one of these plane graph problem into the corresponding 
+3-manifold problem is polynomially solvable by topological means.
 
 \section{Proof of the Theorem}
 
-\begin{figure}[!h]
+\begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{A.figs/proofequivalencea3A3a4A4.pdf} 
 \caption{\sf A proof that in the presence of 
@@ -320,7 +358,7 @@ blink moves which are shown again up to isotopy in the lower part of the figure.
 \end{proof}
 
 
-\begin{figure}[!htb]
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.7]{A.figs/blinkandlinktogether.pdf}
 \caption{\sf Blackboard framed version of Martelli's revised calculus with 
@@ -338,12 +376,12 @@ The counterpart of the ribbon moves in the blink-coin calculus,
 because Martelli's calculus is in $\mathbb{R}^3$. We include them 
 in our blackboard framed link calculus because with their inclusions all the dual moves,
 except $\mu_{20}^\star$ and $\mu_{02}^\star$, become redundant.
-\begin{theorem}
+\begin{corollary}
  The blink-coin calculus can be simplified to include only the following set of 36 moves
  $ \{\pm \mu_{20}, \pm \mu_{02}, \pm \mu_{20}^\star, \pm \mu_{02}^\star, 
  \pm \mu_{33}^{\pm1}, \pm \mu_{01}, \pm \mu_{01},  \pm \mu_{11}^{\pm -1}, \pm \mu_{31},  \pm \mu_{13},  
  \pm \mu_{54},  \pm \mu_{45}, \pm \mu_{66}^{\pm},\pm \mu_{99}^{\pm}\}.$
-\end{theorem}
+\end{corollary}
 \begin{proof}
  We work with the language of blackboard framed links which corresponds to the various coins.
  Moves corresponding to $(\pm \mu_{11}^{\pm1})^\star$ and  $(\pm \mu_{33}^{\pm1})^\star$ are redundant 
@@ -360,8 +398,8 @@ except $\mu_{20}^\star$ and $\mu_{02}^\star$, become redundant.
  edges. Having this double involutions at our disposal it
  is straighforward to obtain all the remaining dual moves.
 \end{proof}
-In Fig. \ref{fig:reducedblinkcalculus} we present the 36 moves of the final reduced coin-blink calculus.
-\begin{figure}[!htb]
+In Fig. \ref{fig:reducedblinkcalculus} I present the 36 moves of the final reduced coin-blink calculus.
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.93]{A.figs/reducedblinkcalculus.pdf}
 \caption{\sf The 36 moves forming the reduced blink-coin calculus}
@@ -370,32 +408,32 @@ In Fig. \ref{fig:reducedblinkcalculus} we present the 36 moves of the final redu
 \end{figure}
 
 
-\include{refaf}
+%\include{refaf}
 
-%-----------------------------------
-% \bibliographystyle{plain}
-% %\bibliographystyle{is-alpha}
-% %\addcontentsline{toc}{bibliografia}{\MakeTextUppercase{Referências Bibliográficas}}
-% %\bibliography{d:/slsl\3.DadosSostenes.35.ArtigosLivros.bibtexGoogleScholar/bibtexIndex.bib} % bib file is slsl.bib
-% %\bibliography{~/home/ricardo/Dropbox/35.ArtigosLivros.bibtexGoogleScholar/bibtexIndex.bib}
-% \bibliography{bibtexIndex.bib}
-% %\bibliography{slsl}
-% 
-% 
-% \vspace{5mm}
-% \begin{center}
-% \hspace{7mm}
-% \begin{tabular}{l}
-%    S\'ostenes L. Lins\\
-%    Centro de Inform\'atica, UFPE \\
-%    Av. Jornalista Anibal Fernandes s/n\\
-%    Recife, PE 50740-560 \\
-%    Brazil\\
-%    sostenes@cin.ufpe.br
-% \end{tabular}
-% 
+-----------------------------------
+\bibliographystyle{plain}
+%\bibliographystyle{is-alpha}
+%\addcontentsline{toc}{bibliografia}{\MakeTextUppercase{Referências Bibliográficas}}
+%\bibliography{d:/slsl\3.DadosSostenes.35.ArtigosLivros.bibtexGoogleScholar/bibtexIndex.bib} % bib file is slsl.bib
+%\bibliography{~/home/ricardo/Dropbox/35.ArtigosLivros.bibtexGoogleScholar/bibtexIndex.bib}
+\bibliography{bibtexIndex.bib}
+%\bibliography{slsl}
 
-%\end{center}
+
+\vspace{5mm}
+\begin{center}
+\hspace{7mm}
+\begin{tabular}{l}
+   S\'ostenes L. Lins\\
+   Centro de Inform\'atica, UFPE \\
+   Av. Jornalista Anibal Fernandes s/n\\
+   Recife, PE 50740-560 \\
+   Brazil\\
+   sostenes@cin.ufpe.br
+\end{tabular}
+
+
+\end{center}
 
 
 \end{document}
