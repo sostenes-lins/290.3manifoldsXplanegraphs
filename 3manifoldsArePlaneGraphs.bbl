@@ -2,7 +2,7 @@
 
 \bibitem{agol2002}
 Ian Agol, Joel Hass, and William Thurston.
-\newblock 3-manifold knot genus is np-complete.
+\newblock 3-manifold knot genus is {NP}-complete.
 \newblock In {\em Proceedings of the thiry-fourth annual ACM symposium on
   Theory of computing}, pages 761--766. ACM, 2002.
 
@@ -11,23 +11,23 @@ J.~H. Conway.
 \newblock {\em On {N}umbers and {G}ames}.
 \newblock Academic Press, 1976.
 
+\bibitem{edmonds1965lehman}
+J.~Edmonds.
+\newblock Lehman's switching game and a theorem of tutte and nash-williams.
+\newblock {\em J. Res. Nat. Bur. Standards B}, 69:73--77, 1965.
+
 \bibitem{Edmonds1965}
 J.~Edmonds.
 \newblock Paths, trees and flowers.
 \newblock {\em Canadian Journal of Mathematics}, 17:449--467, 1965.
 
-\bibitem{edmonds1965lehman}
-Jack Edmonds.
-\newblock Lehman's switching game and a theorem of tutte and nash-williams.
-\newblock {\em J. Res. Nat. Bur. Standards B}, 69:73--77, 1965.
-
 \bibitem{edmonds1968matroid}
-Jack Edmonds.
+J.~Edmonds.
 \newblock Matroid partition.
 \newblock {\em Mathematics of the Decision Sciences, part}, 1:335--345, 1968.
 
 \bibitem{edmonds1973matching}
-Jack Edmonds and Ellis~L Johnson.
+J.~Edmonds and E.~L. Johnson.
 \newblock Matching, euler tours and the chinese postman.
 \newblock {\em Mathematical programming}, 5(1):88--124, 1973.
 
@@ -36,13 +36,18 @@ R.~Fenn and C.~Rourke.
 \newblock On {K}irby's calculus of links.
 \newblock {\em Topology}, 18(1):1--15, 1979.
 
+\bibitem{garey1979computers}
+M.R. Garey and D.S. Johnson.
+\newblock {\em {Computers and intractability}}.
+\newblock Freeman San Francisco, 1979.
+
 \bibitem{kauffman1991knots}
 L.H. Kauffman.
 \newblock {\em Knots and physics}, volume~1.
 \newblock World Scientific Publishing Company, 1991.
 
 \bibitem{kauffman1994tlr}
-L.H. Kauffman and S.~Lins.
+L.H. Kauffman and S.~L. Lins.
 \newblock {Temperley-Lieb Recoupling Theory and Invariants of 3-manifolds}.
 \newblock {\em Annals of Mathematical Studies, Princeton University Press},
   134:1--296, 1994.
@@ -53,18 +58,18 @@ R.~Kirby.
 \newblock {\em Inventiones Mathematicae}, 45(1):35--56, 1978.
 
 \bibitem{lehman1964solution}
-Alfred Lehman.
-\newblock A solution of the shannon switching game.
+A.~Lehman.
+\newblock A solution of the {S}hannon switching game.
 \newblock {\em Journal of the Society for Industrial \& Applied Mathematics},
   12(4):687--725, 1964.
 
 \bibitem{lickorish1962representation}
-W.B.R. Lickorish.
+W.~B.~R. Lickorish.
 \newblock A representation of orientable combinatorial 3-manifolds.
 \newblock {\em Annals of Mathematics}, 76(3):531--540, 1962.
 
 \bibitem{lins2007blink}
-L.D. Lins.
+L.~D. Lins.
 \newblock Blink: a language to view, recognize, classify and manipulate
   3{D}-spaces.
 \newblock {\em Arxiv preprint math/0702057}, 2007.
@@ -76,7 +81,7 @@ L.~Lovasz.
 
 \bibitem{martelli2012finite}
 B.~Martelli.
-\newblock A finite set of local moves for kirby calculus.
+\newblock A finite set of local moves for {K}irby calculus.
 \newblock {\em Journal of Knot Theory and Its Ramifications}, 21(14), 2012.
 
 \bibitem{rolfsen2003knots}
@@ -103,12 +108,12 @@ A.~Schrijver.
 \newblock Springer-Verlag, 2003.
 
 \bibitem{tutte1965lectures}
-WT~Tutte.
+W.~T. Tutte.
 \newblock Lectures on matroids.
 \newblock {\em J. Res. Nat. Bur. Standards Sect. B}, 69(1-47):468, 1965.
 
 \bibitem{wallace1960modifications}
-A.H. Wallace.
+A.~H. Wallace.
 \newblock Modifications and cobounding manifolds.
 \newblock {\em Canad. J. Math}, 12:503--528, 1960.
 

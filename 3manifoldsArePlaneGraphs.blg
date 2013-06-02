@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: 3manifoldsArePlaneGraphs.aux
+The style file: plain.bst
+Database file #1: bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 1205 of file bibtexIndex.bib.bib
+ : 
+ : @article{joli2012B,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1499 of file bibtexIndex.bib.bib
+ : 
+ : @article{polyak2010minimal,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `)'---line 3451 of file bibtexIndex.bib.bib
+ : 
+ : }
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 6441 of file bibtexIndex.bib.bib
+ : 
+ : %160
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 22 entries,
+            2118 wiz_defined-function locations,
+            628 strings with 6394 characters,
+and the built_in function-call counts, 6069 in all, are:
+= -- 611
+> -- 189
+< -- 6
++ -- 82
+- -- 56
+* -- 363
+:= -- 1028
+add.period$ -- 67
+call.type$ -- 22
+change.case$ -- 87
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 266
+empty$ -- 538
+format.name$ -- 56
+if$ -- 1275
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 29
+newline$ -- 113
+num.names$ -- 44
+pop$ -- 97
+preamble$ -- 1
+purify$ -- 72
+quote$ -- 0
+skip$ -- 175
+stack$ -- 0
+substring$ -- 391
+swap$ -- 43
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 74
+warning$ -- 0
+while$ -- 69
+width$ -- 24
+write$ -- 241
+(There were 4 error messages)
