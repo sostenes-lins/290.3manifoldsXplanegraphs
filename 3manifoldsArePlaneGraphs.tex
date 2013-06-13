@@ -140,7 +140,7 @@ of which strand is the upper one, usually by removing a piece of the lower stran
 I use another way to decorate the link projections: the images of the link components are thich black curves
 and the upper strands are indicated by a thinner white segment inside the thich black curve at the crossing.
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=16.5cm]{A.figs/somenotation.pdf} 
 \caption{\sf Notation for special disk neighborhoods of general position decorated link projections}
@@ -149,16 +149,26 @@ and the upper strands are indicated by a thinner white segment inside the thich 
 \end{figure} 
 
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=7cm]{A.figs/linkblink.pdf} 
-\caption{\sf The projection of any link can be 2-face colorable into white and gray with the infinite
+\includegraphics[width=15cm]{A.figs/linkblink.pdf} 
+\caption{\sf From BFL to blink and back: 
+the projection of any link can be 2-face colorable into white and gray with the infinite
 face white so that each subcurve between two crossing have their incident faces receiving distinct
-colors. The above figure shows how to transform the projection into a blink (with thicker edges
-than the curves representing the link projection). The vertices of the blink are distinguished fixed
-points in the interior of the gray faces. The inverse procedure
-is clearly defined. Thus we have a 1-1 correspondence between general position decorated link projections
-and blinks.}
+colors. The above figure shows how to transform a link projection into a blink (with thicker edges
+than the curves representing the link projection). 
+The vertices of the blink are distinguished fixed
+points represented by white disks in the interior of the gray faces. 
+Each crossing of the link projection becomes an edge in the corresponding blink, 
+An edge of the blink is gray if the upper strand 
+that crosses it is from northwest to southeast, it is black if the the upper strand 
+that crosses it is from northeast
+to southwest. The inverse procedure
+is clearly defined. In fact, the link is the so called {\em medial map} of the blink.
+Thus we have a 1-1 correspondence between general position decorated link projections
+and blinks. The (complete) blink at the right induces Poincaré's sphere, 
+the spherical dodecahedron space. The expressibility of a blink is powerful: quite
+complicated 3-manifolds are induced by simple blinks.}
 \label{fig:linkblink}
 \end{center}
 \end{figure} 
@@ -325,13 +335,15 @@ some aspects of the polyhedral theory may have consequences on 3-manifolds algor
 
 Two interesting open questions relating plane graphs and 3-manifolds are: 
 (1) Which 3-manifolds correspond to the class of 3-connected monochromatic blinks?
-I have reasons to believe that a pair of blinks (related in a still mysterious way)
-(and the associated graphic matroids) 
-is a complete invariant for these manifolds. A catalogue of
+I have reasons to believe that the pair $\{$blink, dual blink$\}$ 
+(and the associated $\{$graphic-cographic$\}$ matroids) 
+is a complete invariant for these manifolds: a census of
 all the 242 blinks which are $3$-connected, monochromatic 
-and have up to 16 edges appear in \cite{lins2007blink}.
+and have up to 16 edges appear in \cite{lins2007blink}. In the domain of the census,
+the pair $\{$graphical/cographical$\}$ matroids is a complete invariant.
 (2) The theorem established in this work brings closer of being true an old quest of mine: 
-is there a way to associate a matroidal invariant to a 3-manifold?
+is there a way to associate a matroidal invariant to a general closed, orientable and connected
+3-manifold?
 
 Eleven years ago, I. Agol, J. Hass and W. Thurston proved that {\em 3-manifold knot genus is NP-complete}, \cite{agol2002}.
 There seems to be relatively few results along this line. This one in particular suffer from the fact
@@ -421,12 +433,26 @@ In Fig. \ref{fig:reducedblinkcalculus} I present the 36 moves of the final reduc
 \end{center}
 \end{figure}
 
+\section{Conclusion}
+I finished this work by presenting below a complete census of the $k$-small 3-manifolds, for $k=8$. 
+These are the closed, oriented, connected and prime 3-manifolds 
+induced by a blink with at most $k$ edges. 
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=1.2]{A.figs/prime191Blinks.pdf}
-\caption{\sf The first 191 closed, oriented, connected and prime 3-manifolds. 
-These are such 3-manifolds which are induced by blinks up to 8 edges.}
+\caption{\sf A complete census (no misses, no duplicates) of 8-small prime 3-manifolds. 
+They correspond to the first 191 closed, oriented, connected and prime 3-manifolds. 
+These are such 3-manifolds which are induced by blinks up to $k=8$ edges. 
+A blink is a finite plane graph with an (arbitrary) edge bipartition. Such 
+census are possible by completely combinatorial methods: we generate a subset of 
+blinks that misses no 3-manifold by lexicography and the theory in \cite{lins2007blink};
+then we compute the homology and the WRT-invariants; at this level $k=8$ 
+these two invariants are seen to be complete. An entirely 
+combinatorial recipe directly implementable to compute the WRT-invariants of a 3-manifold from 
+a blink inducing it is given in Chapter 7 of \cite{lins1995gca}.
+This recipe, in its turn is justified by the (at the bottom, also combinatorial) 
+theory developed in \cite{kauffman1994tlr}.}
 \label{fig:prime191Blinks}
 \end{center}
 \end{figure}

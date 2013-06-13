@@ -23,45 +23,45 @@ I was expecting a `,' or a `}'---line 6421 of file bibtexIndex.bib.bib
  : %160
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 22 entries,
+You've used 23 entries,
             2118 wiz_defined-function locations,
-            628 strings with 6384 characters,
-and the built_in function-call counts, 6069 in all, are:
-= -- 611
-> -- 189
+            634 strings with 6485 characters,
+and the built_in function-call counts, 6284 in all, are:
+= -- 630
+> -- 196
 < -- 6
-+ -- 82
-- -- 56
-* -- 363
-:= -- 1028
-add.period$ -- 67
-call.type$ -- 22
-change.case$ -- 87
++ -- 85
+- -- 58
+* -- 371
+:= -- 1066
+add.period$ -- 70
+call.type$ -- 23
+change.case$ -- 90
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 266
-empty$ -- 538
-format.name$ -- 56
-if$ -- 1275
+cite$ -- 23
+duplicate$ -- 278
+empty$ -- 560
+format.name$ -- 58
+if$ -- 1321
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 29
-newline$ -- 113
-num.names$ -- 44
-pop$ -- 97
+int.to.str$ -- 23
+missing$ -- 31
+newline$ -- 118
+num.names$ -- 46
+pop$ -- 105
 preamble$ -- 1
-purify$ -- 72
+purify$ -- 75
 quote$ -- 0
-skip$ -- 175
+skip$ -- 181
 stack$ -- 0
-substring$ -- 391
-swap$ -- 43
+substring$ -- 396
+swap$ -- 44
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 74
+type$ -- 76
 warning$ -- 0
-while$ -- 69
-width$ -- 24
-write$ -- 241
+while$ -- 71
+width$ -- 25
+write$ -- 251
 (There were 4 error messages)
