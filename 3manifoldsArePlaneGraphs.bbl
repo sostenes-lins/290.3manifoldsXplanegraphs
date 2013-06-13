@@ -1,8 +1,8 @@
 \begin{thebibliography}{10}
 
 \bibitem{agol2002}
-Ian Agol, Joel Hass, and William Thurston.
-\newblock 3-manifold knot genus is {NP}-complete.
+I.~Agol, J.~Hass, and W.~Thurston.
+\newblock 3-manifold knot genus is np-complete.
 \newblock In {\em Proceedings of the thiry-fourth annual ACM symposium on
   Theory of computing}, pages 761--766. ACM, 2002.
 

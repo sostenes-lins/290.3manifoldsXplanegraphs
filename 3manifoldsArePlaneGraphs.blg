@@ -18,14 +18,14 @@ I was expecting a `,' or a `)'---line 3451 of file bibtexIndex.bib.bib
  : }
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 6441 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 6421 of file bibtexIndex.bib.bib
  : 
  : %160
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 You've used 22 entries,
             2118 wiz_defined-function locations,
-            628 strings with 6394 characters,
+            628 strings with 6384 characters,
 and the built_in function-call counts, 6069 in all, are:
 = -- 611
 > -- 189
