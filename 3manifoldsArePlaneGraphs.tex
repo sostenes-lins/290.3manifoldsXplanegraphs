@@ -91,12 +91,13 @@ This paper proves the following theorem:
  coins and also divided into 32 pairs of left-right coins,
   A move replaces the left (right) coin of a pair by its right (left) 
  coin. Thus, the number of moves is equal to the number of coins.
- Vertices internal  to the coins are shown as small black disks. 
+ Boundary and internal vertices of the coins are shown as small white disks. 
   The complementary sub-blink in the exterior a coin is completely arbitrary; 
  its intersection with the corresponding internal coin is a subset of the set of 
- attachment vertices shown in the boundary of the coin as small white circles. 
+ attachment vertices in the boundary of the coin.
  The support of the coins
- are disks, except in the the right coin  of $\mu_{20}$, case in which is a pinched disk. 
+ are disks, except in the the right coin  
+ of $\mu_{20}$, case in which is a pinched disk. 
  The number $k$ of the attachment vertices  satisfies $k\in \{0,1,2,3,4\}$. 
  A reduced but sufficient form of this coin 
  calculus having 36 coins (and moves) is obtained in the final section.
@@ -123,22 +124,41 @@ What can be more desirable than an equivalence relation on such simple mathemati
 objects that captures the subtle and difficult computational topological notion of
 factorizing any homeomorphism between two closed, oriented, connected 3-manifolds?
  
-\section{A brief historical review: a result by Lickorish 
-and consequences by Kirby, Fenn-Rourke, Kauffman and Martelli}
+\section{Topological preliminaries}
 
-A {\em knot} is an embedding of a circle, an $\mathbb{S}^1$, into $\mathbb{R}^3$ or  $\mathbb{S}^3$.
+This section contains the basic topological material that I need. It is primarely intended to the 
+combinatorially oriented readers, unfamiliar with the fundamental definitions of knots, 
+links and framed lins.
+The topological oriented readers also should read it 
+because I introduce some unfamiliar notation and definitions which are new and that will be 
+used throughout as well as  present a short historic overview of the known results.
+
+\subsection{Links, framed links, blackboard framed links, bflink, blinks}
+
+A {\em knot} is an embedding of a circle,  $\mathbb{S}^1$, into $\mathbb{R}^3$.
 The {\em unknot} is a knot which is the boundary of a disk.
-A {\em link with $k$ components} is an embedding of a disjoint union of $k$ copies of $\mathbb{S}^1$
-into $\mathbb{R}^3$ or  $\mathbb{S}^3$. In this way, a knot is a link with one component.
+A {\em link with $k$ components} is an embedding of a disjoint union of $k$ 
+copies of $\mathbb{S}^1$,
+$\left(\cup_{i=1}^k \mathbb{S}^1_i \right)$,
+into $\mathbb{R}^3$. In this way, a knot is a particular case of a link: one which
+has one component.
+A {\em framed link} is an embedding of 
+$\left(\cup_{i=1}^k \mathbb{S}^1_i \right) \times [-\epsilon,+\epsilon]$  
+into $\mathbb{R}^3$, for an arbitrarily fixed $\epsilon>0$. The {\em base link} of a framed
+link is the framed link restricted to $\left(\cup_{i=1}^k \mathbb{S}^1_i \right) \times\{0\}$.  
 
-Knots and links can be presented by their {\em decorated 
+
+Links can be presented with profit by their {\em decorated 
 general position projections} into a fixed plane $\mathbb{R}^2$. {\em General position} means that 
 in the image of the link there is no triple points and that at each neighborhood of
-each double is the transversal crossing of two segments of the link, named {\em strands}. 
+a double point is the transversal crossing of two segments of the link, named {\em strands}. 
 {\em Decorated} means that we keep the information
 of which strand is the upper one, usually by removing a piece of the lower strand. In this paper
-I use another way to decorate the link projections: the images of the link components are thich black curves
-and the upper strands are indicated by a thinner white segment inside the thich black curve at the crossing.
+I use yet another way to decorate the link projections: the images of the link components 
+are thich black curves
+and the upper strands are indicated by a thinner white segment inside the thich 
+black curve at the crossing (see second definition in Fig. \ref{fig:somenotation}).
+
 
 \begin{figure}[H]
 \begin{center}
@@ -149,12 +169,63 @@ and the upper strands are indicated by a thinner white segment inside the thich 
 \end{figure} 
 
 
+The isotopy class of a framed link is determined by assigning an 
+integer to each component of the link which is equal to the {\em linking number} of the
+two components of the boundary of each of its bands oriented in the same way. The linking number 
+can be obtained from an arbitrary decorated general position projection of the oriented band:
+it is the algebraic sum of the $(\pm)$-signs of the crossings of distinct boundary components.
+The convention is 
+\raisebox{-3mm}{\includegraphics[width=3cm]{A.figs/plusoneminusonecrossing.pdf}}
+The linking number is an invariant, that is, it does not depend on 
+the particular projection used. This is proved by K. Reidemeister in its 1932 book
+on Knot Theory, \cite{reid1932}. He isolates three local moves $r_1, r_2, r_3$ that
+are enough to finitely factor any arbitrary ambient isotopy between two decorated general 
+position projections of the same link:
+\raisebox{-3mm}{\includegraphics[width=7cm]{A.figs/reidemeistermoves.pdf}}.
+
+As a matter of fact, Theorem \ref{theo:theorem} which 
+I proved in this work is the counterpart for 3-manifolds
+of Reidemeister Theorem. Note that in the coin calculus of depicted together
+with bflinks in Fig. \ref{fig:blinkandlinktogether}
+there are 8 versions of each of Reidemeister moves $r_2$ and $r_3$. Note also that 
+Reidemeister move $r_1$ is not used at all. The equivalence class of bflinks generated
+by $r_2^{\pm 1}$ and $r_3^{\pm 1}$ is called {\em regular isotopy}. It plays an important role
+in the computation of the Jones invariants via Kauffman's bracket \cite{kauffman1987state}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=8.5cm]{A.figs/GettingImmersedBandSameWidth.pdf} 
+\caption{\sf Getting a constant width immersion of a band projection. 
+Each 360-degree rotation of the band projection is ambient isotopic to
+a curl in the band (in two different ways) so as to maintain  
+constant the width immersion of the band projection.
+In particular the images of
+$\left(\cup_{i=1}^k \mathbb{S}^1_i \right) \times\{-\epsilon\}$,
+and $\left(\cup_{i=1}^k \mathbb{S}^1_i \right) \times\{+\epsilon\}$
+have 4 distinct points near each crossing of the base link.
+}
+\label{fig:GettingImmersedBandSameWidth}
+\end{center}
+\end{figure} 
+
+A {\em blackboard framed link} is a projection of a framed link so that 
+the base link is projected as a decorated general position one and its bands are immersed
+with constant width $2\epsilon$. Moreover, we adjust the number of curls and their signs 
+(in the base link) so that the framing of each component coincides with the linking number of 
+the two boundary components of the band. The advantage of the blackboard framed link is that
+we no longer have to worry about assigning numbers to the components. These numbers are induced
+by the plane $\mathbb{R}^ 2$ of projection. The importance of this concept was 
+advocated by L. Kauffman in a number of works, including \cite{kauffman1991knots} and 
+\cite{kauffman1994tlr}. In this work, it is central: every framed link I use is presented as 
+a {\em bflink}, defined as the base link of a blackboard framed link, with no numbers attached. 
+Fig. \ref{fig:linkblink} shows a 1-1 correspondence between bflinks and blinks.
+
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=15cm]{A.figs/linkblink.pdf} 
-\caption{\sf From BFL to blink and back: 
+\caption{\sf From bflink to blink and back: 
 the projection of any link can be 2-face colorable into white and gray with the infinite
-face white so that each subcurve between two crossing have their incident faces receiving distinct
+face being white so that each subcurve between two crossing have their incident faces receiving distinct
 colors. The above figure shows how to transform a link projection into a blink (with thicker edges
 than the curves representing the link projection). 
 The vertices of the blink are distinguished fixed
@@ -173,7 +244,7 @@ complicated 3-manifolds are induced by simple blinks.}
 \end{center}
 \end{figure} 
 
-
+\subsection{Lickorish's groundbreaking result}
 In a grounding breaking work (1962),  W.B.R. Lickorish, \cite{lickorish1962representation}, proved that
 each closed orientable 3-manifold $\mathbb{M}^3$ can be encoded by a link in $\mathbb{S}^ 3$ 
 where each one of its $k$ components
@@ -196,7 +267,8 @@ $k$ of disjoint solid tori so that $\mathbb{M}^ 3\backslash \bigcup_{i=1}^k
 Actually, this result had been proved 2 years before 
 by A. H. Wallace \cite{wallace1960modifications} by using differential geometry. However
 it was the purely topological flavor of Lickorish's proof that spurs the subsequent developments.
-  
+
+\subsection{Kirby's famous calculus of framed links}
 In 1978 R. Kirby published his, to become famous, calculus of framed links, \cite{kirby1978calculus}.
 The gist of this paper is that two types of moves 
 are enough to go from any framed
@@ -216,19 +288,19 @@ thin rectangle arbitrarily embedded into $\mathbb{S}^3$, so as to miss the link.
 The short sides of the band 
 are attached to $K$ and to the copy of $K'$ and are recoupled in the other way.
 The band can be quite complicated because it may wander
-arbitrarily in  $\mathbb{S}^3$ while connecting
-the two components. Framings are modified in a judicious way. 
-The situation loses no generality and becomes 
-particularly simple (particularly in respect to the new framings) 
-if we have a blackboard framed link (shortly to be defined). 
+arbitrarily (as long as it misses the link) 
+in $\mathbb{R}^3$ in its way to connecting
+the two components. The situation loses no generality and becomes 
+particularly simple if we have a bflink. 
 More details in Kauffman's book, \cite{kauffman1991knots}. 
-In blackboard framed language (BFL), this move
-is conveniently depicted via the hieroglyph shown above. See Section 12.3 of \cite{kauffman1994tlr}
-.}
+In bflink language, this move
+is depicted in all its generality, via the hieroglyph shown in the bottom part of the 
+Figure. See Section 12.3 of \cite{kauffman1994tlr}.}
 \label{fig:handleslide}
 \end{center}
 \end{figure} 
 
+\subsection{Fenn-Rourk reformulation of Kirby's calculus}
 In 1979 R. Fenn and C. Rourke (\cite{fenn1979kirby}) show that Kirby's moves could 
 be replaced by an infinite sequence of a single type of move (a {\em blow down move})
 indexed by $n$, which I depict at the left side of Fig. \ref{fig:FennRourkeAndKauffmanMove}. 
@@ -250,6 +322,7 @@ moves $A_3$ and $A_4$, described in Fig. \ref{fig:Martelli}.}
 \end{center}
 \end{figure} 
 
+\subsection{Kauffman's idea to let the plane induce the framing}
 In the beginning of the 1990's L. Kauffman
 presented (\cite{kauffman1991knots}) a completely planar diagramatic way to deal with the 
 calculus of Kirby and its reformulation by Fenn and Rourke.
@@ -275,24 +348,36 @@ In this work I only use links given by blackboard framed projections:
 they are rather close of blinks, which are purely graph theoretical plane graphs with 
 an edge bipartition.
 
-In an important recent paper B. Martelli \cite{martelli2012finite} presented a local finite reformulation of
+\subsection{Martelli's finite calculus on flinks}
+In an important recent paper B. Martelli \cite{martelli2012finite} 
+presented a local finite reformulation of
 the Fenn-Rourke version (\cite{fenn1979kirby}) of Kirby's calculus \cite{kirby1978calculus}. 
 This calculus is presented in Fig. \ref{fig:Martelli}. It remains
 to be seen the consequences of Martelli' s result for obtaining new 3-manifold invariants.
+A possible door for obtaining such invariants are generalizations of the combinatorial 
+approach to get WRT-invariants, justified in \cite{kauffman1994tlr} and extensely
+used in \cite{lins1995gca} and in \cite{lins2007blink}. To find such a generalization 
+one has to take advantage of the specific sufficient local Martelli's moves now available 
+(or the coin calculus on blinks) instead of 
+hiding in the Temperley-Lieb algebra the infinite cases of Kirby's band move, 
+as pioneered by Lickorish
+in \cite{lickorish1991three}. See also page 144 of the join monography of 
+L. Kauffman and myself, \cite{kauffman1994tlr}.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=16.5cm]{A.figs/Martelli.pdf} 
-\caption{\sf Martelli's calculus on fractional (or integer) framed links. He proves that by keeping only
+\caption{\sf Martelli's calculus on bflinks. 
+He proves that by keeping only
 the blown down of ranks 0, 1 and 2 and replacing all the remaining infinite sequence by two
 new moves 2- and 3-cable engulfing (denoted by $A_3$ and $A_4$) a sufficient calculus for factorizing 
-homeomorphisms between closed 
-3-dimensional 3-manifolds is achieved. Moves $A_3$ and $A_4$ do not translate into blink moves
+homeomorphisms between closed oriented and connected 3-manifolds is achieved solely in terms of blinks. 
+Moves $A_3$ and $A_4$ do not translate into blink moves
 because their left sides are disconnected. What makes this work possible is the replacement of
 these non-connected configurations by equivalent moves $a_3$ and $a_4$ 
-(see Fig. \ref{fig:proofequivalencea3A3a4A4} where the diagrams for the moves
-appear -90$^{\tiny o}$-rotated)
 so that blink translations become available. 
+See Fig. \ref{fig:proofequivalencea3A3a4A4} where the diagrams for the moves
+appear -90$^{\tiny o}$-rotated relative to this Figure.
 }
 \label{fig:Martelli}
 \end{center}
@@ -356,7 +441,7 @@ showing that reformulating one of these plane graph problem into the correspondi
 
 \section{Proof of the Theorem}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=14cm]{A.figs/proofequivalencea3A3a4A4.pdf} 
 \caption{\sf A proof that in the presence of 
@@ -365,6 +450,7 @@ $a_3 \equiv A_3$ and $a_4 \equiv A_4$ hold}
 \label{fig:proofequivalencea3A3a4A4}
 \end{center}
 \end{figure} 
+
 \begin{lemma}
  In the presence of Reidemeister moves 2, generaly denoted by $\pm r_2^{\pm -1}$,
  moves $\pm a_3$ and $\pm A_3$ are equivalent and so are
@@ -377,22 +463,24 @@ $a_3 \equiv A_3$ and $a_4 \equiv A_4$ hold}
 \end{proof}
 
 \begin{proof} ({\bf of Theorem \ref{theo:theorem}})\\
-In Fig. \ref{fig:blinkandlinktogether} we draw all the moves for the revised Martelli's moves in a blackboard framing
-language and the respective blinks superimposed. The result follows by removing the 
-superimposed moves leaving only the
+In Fig. \ref{fig:bflinkandlinktogether} we draw all the moves 
+for the revised Martelli's moves on pairs of distinctly 2-colored bflinks 
+and the respective blinks superimposed. The result follows by removing the 
+bflink moves leaving solely the
 blink moves which are shown again up to isotopy in the lower part of the figure.
 \end{proof}
 
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.7]{A.figs/blinkandlinktogether.pdf}
-\caption{\sf Blackboard framed version of Martelli's revised calculus with 
+\includegraphics[scale=0.7]{A.figs/bflinkandlinktogether.pdf}
+\caption{\sf Bflink version of Martelli's revised calculus with 
 $a_3$, $a_4$ replacing $A_3$, $A_4$. 
-In the upper part of the figure, links \& blinks are superimposed implying 
+In the upper part of the figure, distinctly 2-face colored bflinks 
+and respective blinks are superimposed implying 
 the moves for the coin calculus in the lower part of the figure, 
 concluding the proof of the Theorem 1.1.}
-\label{fig:blinkandlinktogether}
+\label{fig:bflinkandlinktogether}
 \end{center}
 \end{figure}
 
@@ -440,7 +528,7 @@ induced by a blink with at most $k$ edges.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1.2]{A.figs/prime191Blinks.pdf}
+\includegraphics[scale=1.2]{A.figs/prime191Blinks-white-vertices.pdf}
 \caption{\sf A complete census (no misses, no duplicates) of 8-small prime 3-manifolds. 
 They correspond to the first 191 closed, oriented, connected and prime 3-manifolds. 
 These are such 3-manifolds which are induced by blinks up to $k=8$ edges. 
@@ -451,9 +539,9 @@ then we compute the homology and the WRT-invariants; at this level $k=8$
 these two invariants are seen to be complete. An entirely 
 combinatorial recipe directly implementable to compute the WRT-invariants of a 3-manifold from 
 a blink inducing it is given in Chapter 7 of \cite{lins1995gca}.
-This recipe, in its turn is justified by the (at the bottom, also combinatorial) 
+This recipe, in its turn is justified by at the very basic level, also by the combinatorial
 theory developed in \cite{kauffman1994tlr}.}
-\label{fig:prime191Blinks}
+\label{fig:prime191Blinks-white-vertices}
 \end{center}
 \end{figure}
 
