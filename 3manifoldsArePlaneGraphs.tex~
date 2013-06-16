@@ -104,12 +104,11 @@ This paper proves the following theorem:
  \subsection{Organization of the paper}
  In Section \ref{sec:motivationtopprelim} the motivation, the topological 
  preliminaries and an epistemological view of the work are discussed.
- In Section \ref{sec:objective} the objective of this work from an epistemological
- point of  view is discussed. The proof of the Theorem \ref{theo:theorem} 
+ The proof of the Theorem \ref{theo:theorem} 
  is given in Section \ref{sec:prooftheorem}.
  A reduced but sufficient form of this coin 
  calculus having 36 coins (and moves) is obtained in Section \ref{sec:roleribbonmoves}.
- In Section \ref{sec:conclusion} I display a census (no nisses, no duplicates) of
+ In Section \ref{sec:conclusion} I display a census (no misses, no duplicates) of
  the closed, oriented, connected, prime 3-manifold induced by blinks up to 8 edges.
 
 \section{Motivation and topological preliminaries}
@@ -150,7 +149,7 @@ used throughout the paper. Moreover, I present a short historic overview of the 
 
 \subsubsection{Formal definitions for the various types of links}
 
-We need to define vaious tyoes of links:
+We need to define vaious types of links:
 link, framed link, blackboard framed link, fractionary framed link,
 integer framed link, bflink, blink, g-blink.
 
@@ -278,11 +277,11 @@ $$\mathbb{M}^ 3\backslash \bigcup_{i=1}^k
 As a consequence, each closed oriented 3-manifold can be obtained from $\mathbb{S}^3$ 
 by removing a subset of disjoint solid tori and pasting them back in a different way.
 The most general parameters to identify the pasting is a pair of integers for each 
-component of the link. The same algorithm applies component by component, is named 
+component of the link. A filling algorithm algorithm applies component by component, is named 
 {\em $(\pm p,q)$-Dehn filling}, and is explained in Fig. \ref{fig:General_pq_DehnFilling}. 
 For proving the theorem, and this is important in the present work, the fillings used 
-by Lickorish satisfy $q=1$.
-Actually, this result had been proved 2 years before 
+by Lickorish satisfy $q=1$. He call these surgeries honest.
+Actually, Lickorish's result had been proved 2 years before 
 by A. H. Wallace \cite{wallace1960modifications} by using differential geometry. However
 it was the purely topological flavor of Lickorish's proof that spurred
 the subsequent developments. Also, Lickorish does not state his theorem in this way.
@@ -293,49 +292,44 @@ given in \cite{stillwell1993classical}.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=13.0cm]{A.figs/General_pq_DehnFilling.pdf} 
-\caption{\sf Dehn's $(\pm p,q)$-filling of a toroidal hole $T$: 
+\caption{\sf Dehn's $(\pm p,q)$-filling of a toroidal hole $T$ and its particular case
+where $q=1$, yielding a well defined bflink (or link) as input for an algorithm to produce
+a 3-manifold:
 suppose that $\frac{\pm p}{q}$ is an irreducible fraction, where the case 
 $q$=0, $p=1$ is permitted. 
 Consider a solid torus in $\mathbb{S}^3$ as the homeomorphic image of 
 $\mathbb{S}^ 1  \times[-\epsilon,+\epsilon]\times[-\delta,+\delta]$, denoted by $T$,
 where $\epsilon$ and $\delta$ are arbitrarily small fixed positive constants. $T$ can be
-changed by ambient isotopy so that the projection of its restriction to 
+changed by ambient isotopy so that for each $s \in \mathbb{S}^1$,
+$T$ restricted to $\{s\} \times [-\epsilon,+\epsilon] \times [-\delta,+\delta]$,
+is a rectangle which is orthogonal to the projection $xy$-plane. Therefore,
+the projection of its restriction to 
 $\mathbb{S}^ 1  \times[-\epsilon,+\epsilon]\times \{\delta\}$ is a blackboard framed
 link whose base link $\lambda$ is defined by the restriction of $T$ to  
 $\mathbb{S}^ 1  \times\{0\} \times \{\delta\}.$ 
-The important fact is that $\lambda$ does not touch the boundary of 
-the blackboard framed link. Let $\theta$ be
+The important fact is that $\lambda$ does not touch the boundary of its immersed band
+forming the projection of the blackboard framed link. Let $\theta$ be
 a curve that bounds a disk in $T$ but not in its boundary, $\partial(T)$.
 The curve $\pm p.\theta + q.\lambda$ is isotopic to a simple curve in $\partial(T)$.
-Map this curve homeomorphically to $m$ a curve in a canonical solid torus $T'$
+Map this curve homeomorphically to $m$, a curve in a canonical solid torus $T'$
 in $\mathbb{R}^3$ so that it bounds a disk in $T'$ but not in $\partial(T')$.
 This homeomorphism is univocally extensible to identify $\partial(T)$ and $\partial(T')$
 thus closing the toroidal hole. Note that the whole situation is defined
 by the knot $K \equiv \mathbb{S}^ 1  \times \{0\} \times \{0\}$ and the surgery coeficients
-$(\pm p,q)$. In his original paper Lickorish only use Dehn fillings of type $(\pm p,1)$.
+$(\pm p,q)$. In his original paper Lickorish only use Dehn fillings of type $(\pm p,1)$,
+corresponding to what he calls {\em honesty surgeries}. For such surgeries each component $K$ 
+may be curl-adjusted so as the whole link becomes a bflink where each $\pm p$ is given by the 
+linking number of the boundary components of the corresponding band. 
+This establishes an algorithm to obtain a 
+well defined closed, oriented, connected 3-manifold $\mathbb{M}^3$ 
+from a bflink, or from a blink, as input. By Lickorish's theorem, every such manifold arises
+in this way. Even if the blink is not connected, $\mathbb{M}^3$  is connected: in general,
+it is the connected sum of the manifolds induced by the connected components of the blink
+which induces it.
 }
 \label{fig:General_pq_DehnFilling}
 \end{center}
 \end{figure} 
-
-As a consequence, each closed orientable 3-manifold $\mathbb{M}^3$ 
-can be encoded by a link in $\mathbb{S}^ 3$ 
-where each one of its $k$ components
-is endowed with an irreducible fraction (the framing) $\frac {\pm p}{q}$ 
-where $q$ could be 0, and in the case $p$ must be 1 and the fraction
-becomes $\pm \infty$. To construct $\mathbb{M}^3$ 
-from the fractional framed link, act as follows: 
-after removing from $\mathbb{M}^3$
-a solid torus in the form of a homeomorphic image of
-$(\mathbb{S}^ 1 \times[-\epsilon,+\epsilon]\times[-\delta,+\delta])_i$ 
-of the $i$-th link we are left with 
-$\mathbb{M}^ 3\backslash \bigcup_{i=1}^k (\mathbb{S}^ 1 \times \mathbb{D}^2)_i=
-\mathbb{S}^ 3\backslash \bigcup_{i=1}^k (\mathbb{S}^ 1 \times \mathbb{D}^2)_i$. The fraction specifies, in the 
-toroidal boundary inside $\mathbb{S}^ 3$, the homology type $(\pm p,q)$ of the curve that
-is contractible in the solid torus inside $\mathbb{M}^3$. For each component, we then
-identify the simple curve given by the homological base pair with the meridian of a canonical copy of a 
-solid torus in $\mathbb{R}^ 3$  so as to completely specify the pasting of the solid torus 
-closing the toroidal hole.
 
 \subsubsection{Kirby's famous calculus of framed links}
 In 1978 R. Kirby published his, to become famous, calculus of framed links, \cite{kirby1978calculus}.
@@ -347,26 +341,30 @@ component with frame $\pm 1$ separated from the rest of the link by an $\mathbb{
 The other type of move, {\em the band move}, \cite{kirby1978calculus, 
 kauffman1991knots}) {\em (or handle sliding)} is non-local and infinite in number.
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=14cm]{A.figs/handleslide.pdf} 
-\caption{\sf Kirby's handle slide move, also known as the band move. Given $K$ and $K'$ two distinct components of a
-link start by making a close parallel copy of $K'$ in such a way that 
-it has linking number 0 with its originator $K'$.
+\caption{\sf Kirby's {\em handle slide move}, also known as the {\em band move}. 
+In this work the handle slide move is applied only to bflinks, so there is no issue
+about surgery coefficients.
+Given $K$ and $K'$ two distinct components of a
+bflink start by making a close parallel copy of $K'$ in such a way that 
+it forms an immersed band with its originator $K$.
 Let $K''$ be the connected sum of $K$ and the copy of $K'$. 
-The connected sum is defined by a {\em band} which is a
+The connected sum is defined by a em new band which is a
 thin rectangle arbitrarily embedded into $\mathbb{S}^3$, so as to miss the link. 
-The short sides of the band 
-are attached to $K$ and to the copy of $K'$ and are recoupled in the other way.
-The band can be quite complicated because it may wander
+The short sides of this band 
+are attached to $K$ and to the copy of $K'$ and then, recoupled in the other way.
+The new band can be quite complicated because it may wander
 arbitrarily (as long as it misses the link) 
 in $\mathbb{R}^3$ in its way to connecting
-the two components. The situation loses no generality and becomes 
-particularly simple if we have a bflink. 
-More details in Kauffman's book, \cite{kauffman1991knots}. 
+the two components. More details in Kauffman's book, \cite{kauffman1991knots}. 
 In bflink language, this move
 is depicted in all its generality, via the hieroglyph shown in the bottom part of the 
-Figure. See Section 12.3 of \cite{kauffman1994tlr}.}
+Figure. See Section 12.3 of \cite{kauffman1994tlr}. However,
+this hieroglyphic move is non-local because the outside of the hieroglyph changes, and 
+since there are infinite exteriors, there are infinite Kirby's band moves.
+}
 \label{fig:handleslide}
 \end{center}
 \end{figure} 
@@ -380,7 +378,7 @@ This has been a very useful reformulation with many applications,
 including Martelli's calculus (soon to be treated)
 which uses it instead of the direct moves of Kirby. 
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=13.5cm]{A.figs/FennRourkeAndKauffmanMove.pdf} 
 \caption{\sf Fenn-Rourke infinite sequence of blown-down moves 
@@ -460,15 +458,16 @@ appear -90$^{\tiny o}$-rotated relative to this Figure.
 \end{center}
 \end{figure} 
 
-\subsection{The work from an epistemological point of view}
+\subsection{This work from an epistemological point of view}
 \label{sec:objective}
 I proceed by further reformulating Martelli's moves so as to obtain a calculus
 of blinks, denominated {\em coin calculus}. It is is an exact combinatorial counterpart for factorizing homeomorphisms of
 closed, orientable, connected 3-manifolds. It has the consequence that each 3-manifold
-becomes a subtle class of plane graphs. The exposition is complete and elementary seeking
-to reach both audiences: topologists and combinatorialists. We feel that this 
-result may be interesting
-for Combinatorics as well as to Topology and may enhance both areas: conceivably, some 
+becomes a subtle class of plane graphs. This exposition has been and will remain
+complete and elementary. It seeks to reach both audiences: 
+Topologists and Combinatorialists. We feel that this 
+result may be interesting for Combinatorics as well as to Topology and 
+may enhance both areas: conceivably, some 
 deep properties of plane graphs could be used to elucidate aspects of 
 3-manifolds and vice-versa. 
 
@@ -545,8 +544,7 @@ $a_3 \equiv A_3$ and $a_4 \equiv A_4$ hold}
 In Fig. \ref{fig:bflinkandlinktogether} we draw all the moves 
 for the revised Martelli's moves on pairs of distinctly 2-colored bflinks 
 and the respective blinks superimposed. The result follows by removing the 
-bflink moves leaving solely the
-blink moves which are shown again up to isotopy in the lower part of the figure.
+bflink moves leaving only the blink moves which are redrawn up to isotopy in the lower part of the figure.
 \end{proof}
 
 
