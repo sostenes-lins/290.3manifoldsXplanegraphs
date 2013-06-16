@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt,twoside]{article}
 
 %===========PACOTES
-\usepackage[body={170mm,235mm}]{geometry}
+\usepackage[body={175mm,235mm}]{geometry}
 %\usepackage[portuguese]{babel}
 \usepackage{a1}
 \usepackage[english]{babel}
@@ -73,7 +73,8 @@ between 3-manifolds and plane graphs.
 \end{abstract}
 
 
-\section{Statement of the Theorem}
+\section{Introduction}
+\subsection{Statement of the Teorem}
 This paper proves the following theorem:
 \begin{theorem}
 \label{theo:theorem}
@@ -99,10 +100,22 @@ This paper proves the following theorem:
  are disks, except in the the right coin  
  of $\mu_{20}$, case in which is a pinched disk. 
  The number $k$ of the attachment vertices  satisfies $k\in \{0,1,2,3,4\}$. 
+ 
+ \subsection{Organization of the paper}
+ In Section \ref{sec:motivationtopprelim} the motivation, the topological 
+ preliminaries and an epistemological view of the work are discussed.
+ In Section \ref{sec:objective} the objective of this work from an epistemological
+ point of  view is discussed. The proof of the Theorem \ref{theo:theorem} 
+ is given in Section \ref{sec:prooftheorem}.
  A reduced but sufficient form of this coin 
- calculus having 36 coins (and moves) is obtained in the final section.
+ calculus having 36 coins (and moves) is obtained in Section \ref{sec:roleribbonmoves}.
+ In Section \ref{sec:conclusion} I display a census (no nisses, no duplicates) of
+ the closed, oriented, connected, prime 3-manifold induced by blinks up to 8 edges.
 
- \section{Motivation}
+\section{Motivation and topological preliminaries}
+\label{sec:motivationtopprelim}
+\subsection{Motivation}
+
 In his Appendix to part 0, J. H. Conway in his famous book {\em On Numbers and Games}, 
 \cite{onnumbersandgames}, says: {\em ``This appendix is in fact a cry for a Mathematician
 Liberation Movement!
@@ -112,7 +125,8 @@ Among the permissible kinds of constructions we should have:\\
 (ii) Equality among the created objects can be any desirable equivalence relation.''
 } 
  
-This paper is in the confluency of two deep research passions of the author, apparently very far apart:
+This paper is in the confluency of two deep research passions of the author, 
+apparently very far apart:
 the topological study of closed orientable 3-manifolds and the combinatorial study of plane 
 graphs.  The result proved here provides a glimpse, in the spirit of 
 Conway's quotation, to effectively
@@ -124,16 +138,21 @@ What can be more desirable than an equivalence relation on such simple mathemati
 objects that captures the subtle and difficult computational topological notion of
 factorizing any homeomorphism between two closed, oriented, connected 3-manifolds?
  
-\section{Topological preliminaries}
+\subsection{Topological preliminaries}
 
-This section contains the basic topological material that I need. It is primarely intended to the 
+This subsection contains the basic topological material that I need. 
+It is primarely intended to the 
 combinatorially oriented readers, unfamiliar with the fundamental definitions of knots, 
 links and framed lins.
 The topological oriented readers also should read it 
 because I introduce some unfamiliar notation and definitions which are new and that will be 
-used throughout as well as  present a short historic overview of the known results.
+used throughout the paper. Moreover, I present a short historic overview of the known results.
 
-\subsection{Links, framed links, blackboard framed links, bflink, blinks}
+\subsubsection{Formal definitions for the various types of links}
+
+We need to define vaious tyoes of links:
+link, framed link, blackboard framed link, fractionary framed link,
+integer framed link, bflink, blink, g-blink.
 
 A {\em knot} is an embedding of a circle,  $\mathbb{S}^1$, into $\mathbb{R}^3$.
 The {\em unknot} is a knot which is the boundary of a disk.
@@ -185,8 +204,8 @@ position projections of the same link:
 
 As a matter of fact, Theorem \ref{theo:theorem} which 
 I proved in this work is the counterpart for 3-manifolds
-of Reidemeister Theorem. Note that in the coin calculus of depicted together
-with bflinks in Fig. \ref{fig:blinkandlinktogether}
+of Reidemeister Theorem. Note that in the coin calculus depicted together
+with bflinks in Fig. \ref{fig:bflinkandlinktogether}
 there are 8 versions of each of Reidemeister moves $r_2$ and $r_3$. Note also that 
 Reidemeister move $r_1$ is not used at all. The equivalence class of bflinks generated
 by $r_2^{\pm 1}$ and $r_3^{\pm 1}$ is called {\em regular isotopy}. It plays an important role
@@ -244,15 +263,72 @@ complicated 3-manifolds are induced by simple blinks.}
 \end{center}
 \end{figure} 
 
-\subsection{Lickorish's groundbreaking result}
-In a grounding breaking work (1962),  W.B.R. Lickorish, \cite{lickorish1962representation}, proved that
-each closed orientable 3-manifold $\mathbb{M}^3$ can be encoded by a link in $\mathbb{S}^ 3$ 
+\subsubsection{Lickorish's groundbreaking result}
+In a grounding breaking work (1962),  W.B.R. Lickorish, 
+\cite{lickorish1962representation}, proved that
+any closed, oriented, connected $\mathbb{M}^3$ has inside it a finite number
+$k$ of disjoint solid tori each in the form of a homeomorphic image 
+of $\mathbb{S}^ 1  \times[-\epsilon,+\epsilon]\times[-\delta,+\delta]$,
+denoted by  $(\mathbb{S}^ 1  \times[-\epsilon,+\epsilon]\times[-\delta,+\delta])_i$
+so that, where $\mathbb{S}^ 3$ is the 3-dimensional sphere, 
+$$\mathbb{M}^ 3\backslash \bigcup_{i=1}^k 
+(\mathbb{S}^ 1  \times[-\epsilon,+\epsilon]\times[-\delta,+\delta])_i=
+\mathbb{S}^ 3\backslash \bigcup_{i=1}^k (\mathbb{S}^1 
+\times[-\epsilon,+\epsilon]\times[-\delta,+\delta])_i.$$
+As a consequence, each closed oriented 3-manifold can be obtained from $\mathbb{S}^3$ 
+by removing a subset of disjoint solid tori and pasting them back in a different way.
+The most general parameters to identify the pasting is a pair of integers for each 
+component of the link. The same algorithm applies component by component, is named 
+{\em $(\pm p,q)$-Dehn filling}, and is explained in Fig. \ref{fig:General_pq_DehnFilling}. 
+For proving the theorem, and this is important in the present work, the fillings used 
+by Lickorish satisfy $q=1$.
+Actually, this result had been proved 2 years before 
+by A. H. Wallace \cite{wallace1960modifications} by using differential geometry. However
+it was the purely topological flavor of Lickorish's proof that spurred
+the subsequent developments. Also, Lickorish does not state his theorem in this way.
+The form I use for the solid tori is convenient because of its simple relation with bflinks.
+It is inspired in the lucid account by J. Stillwell of the theorem 
+given in \cite{stillwell1993classical}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=13.0cm]{A.figs/General_pq_DehnFilling.pdf} 
+\caption{\sf Dehn's $(\pm p,q)$-filling of a toroidal hole $T$: 
+suppose that $\frac{\pm p}{q}$ is an irreducible fraction, where the case 
+$q$=0, $p=1$ is permitted. 
+Consider a solid torus in $\mathbb{S}^3$ as the homeomorphic image of 
+$\mathbb{S}^ 1  \times[-\epsilon,+\epsilon]\times[-\delta,+\delta]$, denoted by $T$,
+where $\epsilon$ and $\delta$ are arbitrarily small fixed positive constants. $T$ can be
+changed by ambient isotopy so that the projection of its restriction to 
+$\mathbb{S}^ 1  \times[-\epsilon,+\epsilon]\times \{\delta\}$ is a blackboard framed
+link whose base link $\lambda$ is defined by the restriction of $T$ to  
+$\mathbb{S}^ 1  \times\{0\} \times \{\delta\}.$ 
+The important fact is that $\lambda$ does not touch the boundary of 
+the blackboard framed link. Let $\theta$ be
+a curve that bounds a disk in $T$ but not in its boundary, $\partial(T)$.
+The curve $\pm p.\theta + q.\lambda$ is isotopic to a simple curve in $\partial(T)$.
+Map this curve homeomorphically to $m$ a curve in a canonical solid torus $T'$
+in $\mathbb{R}^3$ so that it bounds a disk in $T'$ but not in $\partial(T')$.
+This homeomorphism is univocally extensible to identify $\partial(T)$ and $\partial(T')$
+thus closing the toroidal hole. Note that the whole situation is defined
+by the knot $K \equiv \mathbb{S}^ 1  \times \{0\} \times \{0\}$ and the surgery coeficients
+$(\pm p,q)$. In his original paper Lickorish only use Dehn fillings of type $(\pm p,1)$.
+}
+\label{fig:General_pq_DehnFilling}
+\end{center}
+\end{figure} 
+
+As a consequence, each closed orientable 3-manifold $\mathbb{M}^3$ 
+can be encoded by a link in $\mathbb{S}^ 3$ 
 where each one of its $k$ components
 is endowed with an irreducible fraction (the framing) $\frac {\pm p}{q}$ 
 where $q$ could be 0, and in the case $p$ must be 1 and the fraction
 becomes $\pm \infty$. To construct $\mathbb{M}^3$ 
-from the framed link I act as follows: after removing from $\mathbb{M}^3$
-an $\epsilon$-neighborhood $(\mathbb{S}^ 1 \times \mathbb{D}^2)_i$ of the $i$-th link we are left with 
+from the fractional framed link, act as follows: 
+after removing from $\mathbb{M}^3$
+a solid torus in the form of a homeomorphic image of
+$(\mathbb{S}^ 1 \times[-\epsilon,+\epsilon]\times[-\delta,+\delta])_i$ 
+of the $i$-th link we are left with 
 $\mathbb{M}^ 3\backslash \bigcup_{i=1}^k (\mathbb{S}^ 1 \times \mathbb{D}^2)_i=
 \mathbb{S}^ 3\backslash \bigcup_{i=1}^k (\mathbb{S}^ 1 \times \mathbb{D}^2)_i$. The fraction specifies, in the 
 toroidal boundary inside $\mathbb{S}^ 3$, the homology type $(\pm p,q)$ of the curve that
@@ -260,15 +336,8 @@ is contractible in the solid torus inside $\mathbb{M}^3$. For each component, we
 identify the simple curve given by the homological base pair with the meridian of a canonical copy of a 
 solid torus in $\mathbb{R}^ 3$  so as to completely specify the pasting of the solid torus 
 closing the toroidal hole.
-Lickorish's breakthrough was to prove that any $\mathbb{M}^3$ has inside it a finite number
-$k$ of disjoint solid tori so that $\mathbb{M}^ 3\backslash \bigcup_{i=1}^k 
-(\mathbb{S}^ 1 \times \mathbb{D}^2)_i=
-\mathbb{S}^ 3\backslash \bigcup_{i=1}^k (\mathbb{S}^1 \times \mathbb{D}^2)_i$.
-Actually, this result had been proved 2 years before 
-by A. H. Wallace \cite{wallace1960modifications} by using differential geometry. However
-it was the purely topological flavor of Lickorish's proof that spurs the subsequent developments.
 
-\subsection{Kirby's famous calculus of framed links}
+\subsubsection{Kirby's famous calculus of framed links}
 In 1978 R. Kirby published his, to become famous, calculus of framed links, \cite{kirby1978calculus}.
 The gist of this paper is that two types of moves 
 are enough to go from any framed
@@ -282,8 +351,10 @@ kauffman1991knots}) {\em (or handle sliding)} is non-local and infinite in numbe
 \begin{center}
 \includegraphics[width=14cm]{A.figs/handleslide.pdf} 
 \caption{\sf Kirby's handle slide move, also known as the band move. Given $K$ and $K'$ two distinct components of a
-link start by making a close parallel copy of $K'$ in such a way that it has linking number 0 with its originator $K'$.
-Let $K''$ be the connected sum of $K$ and the copy of $K'$. The connected sum is defined by a {\em band} which is a
+link start by making a close parallel copy of $K'$ in such a way that 
+it has linking number 0 with its originator $K'$.
+Let $K''$ be the connected sum of $K$ and the copy of $K'$. 
+The connected sum is defined by a {\em band} which is a
 thin rectangle arbitrarily embedded into $\mathbb{S}^3$, so as to miss the link. 
 The short sides of the band 
 are attached to $K$ and to the copy of $K'$ and are recoupled in the other way.
@@ -300,7 +371,7 @@ Figure. See Section 12.3 of \cite{kauffman1994tlr}.}
 \end{center}
 \end{figure} 
 
-\subsection{Fenn-Rourk reformulation of Kirby's calculus}
+\subsubsection{Fenn-Rourk reformulation of Kirby's calculus}
 In 1979 R. Fenn and C. Rourke (\cite{fenn1979kirby}) show that Kirby's moves could 
 be replaced by an infinite sequence of a single type of move (a {\em blow down move})
 indexed by $n$, which I depict at the left side of Fig. \ref{fig:FennRourkeAndKauffmanMove}. 
@@ -322,7 +393,7 @@ moves $A_3$ and $A_4$, described in Fig. \ref{fig:Martelli}.}
 \end{center}
 \end{figure} 
 
-\subsection{Kauffman's idea to let the plane induce the framing}
+\subsubsection{Kauffman's idea to let the plane induce the integer framing}
 In the beginning of the 1990's L. Kauffman
 presented (\cite{kauffman1991knots}) a completely planar diagramatic way to deal with the 
 calculus of Kirby and its reformulation by Fenn and Rourke.
@@ -345,12 +416,12 @@ a component coincides with the algebraic sum of its self-crossings.
 By specifying that the link is {\em blackboard framed}, we no longer need the integers to
 specifies the framing. They are a consequence.
 In this work I only use links given by blackboard framed projections: 
-they are rather close of blinks, which are purely graph theoretical plane graphs with 
+they are rather close of blinks, which are just purely graph theoretical plane graphs with 
 an edge bipartition.
 
-\subsection{Martelli's finite calculus on flinks}
+\subsubsection{Martelli's finite calculus on fractionary framed link}
 In an important recent paper B. Martelli \cite{martelli2012finite} 
-presented a local finite reformulation of
+presented a local and finite reformulation of
 the Fenn-Rourke version (\cite{fenn1979kirby}) of Kirby's calculus \cite{kirby1978calculus}. 
 This calculus is presented in Fig. \ref{fig:Martelli}. It remains
 to be seen the consequences of Martelli' s result for obtaining new 3-manifold invariants.
@@ -358,38 +429,45 @@ A possible door for obtaining such invariants are generalizations of the combina
 approach to get WRT-invariants, justified in \cite{kauffman1994tlr} and extensely
 used in \cite{lins1995gca} and in \cite{lins2007blink}. To find such a generalization 
 one has to take advantage of the specific sufficient local Martelli's moves now available 
-(or the coin calculus on blinks) instead of 
+(or the coin calculus on blinks). The WRT-invariants are obtained by  
 hiding in the Temperley-Lieb algebra the infinite cases of Kirby's band move, 
-as pioneered by Lickorish
-in \cite{lickorish1991three}. See also page 144 of the join monography of 
-L. Kauffman and myself, \cite{kauffman1994tlr}.
+as pioneered by Lickorish in \cite{lickorish1991three}. 
+See also page 144 of the join monography of L. Kauffman and myself, \cite{kauffman1994tlr}.
+Finding such generalization of the WRT-invariants still seems to be a formidable task.
+However, Martelli's theorem and the coin calculus on blinks make it conceivable. 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=16.5cm]{A.figs/Martelli.pdf} 
-\caption{\sf Martelli's calculus on bflinks. 
+\caption{\sf Martelli's calculus on fractionary framed links.
+The links are in $\mathbb{R}^3$ and are endowed with an irreducible
+fraction $\frac{\pm p_K}{q_K}$ assigned to component $K$.
 He proves that by keeping only
 the blown down of ranks 0, 1 and 2 and replacing all the remaining infinite sequence by two
-new moves 2- and 3-cable engulfing (denoted by $A_3$ and $A_4$) a sufficient calculus for factorizing 
-homeomorphisms between closed oriented and connected 3-manifolds is achieved solely in terms of blinks. 
+new moves,  2- and 3-cable engulfing (denoted by $A_3$ and $A_4$), a sufficient 
+calculus for factorizing 
+homeomorphisms between closed oriented and connected 3-manifolds is achieved solely 
+in terms of the above 5 local moves. 
 Moves $A_3$ and $A_4$ do not translate into blink moves
 because their left sides are disconnected. What makes this work possible is the replacement of
 these non-connected configurations by equivalent moves $a_3$ and $a_4$ 
 so that blink translations become available. 
-See Fig. \ref{fig:proofequivalencea3A3a4A4} where the diagrams for the moves
+The equivalence is proved in Fig. \ref{fig:proofequivalencea3A3a4A4} 
+where the diagrams for the moves
 appear -90$^{\tiny o}$-rotated relative to this Figure.
 }
 \label{fig:Martelli}
 \end{center}
 \end{figure} 
 
-\section{Objective of the work}
-Our objective here is to further reformulate Martelli's moves so as to obtain a calculus
-of blinks, denominated {\em coin calculus}, 
-which is an exact combinatorial counterpart for factorizing homeomorphisms of
+\subsection{The work from an epistemological point of view}
+\label{sec:objective}
+I proceed by further reformulating Martelli's moves so as to obtain a calculus
+of blinks, denominated {\em coin calculus}. It is is an exact combinatorial counterpart for factorizing homeomorphisms of
 closed, orientable, connected 3-manifolds. It has the consequence that each 3-manifold
-becomes a subtle class of plane graphs. Our exposition is complete and elementary seeking
-to reach both audiences: topologists and combinatorialists. We feel that this result may be interesting
+becomes a subtle class of plane graphs. The exposition is complete and elementary seeking
+to reach both audiences: topologists and combinatorialists. We feel that this 
+result may be interesting
 for Combinatorics as well as to Topology and may enhance both areas: conceivably, some 
 deep properties of plane graphs could be used to elucidate aspects of 
 3-manifolds and vice-versa. 
@@ -440,6 +518,7 @@ showing that reformulating one of these plane graph problem into the correspondi
 3-manifold problem is polynomially solvable by topological means.
 
 \section{Proof of the Theorem}
+\label{sec:prooftheorem}
 
 \begin{figure}[H]
 \begin{center}
@@ -485,10 +564,11 @@ concluding the proof of the Theorem 1.1.}
 \end{figure}
 
 \section{The role of ribbon moves  $\pm \mu_{11}^{\pm 1}$}
+\label{sec:roleribbonmoves}
 The counterpart of the ribbon moves in the coin calculus, 
 (also called ribbon moves) $\pm\mu_{11}^{\pm 1}$ are redundant 
 because Martelli's calculus is in $\mathbb{R}^3$. We include them 
-in our blackboard framed link calculus because with their inclusions all the dual moves,
+in the coin calculus because with their inclusions all the dual moves,
 except $\mu_{20}^\star$ and $\mu_{02}^\star$, become redundant.
 \begin{corollary}
  The coin calculus can be simplified to include only the following set of 36 moves
@@ -522,6 +602,7 @@ In Fig. \ref{fig:reducedblinkcalculus} I present the 36 moves of the final reduc
 \end{figure}
 
 \section{Conclusion}
+\label{sec:conclusion}
 I finished this work by presenting below a complete census of the $k$-small 3-manifolds, for $k=8$. 
 These are the closed, oriented, connected and prime 3-manifolds 
 induced by a blink with at most $k$ edges. 
@@ -546,6 +627,21 @@ theory developed in \cite{kauffman1994tlr}.}
 \end{figure}
 
 %\include{refaf}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.12]{A.figs/DSC02309.jpg}
+\caption{\sf Bflink version of Martelli's revised calculus with 
+$a_3$, $a_4$ replacing $A_3$, $A_4$. 
+In the upper part of the figure, distinctly 2-face colored bflinks 
+and respective blinks are superimposed implying 
+the moves for the coin calculus in the lower part of the figure, 
+concluding the proof of the Theorem 1.1.}
+\label{fig:DSC02309}
+\end{center}
+\end{figure}
+
 
 -----------------------------------
 \bibliographystyle{plain}
