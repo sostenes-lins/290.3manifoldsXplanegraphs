@@ -152,14 +152,15 @@ It is primarely intended to the
 combinatorially oriented readers, unfamiliar with the fundamental definitions of knots, 
 links and framed lins.
 The topological oriented readers also should read it 
-because I introduce some unfamiliar notation and definitions which are new and that will be 
-used throughout the paper. Moreover, I present a short historic overview of the known results.
+because I introduce some unfamiliar notation and 
+definitions which are new and that will be 
+used throughout the paper. Moreover, I present a short historic 
+overview of the known results needed.
 
 \subsubsection{Formal definitions for the various types of links}
 
-We need to define vaious types of links:
-link, framed link, blackboard framed link, fractionary framed link,
-integer framed link, bflink, blink, g-blink.
+We need to define various types of links:
+link, framed link, blackboard framed link, bflink, blink, hflink, brflink, g-blink.
 
 A {\em knot} is an embedding of a circle,  $\mathbb{S}^1$, into $\mathbb{R}^3$.
 The {\em unknot} is a knot which is the boundary of a disk.
@@ -168,6 +169,7 @@ copies of $\mathbb{S}^1$,
 $\left(\cup_{i=1}^k \mathbb{S}^1_i \right)$,
 into $\mathbb{R}^3$. In this way, a knot is a particular case of a link: one which
 has one component.
+
 A {\em framed link} is an embedding of 
 $\left(\cup_{i=1}^k \mathbb{S}^1_i \right) \times [-\epsilon,+\epsilon]$  
 into $\mathbb{R}^3$, for an arbitrarily fixed $\epsilon>0$. The {\em base link} of a framed
@@ -214,7 +216,8 @@ I proved in this work is the counterpart for 3-manifolds
 of Reidemeister Theorem. Note that in the coin calculus depicted together
 with bflinks in Fig. \ref{fig:bflinkandlinktogether}
 there are 8 versions of each of Reidemeister moves $r_2$ and $r_3$. Note also that 
-Reidemeister move $r_1$ is not used at all. The equivalence class of bflinks generated
+Reidemeister move $r_1$ is not used at all. 
+The equivalence class of decorated general position link projection generated
 by $r_2^{\pm 1}$ and $r_3^{\pm 1}$ is called {\em regular isotopy}. It plays an important role
 in the computation of the Jones invariants via Kauffman's bracket \cite{kauffman1987state}.
 
@@ -234,16 +237,22 @@ have 4 distinct points near each crossing of the base link.
 \end{center}
 \end{figure} 
 
-A {\em blackboard framed link} is a projection of a framed link so that 
+A {\em blackboard framed link} is a projection of a framed link prepared by isotopy so that 
 the base link is projected as a decorated general position one and its bands are immersed
-with constant width $2\epsilon$. Moreover, we adjust the number of curls and their signs 
+with constant width $2\epsilon$, see Fig. \ref{fig:GettingImmersedBandSameWidth}.  
+Moreover, we adjust the number of curls and their signs 
 (in the base link) so that the framing of each component coincides with the linking number of 
 the two boundary components of the band. The advantage of the blackboard framed link is that
-we no longer have to worry about assigning numbers to the components. These numbers are induced
-by the plane $\mathbb{R}^ 2$ of projection. The importance of this concept was 
+we no longer have to worry about assigning numbers to the components. These integer 
+numbers are induced
+by the plane of projection. The importance of this concept was 
 advocated by L. Kauffman in a number of works, including \cite{kauffman1991knots} and 
-\cite{kauffman1994tlr}. In this work, it is central: every framed link I use is presented as 
-a {\em bflink}, defined as the base link of a blackboard framed link, with no numbers attached. 
+\cite{kauffman1994tlr}. In this work, it is central: every framed link I use is 
+blackboard framed. 
+
+A {\em bflink} is the projection of the base link of a blackboard framed link. 
+Thus a bflink is a 
+decorated general position link projection, with no numbers attached. 
 Fig. \ref{fig:linkblink} shows a 1-1 correspondence between bflinks and blinks.
 
 \begin{figure}[H]
@@ -288,7 +297,7 @@ The most general parameters to identify the pasting is a pair of integers for ea
 component of the link. A filling algorithm algorithm applies component by component, is named 
 {\em $(\pm p,q)$-Dehn filling}, and is explained in Fig. \ref{fig:General_pq_DehnFilling}. 
 For proving the theorem, and this is important in the present work, the fillings used 
-by Lickorish satisfy $q=1$. He call these surgeries honest.
+by Lickorish satisfy $q=1$. He call these surgeries {\em honest}.
 Actually, Lickorish's result had been proved 2 years before 
 by A. H. Wallace \cite{wallace1960modifications} by using differential geometry. However
 it was the purely topological flavor of Lickorish's proof that spurred
@@ -445,7 +454,7 @@ However, Martelli's theorem and the coin calculus on blinks make it conceivable.
 \begin{figure}
 \begin{center}
 \includegraphics[width=16.5cm]{A.figs/Martelli.pdf} 
-\caption{\sf Martelli's calculus on fractionary framed links.
+\caption{\sf Martelli's calculus on brflinks.
 The links are in $\mathbb{R}^3$ and are endowed with an irreducible
 fraction $\frac{\pm p_K}{q_K}$ assigned to component $K$.
 He proves that by keeping only
