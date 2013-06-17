@@ -74,6 +74,14 @@ between 3-manifolds and plane graphs.
 
 
 \section{Introduction}
+
+A {\em blink} is a plane graph with an arbitrary edge bipartition into
+two colors (black and gray). {\em Plane} means that it is given embedded in a plane.
+Two blinks $B$ and $B'$ are the same if there is an isotopy of the plane into itself so that 
+the image of $B$ is $B'$. The next four blinks are all distinct even tough they have the same 
+subjacent graph: 
+\raisebox{-2mm}{\includegraphics[width=40mm]{A.figs/distinctblinkssamegraph.pdf}}.
+
 \subsection{Statement of the Teorem}
 This paper proves the following theorem:
 \begin{theorem}
@@ -544,7 +552,8 @@ $a_3 \equiv A_3$ and $a_4 \equiv A_4$ hold}
 In Fig. \ref{fig:bflinkandlinktogether} we draw all the moves 
 for the revised Martelli's moves on pairs of distinctly 2-colored bflinks 
 and the respective blinks superimposed. The result follows by removing the 
-bflink moves leaving only the blink moves which are redrawn up to isotopy in the lower part of the figure.
+bflink moves leaving only the blink moves which are redrawn up to isotopy,
+in the lower part of the figure.
 \end{proof}
 
 
@@ -575,41 +584,47 @@ except $\mu_{20}^\star$ and $\mu_{02}^\star$, become redundant.
  \pm \mu_{54},  \pm \mu_{45}, \pm \mu_{66}^{\pm},\pm \mu_{99}^{\pm}\}.$
 \end{corollary}
 \begin{proof}
- We work with the language of blackboard framed links which corresponds to the various coins.
- Moves corresponding to $(\pm \mu_{11}^{\pm1})^\star$ and  $(\pm \mu_{33}^{\pm1})^\star$ are redundant 
- because $\pm \mu_{11}^{\pm1}$  $\pm \mu_{33}^{\pm1}$ are self dual. 
- Moves $\pm\mu_{10}^\star$ and  $\pm\mu_{01}^\star$ are implied by a combination of moves 
- $\pm \mu_{10}$,  $\pm \mu_{01}$,  $\pm \mu_{11}$ and $(\pm \mu_{11})^{-1}$. 
- In particular, all the Reidemeister 2 and 3 moves (regular isotopy) 
- are at our disposal. We can use this fact to change the external face of
- the link diagram to become any chosen adjacent face by using regular isotopy at the cost of creating two 
- curls adjacent in the same component with distinct sign and the same rotation number. Use the the appropriate ribbon move to
- obtain two curls with the distinct signs and distinct rotation number. Now apply Whitney's trick
- (see page 30 of \cite{lins2007blink}) to cancel these curls. The net effect in the correponding 
- final blink  is that it is obtained from the initial blink by dualizing and interchanging black and gray
- edges. Having this double involutions at our disposal it
- is straighforward to obtain all the remaining dual moves.
+We work in the language of bflinks.
+Moves corresponding to $(\pm \mu_{11}^{\pm1})^\star$ and  $(\pm \mu_{33}^{\pm1})^\star$ are redundant 
+because $\pm \mu_{11}^{\pm1}$  $\pm \mu_{33}^{\pm1}$ are self dual. 
+Moves $\pm\mu_{10}^\star$ and  $\pm\mu_{01}^\star$ are implied by a combination of moves 
+$\pm \mu_{10}$,  $\pm \mu_{01}$,  $\pm \mu_{11}$ and $(\pm \mu_{11})^{-1}$. 
+In particular, all the Reidemeister 2 and 3 moves (regular isotopy) 
+are at our disposal. We can use this fact to change the external face of
+the link diagram to become any chosen adjacent face by using regular isotopy at the cost of creating two 
+curls adjacent in the same component with distinct sign and the same rotation number. Use the the appropriate ribbon move to
+obtain two curls with the distinct signs and distinct rotation number. Now apply Whitney's trick
+which cancel these opposite curls by using $r_2^{\pm 1}$ and $r_3^{\pm 1}$ moves
+(regular homotopies):
+\raisebox{-3mm}{\includegraphics[width=45mm]{A.figs/whitneytrickproof.pdf}}.
+The net effect in the correponding 
+final blink  is that it is obtained from the initial blink by dualizing 
+and interchanging black and gray
+edges. Having this double involutions at our disposal it
+is straighforward to obtain all the remaining dual moves.
 \end{proof}
 In Fig. \ref{fig:reducedblinkcalculus} I present the 36 moves of the final reduced coin calculus.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.93]{A.figs/reducedblinkcalculus.pdf}
-\caption{\sf The 36 moves forming the reduced coin calculus}
+\caption{\sf The 36 moves (and 36 coins not necessarily distinct) 
+defining the reduced coin calculus.}
 \label{fig:reducedblinkcalculus}
 \end{center}
 \end{figure}
 
 \section{Conclusion}
 \label{sec:conclusion}
-I finished this work by presenting below a complete census of the $k$-small 3-manifolds, for $k=8$. 
+I finish this work by presenting below a complete (no misses, no duplicates)
+census of the $k$-small 3-manifolds, for $k=8$. 
 These are the closed, oriented, connected and prime 3-manifolds 
 induced by a blink with at most $k$ edges. 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1.2]{A.figs/prime191Blinks-white-vertices.pdf}
+\includegraphics[scale=1.15]{A.figs/prime191Blinks-white-vertices.pdf}
 \caption{\sf A complete census (no misses, no duplicates) of 8-small prime 3-manifolds. 
-They correspond to the first 191 closed, oriented, connected and prime 3-manifolds. 
+They correspond to the first (by lexicography) 191 closed, oriented, connected and prime 3-manifolds. 
 These are such 3-manifolds which are induced by blinks up to $k=8$ edges. 
 A blink is a finite plane graph with an (arbitrary) edge bipartition. Such 
 census are possible by completely combinatorial methods: we generate a subset of 
@@ -619,7 +634,18 @@ these two invariants are seen to be complete. An entirely
 combinatorial recipe directly implementable to compute the WRT-invariants of a 3-manifold from 
 a blink inducing it is given in Chapter 7 of \cite{lins1995gca}.
 This recipe, in its turn is justified by at the very basic level, also by the combinatorial
-theory developed in \cite{kauffman1994tlr}.}
+theory developed in \cite{kauffman1994tlr}. There are 3 independent implementations 
+of to obtain the Kauffman-Lins version (depending upon the Temperley-Lieb algebra)
+of the WRT-invariants. They were implemented by different people,
+in non-overlapping times:
+S. Lins (1990-1995), S. Melo (1999-2001) and L. Lins (2006-2007). The results agree.
+The software BLINK which compute these invariants and the above census by exhaustive
+generation of blinks is currently the object of an open source Github project, 
+and is available upon request. The sequence of WRT-invariants of a closed oriented 
+connected 3-manifold is an infinite sequence of complex numbers, indexed by $r\ge3$. 
+The $r$-th WRT-invariant of a manifold is directly obtained 
+from a blink inducing it.
+}
 \label{fig:prime191Blinks-white-vertices}
 \end{center}
 \end{figure}
