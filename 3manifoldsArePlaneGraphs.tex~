@@ -160,7 +160,9 @@ overview of the known results needed.
 \subsubsection{Formal definitions for the various types of links}
 
 We need to define various types of links:
-link, framed link, blackboard framed link, bflink, blink, hflink, brflink, g-blink.
+link, 
+decorated general position link pr
+framed link, blackboard framed link, bflink, blink, hflink, r-bflink, g-blink.
 
 A {\em knot} is an embedding of a circle,  $\mathbb{S}^1$, into $\mathbb{R}^3$.
 The {\em unknot} is a knot which is the boundary of a disk.
@@ -579,14 +581,49 @@ concluding the proof of the Theorem 1.1.}
 \end{center}
 \end{figure}
 
-\section{The role of ribbon moves  $\pm \mu_{11}^{\pm 1}$}
+\section{The role of the ribbon moves  $\pm \mu_{11}^{\pm 1}$}
 \label{sec:roleribbonmoves}
 The counterpart of the ribbon moves in the coin calculus, 
 (also called ribbon moves) $\pm\mu_{11}^{\pm 1}$ are redundant 
 because Martelli's calculus is in $\mathbb{R}^3$. We include them 
 in the coin calculus because with their inclusions all the dual moves,
 except $\mu_{20}^\star$ and $\mu_{02}^\star$, become redundant.
+\begin{lemma}
+Let $f$ be the external infinite face of a decorated general position 
+link projection and $g$ be a face adjacent to $f$. Then it is possible 
+to interchange $f$ and $g$ by means of regular isotopies and
+one finger move.
+\end{lemma}
+\begin{proof}
+ The proof is given in Fig. \ref{fig:changeexternalface}.
+\end{proof}
+
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=16cm]{A.figs/changeexternalface.pdf}
+\caption{\sf Changing the external face $f$ to be any one of its 
+adjacent faces $g$ by means of $r_2$, $r_3$ (regular isotopies) 
+and the ribbon move: the passage from the first to the 
+second configurations is a {\em finger move} where a small segment of an edge is
+arbitrarily deformed as a {\em finger} passing over all the crossings of the 
+dark gray rectangle; the finger move can be factored by regular isotopies; by other
+four finger moves one can go from the second to the third to the fourth 
+configuration; the passage from the fourth to the fifth 
+configuration is simply an isotopy; from the fifth to the sixth is a ribbon move;
+finally, the passage from the sixth to the seventh is acomplished by
+Whitney's trick, depicted in the proof below; Whitney's trick also factors as
+regular isotopies, as shown in the proof of Corollary \ref{cor:soinsimplification}.
+The net effect is to interchange the faces $f$ and $g$: the initial infinite face is $f$ 
+and, at the end, the infinite face is $g$.
+}
+\label{fig:changeexternalface}
+\end{center}
+\end{figure}
+
 \begin{corollary}
+\label{cor:soinsimplification}
  The coin calculus can be simplified to include only the following set of 36 moves
  $ \{\pm \mu_{20}, \pm \mu_{02}, \pm \mu_{20}^\star, \pm \mu_{02}^\star, 
  \pm \mu_{33}^{\pm1}, \pm \mu_{01}, \pm \mu_{01},  \pm \mu_{11}^{\pm -1}, \pm \mu_{31},  \pm \mu_{13},  
