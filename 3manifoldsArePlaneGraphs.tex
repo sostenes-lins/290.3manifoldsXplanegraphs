@@ -82,7 +82,7 @@ the image of $B$ is $B'$. The next four blinks are all distinct even tough they 
 subjacent graph: 
 \raisebox{-2mm}{\includegraphics[width=40mm]{A.figs/distinctblinkssamegraph.pdf}}.
 
-\subsection{Statement of the Teorem}
+\subsection{Statement of the Theorem}
 This paper proves the following theorem:
 \begin{theorem}
 \label{theo:theorem}
@@ -157,29 +157,44 @@ definitions which are new and that will be
 used throughout the paper. Moreover, I present a short historic 
 overview of the known results needed.
 
-\subsubsection{Formal definitions for the various types of links}
+\subsubsection{Knots and links into $\mathbb{R}^3$ and into $\mathbb{S}^3$}
 
-We need to define various types of links:
-link, 
-decorated general position link projection,
-framed link, blackboard framed link, bflink, blink, hflink, r-bflink, g-blink.
-
-A {\em knot} is an embedding of a circle,  $\mathbb{S}^1$, into $\mathbb{R}^3$.
+A {\em knot $K$} is an embedding of a circle,  $\mathbb{S}^1$, into $\mathbb{R}^3$
+(or $\mathbb{S}^3$, the boundary of a 4-dimensional ball).
 The {\em unknot} is a knot which is the boundary of a disk.
 A {\em link with $k$ components} is an embedding of a disjoint union of $k$ 
 copies of $\mathbb{S}^1$,
 $\left(\cup_{i=1}^k \mathbb{S}^1_i \right)$,
-into $\mathbb{R}^3$. In this way, a knot is a particular case of a link: one which
-has one component.
+into $\mathbb{R}^3$ ((or $\mathbb{S}^3$) with disjoint images. 
+In this way, a knot is a particular case of a link: one which
+has one component. Fig. \ref{fig:R3S3} shows a 1-1 correspondence
+$K \leftrightarrow K'$ between knots into $\mathbb{R}^3$ and into $\mathbb{S}^3$. 
+By abuse of language, I feel free to identify a knot with its image.
 
-A {\em framed link} is an embedding of 
-$\left(\cup_{i=1}^k \mathbb{S}^1_i \right) \times [-\epsilon,+\epsilon]$  
-into $\mathbb{R}^3$, for an arbitrarily fixed $\epsilon>0$. The {\em base link} of a framed
-link is the framed link restricted to $\left(\cup_{i=1}^k \mathbb{S}^1_i \right) \times\{0\}$.  
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=9.0cm]{A.figs/R3S3.pdf} 
+\caption{\sf How a knot $K$ into $\mathbb{R}^3$ 
+is related to a knot $K'$ into $\mathbb{S}^3$: 
+the 3-sphere $\mathbb{S}^3$
+is the boundary of a 4-ball $\mathbb{B}^4$; the knot $K$ is contained 
+in a ball $\mathbb{B}^ 3$ of radius $r$ centered in the origin $O$ and 
+contained in the equator $\{(x,y,z,w) \in \mathbb{B}^4 \ | \ w=0\}$; by making 
+$\frac{R}{r}$ big knots $K$ (which the south pole of the 4-ball)
+and $K'$ are as close as being isometric as desired. $K'$ is the image of $K$ under the
+stereographic projection $\zeta$ centered at the south pole $S$. In this work I need 
+to work with knots into $\mathbb{R}^3$ and into $\mathbb{S}^3$. Thus the 
+easy correspondence between the two types is welcome.
+}
+\label{fig:R3S3}
+\end{center}
+\end{figure} 
 
 
 Links can be presented with profit by their {\em decorated 
-general position projections} into a fixed plane $\mathbb{R}^2$. {\em General position} means that 
+general position projections} into the $xy$-plane $\mathbb{R}^2$,
+by simply making 0 the $z$-coordinate. Recall that we have already make $w=0$.
+Here {\em general position} means that 
 in the image of the link there is no triple points and that at each neighborhood of
 a double point is the transversal crossing of two segments of the link, named {\em strands}. 
 {\em Decorated} means that we keep the information
@@ -189,22 +204,45 @@ are thich black curves
 and the upper strands are indicated by a thinner white segment inside the thich 
 black curve at the crossing (see second definition in Fig. \ref{fig:somenotation}).
 
+\subsubsection{Framed knots, ribbons, framed links and blackboard framed links into $\mathbb{R}^3$}
+A {\em framed knot} is an embedding of  
+$\mathbb{S}^1 \times [-\epsilon,+\epsilon]$  
+into $\mathbb{R}^3$ (or $\mathbb{S}^3$), for an arbitrarily fixed $\epsilon>0$. 
+A framed knot is also called {\em a ribbon}.
+The {\em base knot} of a ribbon
+is the ribbon restricted to $\mathbb{S}^1 \times\{0\}$. 
+A {\em framed link} is a collection of ribbons with disjoint images. The ribbons 
+that I use are prepared by isotopies so that their projections remain with constant
+width $2\epsilon$. Fig. \ref{fig:GettingImmersedBandSameWidth} 
+shows how to achieve this condition.
+A collection of these constant width ribbons is called 
+a {\em blackboard framed link}.
+
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=16.5cm]{A.figs/somenotation.pdf} 
-\caption{\sf Notation for special disk neighborhoods of general position decorated link projections}
-\label{fig:somenotation}
+\includegraphics[width=8.5cm]{A.figs/GettingImmersedBandSameWidth.pdf} 
+\caption{\sf Getting a constant width immersion of a ribbon projection into $\mathbb{R}^2$. 
+Each 360-degree rotation of the ribbon projection is ambient isotopic to
+a curl in the ribbon (in two different ways) so as to maintain  
+constant the width immersion of the ribbon projection.
+In particular, after making these isotopies, the intersection of the images of
+$\mathbb{S}^1 \times\{-\epsilon\}$
+and $\mathbb{S}^1 \times\{+\epsilon\}$
+have 4 distinct points (it used to have 2 points) 
+near each crossing of the base link and there are no other 
+crossings in the immersed ribbons. 
+}
+\label{fig:GettingImmersedBandSameWidth}
 \end{center}
 \end{figure} 
-
 
 The isotopy class of a framed link is determined by assigning an 
 integer to each component of the link which is equal to the {\em linking number} of the
 two components of the boundary of each of its bands oriented in the same way. The linking number 
 can be obtained from an arbitrary decorated general position projection of the oriented band:
-it is the algebraic sum of the $(\pm)$-signs of the crossings of distinct boundary components.
-The convention is 
+it is half of the algebraic sum of the $(\pm)$-signs of the crossings of distinct boundary components.
+The convention is that
 \raisebox{-3mm}{\includegraphics[width=3cm]{A.figs/plusoneminusonecrossing.pdf}}
 The linking number is an invariant, that is, it does not depend on 
 the particular projection used. This is proved by K. Reidemeister in its 1932 book
@@ -223,21 +261,7 @@ The equivalence class of decorated general position link projection generated
 by $r_2^{\pm 1}$ and $r_3^{\pm 1}$ is called {\em regular isotopy}. It plays an important role
 in the computation of the Jones invariants via Kauffman's bracket \cite{kauffman1987state}.
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=8.5cm]{A.figs/GettingImmersedBandSameWidth.pdf} 
-\caption{\sf Getting a constant width immersion of a band projection. 
-Each 360-degree rotation of the band projection is ambient isotopic to
-a curl in the band (in two different ways) so as to maintain  
-constant the width immersion of the band projection.
-In particular the images of
-$\left(\cup_{i=1}^k \mathbb{S}^1_i \right) \times\{-\epsilon\}$,
-and $\left(\cup_{i=1}^k \mathbb{S}^1_i \right) \times\{+\epsilon\}$
-have 4 distinct points near each crossing of the base link.
-}
-\label{fig:GettingImmersedBandSameWidth}
-\end{center}
-\end{figure} 
+
 
 A {\em blackboard framed link} is a projection of a framed link prepared by isotopy so that 
 the base link is projected as a decorated general position one and its bands are immersed
@@ -281,7 +305,7 @@ complicated 3-manifolds are induced by simple blinks.}
 \end{center}
 \end{figure} 
 
-\subsubsection{Lickorish's groundbreaking result}
+\subsubsection{Lickorish's groundbreaking result and more link type objects}
 In a grounding breaking work (1962),  W.B.R. Lickorish, 
 \cite{lickorish1962representation}, proved that
 any closed, oriented, connected $\mathbb{M}^3$ has inside it a finite number
@@ -307,6 +331,8 @@ the subsequent developments. Also, Lickorish does not state his theorem in this 
 The form I use for the solid tori is convenient because of its simple relation with bflinks.
 It is inspired in the lucid account by J. Stillwell of the theorem 
 given in \cite{stillwell1993classical}.
+
+
 
 \begin{figure}[H]
 \begin{center}
@@ -350,6 +376,16 @@ which induces it.
 \end{center}
 \end{figure} 
 
+An {\em hflink} is the base link of a framed link $L_1 \cup \ldots \cup L_k$ endowed with
+the surgery coefficients $(\pm p_1,q_1), \ldots (\pm p_k,q_k)$. 
+A {\em residual bflink} of an hflink,
+or an {\em r-bflink}, is obtained by effecting an ambient isotopy in an hflink so that
+in the projected base link of the hflink all the surgery coefficients 
+satisfy $$\frac{\pm p_i}{q_i}=z_i+\frac{p'_i}{q_i},$$
+where $z_i$ is an integer equal to the linking number of boundary components of
+the $i$-th band of the hflink and $0<p_i<q_i$. Of course this can be achieved only
+by inserting adequate curls.
+
 \subsubsection{Kirby's famous calculus of framed links}
 In 1978 R. Kirby published his, to become famous, calculus of framed links, \cite{kirby1978calculus}.
 The gist of this paper is that two types of moves 
@@ -389,6 +425,16 @@ since there are infinite exteriors, there are infinite Kirby's band moves.
 \end{figure} 
 
 \subsubsection{Fenn-Rourk reformulation of Kirby's calculus}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=16.5cm]{A.figs/somenotation.pdf} 
+\caption{\sf Notation for special disk neighborhoods of general position decorated link projections}
+\label{fig:somenotation}
+\end{center}
+\end{figure} 
+
 In 1979 R. Fenn and C. Rourke (\cite{fenn1979kirby}) show that Kirby's moves could 
 be replaced by an infinite sequence of a single type of move (a {\em blow down move})
 indexed by $n$, which I depict at the left side of Fig. \ref{fig:FennRourkeAndKauffmanMove}. 
@@ -399,7 +445,7 @@ which uses it instead of the direct moves of Kirby.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=13.5cm]{A.figs/FennRourkeAndKauffmanMove.pdf} 
+\includegraphics[width=11.5cm]{A.figs/FennRourkeAndKauffmanMove.pdf} 
 \caption{\sf Fenn-Rourke infinite sequence of blown-down moves 
 and their counterpart in Kauffman's blackboard framed links. These are
 infinite sequence of local moves. Cases $n=0$ of these moves replace
@@ -456,15 +502,19 @@ However, Martelli's theorem and the coin calculus on blinks make it conceivable.
 \begin{figure}
 \begin{center}
 \includegraphics[width=16.5cm]{A.figs/Martelli.pdf} 
-\caption{\sf Martelli's calculus on brflinks.
-The links are in $\mathbb{R}^3$ and are endowed with an irreducible
-fraction $\frac{\pm p_K}{q_K}$ assigned to component $K$.
-He proves that by keeping only
+\caption{\sf Martelli's calculus on r-bflinks.
+Each component of the r-bflink is endowed with an irreducible
+fraction $\frac{p}{q}$ assigned to it, $q>p\ge 0$. The surgery 
+coeficients $(p',q)$ of the solid torus obtained by $\delta$-thickening the 
+corresponding ribbon satisfies: $\frac{p'}{q}=z+\frac{p}{q}$, where $z$ is the 
+linking number of the boundary components of the ribbon. Note that for the internal
+components of all the above moves the residual surgery coefficient is 0.
+Martelli' proves that by keeping only
 the blown down of ranks 0, 1 and 2 and replacing all the remaining infinite sequence by two
 new moves,  2- and 3-cable engulfing (denoted by $A_3$ and $A_4$), a sufficient 
 calculus for factorizing 
 homeomorphisms between closed oriented and connected 3-manifolds is achieved solely 
-in terms of the above 5 local moves. 
+in terms of the above 5 local moves plus the regular isotopies moves and the ribbon move. 
 Moves $A_3$ and $A_4$ do not translate into blink moves
 because their left sides are disconnected. What makes this work possible is the replacement of
 these non-connected configurations by equivalent moves $a_3$ and $a_4$ 
