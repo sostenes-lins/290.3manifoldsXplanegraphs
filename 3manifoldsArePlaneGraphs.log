@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  19 JUN 2013 11:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  21 JUN 2013 08:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -202,7 +202,11 @@ Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 
 
 Writing index file 3manifoldsArePlaneGraphs.idx
-(./3manifoldsArePlaneGraphs.aux)
+(./3manifoldsArePlaneGraphs.aux
+
+LaTeX Warning: Label `fig:switchingcrossing' multiply defined.
+
+)
 \openout1 = `3manifoldsArePlaneGraphs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -226,14 +230,14 @@ LaTeX Font Info:    ... okay on input line 52.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(39.83386pt, 497.92322pt, 59.7508pt)
+* h-part:(L,W,R)=(28.45276pt, 526.37598pt, 42.67914pt)
 * v-part:(T,H,B)=(70.56284pt, 668.63976pt, 105.84425pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=497.92322pt
+* \textwidth=526.37598pt
 * \textheight=668.63976pt
-* \oddsidemargin=-32.43613pt
-* \evensidemargin=-12.5192pt
+* \oddsidemargin=-43.81723pt
+* \evensidemargin=-29.59085pt
 * \topmargin=-38.70715pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -324,10 +328,10 @@ File: A.figs/distinctblinkssamegraph.pdf Graphic file (type pdf)
 
 <use A.figs/distinctblinkssamegraph.pdf>
 Package pdftex.def Info: A.figs/distinctblinkssamegraph.pdf used on input line 
-83.
+84.
 (pdftex.def)             Requested size: 113.81102pt x 19.14871pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--93
+Underfull \hbox (badness 10000) in paragraph at lines 89--94
 
  []
 
@@ -335,7 +339,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--93
 File: A.figs/blinkcalculus.pdf Graphic file (type pdf)
 
 <use A.figs/blinkcalculus.pdf>
-Package pdftex.def Info: A.figs/blinkcalculus.pdf used on input line 94.
+Package pdftex.def Info: A.figs/blinkcalculus.pdf used on input line 95.
 (pdftex.def)             Requested size: 455.24408pt x 270.40878pt.
  [1
 
@@ -344,198 +348,231 @@ egraph.pdf>] [2 <./A.figs/blinkcalculus.pdf>]
 <A.figs/R3S3.pdf, id=29, 304.46147pt x 223.89949pt>
 File: A.figs/R3S3.pdf Graphic file (type pdf)
  <use A.figs/R3S3.pdf>
-Package pdftex.def Info: A.figs/R3S3.pdf used on input line 176.
+Package pdftex.def Info: A.figs/R3S3.pdf used on input line 177.
 (pdftex.def)             Requested size: 256.0748pt x 188.3305pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-<A.figs/GettingImmersedBandSameWidth.pdf, id=35, 174.82816pt x 56.24216pt>
+[3 <./A.figs/R3S3.pdf>]
+<A.figs/GettingImmersedBandSameWidth.pdf, id=38, 174.82816pt x 56.24216pt>
 File: A.figs/GettingImmersedBandSameWidth.pdf Graphic file (type pdf)
 
 <use A.figs/GettingImmersedBandSameWidth.pdf>
 Package pdftex.def Info: A.figs/GettingImmersedBandSameWidth.pdf used on input 
-line 224.
+line 225.
 (pdftex.def)             Requested size: 241.84842pt x 77.80904pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<A.figs/knotandframedknot.pdf, id=39, 363.573pt x 82.2614pt>
+File: A.figs/knotandframedknot.pdf Graphic file (type pdf)
 
- [4 <./A.figs/R3S3.pdf>]
-<A.figs/plusoneminusonecrossing.pdf, id=42, 304.09248pt x 66.649pt>
+<use A.figs/knotandframedknot.pdf>
+Package pdftex.def Info: A.figs/knotandframedknot.pdf used on input line 243.
+(pdftex.def)             Requested size: 241.84842pt x 54.72069pt.
+
+<A.figs/plusoneminusonecrossing.pdf, id=40, 304.09248pt x 66.649pt>
 File: A.figs/plusoneminusonecrossing.pdf Graphic file (type pdf)
 
 <use A.figs/plusoneminusonecrossing.pdf>
 Package pdftex.def Info: A.figs/plusoneminusonecrossing.pdf used on input line 
-246.
+260.
 (pdftex.def)             Requested size: 85.35826pt x 18.70836pt.
 
-<A.figs/reidemeistermoves.pdf, id=43, 408.3506pt x 70.60109pt>
+<A.figs/reidemeistermoves.pdf, id=41, 408.3506pt x 70.60109pt>
 File: A.figs/reidemeistermoves.pdf Graphic file (type pdf)
 
 <use A.figs/reidemeistermoves.pdf>
-Package pdftex.def Info: A.figs/reidemeistermoves.pdf used on input line 252.
+Package pdftex.def Info: A.figs/reidemeistermoves.pdf used on input line 266.
 (pdftex.def)             Requested size: 199.16928pt x 34.43538pt.
+ [4 <./A.figs/GettingImmersedBandSameWidth.pdf> <./A.figs/knotandframedknot.pdf
 
-<A.figs/linkblink.pdf, id=44, 434.42412pt x 159.23416pt>
-File: A.figs/linkblink.pdf Graphic file (type pdf)
 
-<use A.figs/linkblink.pdf>
-Package pdftex.def Info: A.figs/linkblink.pdf used on input line 286.
+pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/knotandframedknot.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./A.figs/plusoneminusonecrossing.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/plusoneminusonecrossing.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+! Too many }'s.
+l.301 $\pm 1/0 =\pm \infty$, else $0/1=0$}
+                                          .
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+<A.figs/ribbonmovesimple.pdf, id=49, 129.75995pt x 72.94998pt>
+File: A.figs/ribbonmovesimple.pdf Graphic file (type pdf)
+
+<use A.figs/ribbonmovesimple.pdf>
+Package pdftex.def Info: A.figs/ribbonmovesimple.pdf used on input line 305.
+(pdftex.def)             Requested size: 71.13188pt x 39.99014pt.
+
+<A.figs/flinkblink.pdf, id=50, 434.42412pt x 159.23416pt>
+File: A.figs/flinkblink.pdf Graphic file (type pdf)
+
+<use A.figs/flinkblink.pdf>
+Package pdftex.def Info: A.figs/flinkblink.pdf used on input line 318.
 (pdftex.def)             Requested size: 426.79134pt x 156.44202pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 303.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 336.
 
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./A.figs/GettingImmersedBandSameWidth.pdf> <./A.figs/plusoneminusonecrossi
-ng.pdf
+ [5 <./A.figs/reidemeistermoves.pdf> <./A.figs/ribbonmovesimple.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/plusoneminusonecrossing.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./A.figs/reidemeistermoves.pdf
+pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/ribbonmovesimple.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
+>] <A.figs/surgerycoefficientsfromflink.pdf, id=57, 433.51042pt x 326.40851pt>
+File: A.figs/surgerycoefficientsfromflink.pdf Graphic file (type pdf)
 
-pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/reidemeistermoves.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->] <A.figs/General_pq_DehnFilling.pdf, id=52, 400.62923pt x 169.6558pt>
-File: A.figs/General_pq_DehnFilling.pdf Graphic file (type pdf)
+<use A.figs/surgerycoefficientsfromflink.pdf>
+Package pdftex.def Info: A.figs/surgerycoefficientsfromflink.pdf used on input 
+line 364.
+(pdftex.def)             Requested size: 369.88582pt x 278.50441pt.
 
-<use A.figs/General_pq_DehnFilling.pdf>
-Package pdftex.def Info: A.figs/General_pq_DehnFilling.pdf used on input line 3
-39.
-(pdftex.def)             Requested size: 369.88582pt x 156.63663pt.
- [6 <./A.figs/linkblink.pdf>]
-Underfull \vbox (badness 6961) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./A.figs/General_pq_DehnFilling.pdf>]
-<A.figs/handleslide.pdf, id=65, 508.02364pt x 168.93962pt>
+ [6 <./A.figs/flinkblink.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./A.figs/surgerycoefficientsfromflink.pdf>]
+<A.figs/handleslide.pdf, id=70, 508.02364pt x 168.93962pt>
 File: A.figs/handleslide.pdf Graphic file (type pdf)
 
 <use A.figs/handleslide.pdf>
-Package pdftex.def Info: A.figs/handleslide.pdf used on input line 401.
+Package pdftex.def Info: A.figs/handleslide.pdf used on input line 417.
 (pdftex.def)             Requested size: 398.33858pt x 132.46837pt.
 
-<A.figs/somenotation.pdf, id=66, 570.08276pt x 119.76024pt>
+<A.figs/somenotation.pdf, id=71, 570.08276pt x 119.76024pt>
 File: A.figs/somenotation.pdf Graphic file (type pdf)
 
 <use A.figs/somenotation.pdf>
-Package pdftex.def Info: A.figs/somenotation.pdf used on input line 432.
+Package pdftex.def Info: A.figs/somenotation.pdf used on input line 451.
 (pdftex.def)             Requested size: 469.47046pt x 98.62614pt.
  [8 <./A.figs/handleslide.pdf> <./A.figs/somenotation.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/somenotation.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] <A.figs/FennRourkeAndKauffmanMove.pdf, id=79, 315.4461pt x 91.1685pt>
+>] <A.figs/FennRourkeAndKauffmanMove.pdf, id=84, 315.4461pt x 91.1685pt>
 File: A.figs/FennRourkeAndKauffmanMove.pdf Graphic file (type pdf)
 
 <use A.figs/FennRourkeAndKauffmanMove.pdf>
 Package pdftex.def Info: A.figs/FennRourkeAndKauffmanMove.pdf used on input lin
-e 448.
+e 467.
 (pdftex.def)             Requested size: 327.20668pt x 94.56953pt.
- [9 <./A.figs/FennRourkeAndKauffmanMove.pdf>] <A.figs/Martelli.pdf, id=85, 454.
+ [9 <./A.figs/FennRourkeAndKauffmanMove.pdf>] <A.figs/Martelli.pdf, id=90, 454.
 47345pt x 66.85704pt>
 File: A.figs/Martelli.pdf Graphic file (type pdf)
 
 <use A.figs/Martelli.pdf>
-Package pdftex.def Info: A.figs/Martelli.pdf used on input line 504.
+Package pdftex.def Info: A.figs/Martelli.pdf used on input line 525.
 (pdftex.def)             Requested size: 469.47046pt x 69.06346pt.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 525.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 543.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 525.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 543.
 
-[10 <./A.figs/Martelli.pdf>]
-<A.figs/proofequivalencea3A3a4A4.pdf, id=92, 427.09851pt x 425.7877pt>
+<A.figs/switchingcrossing.pdf, id=91, 572.19533pt x 153.09819pt>
+File: A.figs/switchingcrossing.pdf Graphic file (type pdf)
+
+<use A.figs/switchingcrossing.pdf>
+Package pdftex.def Info: A.figs/switchingcrossing.pdf used on input line 563.
+(pdftex.def)             Requested size: 469.47046pt x 125.61372pt.
+ [10 <./A.figs/Martelli.pdf> <./A.figs/switchingcrossing.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/switchingcrossing.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 581.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 581.
+ [11]
+<A.figs/proofequivalencea3A3a4A4.pdf, id=104, 427.09851pt x 425.7877pt>
 File: A.figs/proofequivalencea3A3a4A4.pdf Graphic file (type pdf)
 
 <use A.figs/proofequivalencea3A3a4A4.pdf>
 Package pdftex.def Info: A.figs/proofequivalencea3A3a4A4.pdf used on input line
- 593.
+ 682.
 (pdftex.def)             Requested size: 398.33858pt x 397.11545pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-<A.figs/bflinkandlinktogether.pdf, id=96, 577.1288pt x 820.58101pt>
-File: A.figs/bflinkandlinktogether.pdf Graphic file (type pdf)
+ [12]
+<A.figs/flinkandlinktogether.pdf, id=108, 577.1288pt x 820.58101pt>
+File: A.figs/flinkandlinktogether.pdf Graphic file (type pdf)
 
-<use A.figs/bflinkandlinktogether.pdf>
-Package pdftex.def Info: A.figs/bflinkandlinktogether.pdf used on input line 62
-3.
+<use A.figs/flinkandlinktogether.pdf>
+Package pdftex.def Info: A.figs/flinkandlinktogether.pdf used on input line 712
+.
 (pdftex.def)             Requested size: 403.9874pt x 574.4028pt.
 
 Underfull \vbox (badness 1902) has occurred while \output is active []
 
- [12 <./A.figs/proofequivalencea3A3a4A4.pdf>]
+ [13 <./A.figs/proofequivalencea3A3a4A4.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./A.figs/bflinkandlinktogether.pdf>]
-<A.figs/changeexternalface.pdf, id=110, 573.91917pt x 116.7537pt>
+ [14 <./A.figs/flinkandlinktogether.pdf>]
+<A.figs/changeexternalface.pdf, id=120, 573.91917pt x 116.7537pt>
 File: A.figs/changeexternalface.pdf Graphic file (type pdf)
 
 <use A.figs/changeexternalface.pdf>
-Package pdftex.def Info: A.figs/changeexternalface.pdf used on input line 655.
+Package pdftex.def Info: A.figs/changeexternalface.pdf used on input line 744.
 (pdftex.def)             Requested size: 455.24408pt x 92.61208pt.
 
-<A.figs/whitneytrickproof.pdf, id=111, 334.27383pt x 71.34496pt>
+<A.figs/whitneytrickproof.pdf, id=121, 334.27383pt x 71.34496pt>
 File: A.figs/whitneytrickproof.pdf Graphic file (type pdf)
 
 <use A.figs/whitneytrickproof.pdf>
-Package pdftex.def Info: A.figs/whitneytrickproof.pdf used on input line 695.
+Package pdftex.def Info: A.figs/whitneytrickproof.pdf used on input line 784.
 (pdftex.def)             Requested size: 128.0374pt x 27.3269pt.
 
-<A.figs/reducedblinkcalculus.pdf, id=112, 514.33775pt x 135.22809pt>
+<A.figs/reducedblinkcalculus.pdf, id=122, 514.33775pt x 135.22809pt>
 File: A.figs/reducedblinkcalculus.pdf Graphic file (type pdf)
 
 <use A.figs/reducedblinkcalculus.pdf>
-Package pdftex.def Info: A.figs/reducedblinkcalculus.pdf used on input line 705
+Package pdftex.def Info: A.figs/reducedblinkcalculus.pdf used on input line 794
 .
 (pdftex.def)             Requested size: 478.32918pt x 125.76082pt.
- [14 <./A.figs/changeexternalface.pdf> <./A.figs/whitneytrickproof.pdf
+ [15 <./A.figs/changeexternalface.pdf> <./A.figs/whitneytrickproof.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/whitneytrickproof.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >]
-<A.figs/prime191Blinks-white-vertices.pdf, id=119, 391.93687pt x 364.55518pt>
+<A.figs/prime191Blinks-white-vertices.pdf, id=129, 391.93687pt x 364.55518pt>
 File: A.figs/prime191Blinks-white-vertices.pdf Graphic file (type pdf)
 
 <use A.figs/prime191Blinks-white-vertices.pdf>
 Package pdftex.def Info: A.figs/prime191Blinks-white-vertices.pdf used on input
- line 721.
+ line 810.
 (pdftex.def)             Requested size: 450.7239pt x 419.23518pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <./A.figs/reducedblinkcalculus.pdf>]
+ [16 <./A.figs/reducedblinkcalculus.pdf>]
 Overfull \vbox (7.92874pt too high) has occurred while \output is active []
 
 
-[16 <./A.figs/prime191Blinks-white-vertices.pdf>]
-<A.figs/DSC02309.jpg, id=351, 4015.0pt x 3011.25pt>
-File: A.figs/DSC02309.jpg Graphic file (type jpg)
- <use A.figs/DSC02309.jpg>
-Package pdftex.def Info: A.figs/DSC02309.jpg used on input line 754.
-(pdftex.def)             Requested size: 481.77922pt x 361.33441pt.
+[17 <./A.figs/prime191Blinks-white-vertices.pdf>]
+(./3manifoldsArePlaneGraphs.bbl [18]) [19] (./3manifoldsArePlaneGraphs.aux)
 
-(./3manifoldsArePlaneGraphs.bbl [17 <./A.figs/DSC02309.jpg>]) [18] [19]
-(./3manifoldsArePlaneGraphs.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3619 strings out of 493485
- 49760 string characters out of 3143526
- 121623 words of memory out of 3000000
- 6832 multiletter control sequences out of 15000+200000
+ 3647 strings out of 493485
+ 50477 string characters out of 3143526
+ 116464 words of memory out of 3000000
+ 6856 multiletter control sequences out of 15000+200000
  19416 words of font info for 74 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,8n,31p,2639b,276s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,8n,31p,1784b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
@@ -556,10 +593,10 @@ ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 3manifoldsArePlaneGraphs.pdf (19 pages, 5612194 bytes).
+Output written on 3manifoldsArePlaneGraphs.pdf (19 pages, 1252603 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
+ 434 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

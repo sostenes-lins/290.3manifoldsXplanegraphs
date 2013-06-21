@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt,twoside]{article}
 
 %===========PACOTES
-\usepackage[body={175mm,235mm}]{geometry}
+\usepackage[body={185mm,235mm}]{geometry}
 %\usepackage[portuguese]{babel}
 \usepackage{a1}
 \usepackage[english]{babel}
@@ -69,7 +69,8 @@ The inclusion of $\pm \mu_{11}^{\pm}$  implies that
 all the moves corresponding to plane duality (the starred moves), except for $\mu_{20}^\star$
 and $\mu_{02}^\star$, are redundant and the coin calculus is reduced to 36 moves on 36 coins.
 It is in the aegis of this work to find new important connections 
-between 3-manifolds and plane graphs.
+between 3-manifolds and plane graphs. The concept of {\em flink}, a new object which
+generalizes {\em blackboard framed link} is a central object in this work.
 \end{abstract}
 
 
@@ -153,7 +154,7 @@ combinatorially oriented readers, unfamiliar with the fundamental definitions of
 links and framed lins.
 The topological oriented readers also should read it 
 because I introduce some unfamiliar notation and 
-definitions which are new and that will be 
+definitions which are new (like the flinks) and that will be 
 used throughout the paper. Moreover, I present a short historic 
 overview of the known results needed.
 
@@ -223,7 +224,7 @@ a {\em blackboard framed link}.
 \begin{center}
 \includegraphics[width=8.5cm]{A.figs/GettingImmersedBandSameWidth.pdf} 
 \caption{\sf Getting a constant width immersion of a ribbon projection into $\mathbb{R}^2$. 
-Each 360-degree rotation of the ribbon projection is ambient isotopic to
+Each 360-degree rotation of the ribbon in the space is ambient isotopic to
 a curl in the ribbon (in two different ways) so as to maintain  
 constant the width immersion of the ribbon projection.
 In particular, after making these isotopies, the intersection of the images of
@@ -237,9 +238,22 @@ crossings in the immersed ribbons.
 \end{center}
 \end{figure} 
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=8.5cm]{A.figs/knotandframedknot.pdf} 
+\caption{\sf A knot and its corresponding framed knot (its ribbon) in an adequate projection,
+one which maintains the width of the ribbon.
+Taking the base knot of this ribbon produces back 
+the {\sf blackboard framed link}, seeing on the left.
+}
+\label{fig:knotandframedknot}
+\end{center}
+\end{figure} 
+
+
 The isotopy class of a framed link is determined by assigning an 
 integer to each component of the link which is equal to the {\em linking number} of the
-two components of the boundary of each of its bands oriented in the same way. The linking number 
+two components of the boundary of each of its ribbon oriented in the same way. The linking number 
 can be obtained from an arbitrary decorated general position projection of the oriented band:
 it is half of the algebraic sum of the $(\pm)$-signs of the crossings of distinct boundary components.
 The convention is that
@@ -249,22 +263,23 @@ the particular projection used. This is proved by K. Reidemeister in its 1932 bo
 on Knot Theory, \cite{reid1932}. He isolates three local moves $r_1, r_2, r_3$ that
 are enough to finitely factor any arbitrary ambient isotopy between two decorated general 
 position projections of the same link:
-\raisebox{-3mm}{\includegraphics[width=7cm]{A.figs/reidemeistermoves.pdf}}.
+\raisebox{-3mm}{\includegraphics[width=7cm]{A.figs/reidemeistermoves.pdf}}. The {\em writhe 
+of a  projected link component} is the algebraic sum of the signs of the self-crossings
+of that component.
 
 As a matter of fact, Theorem \ref{theo:theorem} which 
 I proved in this work is the counterpart for 3-manifolds
 of Reidemeister Theorem. Note that in the coin calculus depicted together
-with bflinks in Fig. \ref{fig:bflinkandlinktogether}
+with flinks in Fig. \ref{fig:flinkandlinktogether}
 there are 8 versions of each of Reidemeister moves $r_2$ and $r_3$. Note also that 
 Reidemeister move $r_1$ is not used at all. 
 The equivalence class of decorated general position link projection generated
 by $r_2^{\pm 1}$ and $r_3^{\pm 1}$ is called {\em regular isotopy}. It plays an important role
 in the computation of the Jones invariants via Kauffman's bracket \cite{kauffman1987state}.
 
-
-
-A {\em blackboard framed link} is a projection of a framed link prepared by isotopy so that 
-the base link is projected as a decorated general position one and its bands are immersed
+A {\em blackboard framed link} is an {\em adequate projection} 
+of a framed link prepared by isotopy so that 
+the base link is projected as a decorated general position one and its ribbons are immersed
 with constant width $2\epsilon$, see Fig. \ref{fig:GettingImmersedBandSameWidth}.  
 Moreover, we adjust the number of curls and their signs 
 (in the base link) so that the framing of each component coincides with the linking number of 
@@ -273,20 +288,38 @@ we no longer have to worry about assigning numbers to the components. These inte
 numbers are induced
 by the plane of projection. The importance of this concept was 
 advocated by L. Kauffman in a number of works, including \cite{kauffman1991knots} and 
-\cite{kauffman1994tlr}. In this work, it is central: every framed link I use is 
-blackboard framed. 
+\cite{kauffman1994tlr}. Next, I generalize it.
 
-A {\em bflink} is the projection of the base link of a blackboard framed link. 
-Thus a bflink is a 
-decorated general position link projection, with no numbers attached. 
-Fig. \ref{fig:linkblink} shows a 1-1 correspondence between bflinks and blinks.
+
+\subsubsection{Flinks and its relation with blinks}
+A new object, defined in this work is a {\em flink}. It generalizes the notion of
+blackboard framed link in an adequate way (an invariance under 
+Kirby's handle sliding move) to be made clear, see Fig.\ref{fig:handleslide}. 
+Flink is a dutch word meaning
+{\em significantly}. It is also an acronym for residual {\bf f}raction {\bf link}.
+A {\em residual fraction} is either an irreducible fraction $\frac{p}{q}$ with $0<p<q$, else
+$\pm 1/0 =\pm \infty$, else $0/1=0$}. 
+The {\em ribbon move}
+in a decorated general position link projection in $\mathbb{R}^2$ is the move defined by
+the following change in a pair of coins:
+\raisebox{-4mm}{\includegraphics[width=2.5cm]{A.figs/ribbonmovesimple.pdf}}.
+A {\em flink} is the equivalence class of fraction decorated general position link
+projections under regular isotopies and ribbon moves. {\em Fraction decorated} means 
+decorated and having a residual fraction assigned to each component. A {\em $0$-flink}
+is one so that each component has 0 as its residual fraction. Note that $0$-flink
+and blackboard framed link are the same concept.
+
+
+
+Fig. \ref{fig:linkblink} shows that there is a 1-1 correspondence between 0-flinks and blinks.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=15cm]{A.figs/linkblink.pdf} 
-\caption{\sf From bflink to blink and back: 
+\includegraphics[width=15cm]{A.figs/flinkblink.pdf} 
+\caption{\sf From 0-flink to blink and back: 
 the projection of any link can be 2-face colorable into white and gray with the infinite
-face being white so that each subcurve between two crossing have their incident faces receiving distinct
+face being white so that each subcurve between two crossing have their incident 
+faces receiving distinct
 colors. The above figure shows how to transform a link projection into a blink (with thicker edges
 than the curves representing the link projection). 
 The vertices of the blink are distinguished fixed
@@ -297,7 +330,7 @@ that crosses it is from northwest to southeast, it is black if the the upper str
 that crosses it is from northeast
 to southwest. The inverse procedure
 is clearly defined. In fact, the link is the so called {\em medial map} of the blink.
-Thus we have a 1-1 correspondence between general position decorated link projections
+Thus we have a 1-1 correspondence between 0-flinks
 and blinks. The (complete) blink at the right induces Poincaré's sphere, 
 the spherical dodecahedron space. The expressibility of a blink is powerful: quite
 complicated 3-manifolds are induced by simple blinks.}
@@ -320,71 +353,54 @@ $$\mathbb{M}^ 3\backslash \bigcup_{i=1}^k
 As a consequence, each closed oriented 3-manifold can be obtained from $\mathbb{S}^3$ 
 by removing a subset of disjoint solid tori and pasting them back in a different way.
 The most general parameters to identify the pasting is a pair of integers for each 
-component of the link. A filling algorithm algorithm applies component by component, is named 
-{\em $(\pm p,q)$-Dehn filling}, and is explained in Fig. \ref{fig:General_pq_DehnFilling}. 
+component of the link, named {\em surgery coefficients}. 
+A filling algorithm algorithm applies component by component, is named 
+{\em $(\pm p,q)$-Dehn filling}, and is explained in Fig. 
+\ref{fig:surgerycoefficientsfromflink}. In this figure I explain how to get
+the surgery coefficients from the flink.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=13.0cm]{A.figs/surgerycoefficientsfromflink.pdf} 
+\caption{\sf How to obtain a closed oriented connected 
+3-manifold from a flink in $\mathbb{S}^3$:
+remove the thick ribbons correponding to all components of the flink.
+Repeat the following $(p',q)$-Dehn filling for each component.
+Let $\lambda = K \times \{0\} \times\{+\delta\}$ and let $\mu$ be a closed curve that 
+is contractible in the thick ribbon but not in its boundary. The pair of closed curves
+$(\mu, \lambda)$ form a basis for the fundamental group of the boundary of the thick ribbon.
+Orient $\mu$ arbitrarily and $\lambda$ so that $K$ equally oriented has linking number 1 with $\mu$.
+Note that $\lambda$ remains parallel to $K$ and never touches the boundary of the ribbon.
+Let $\kappa$ be the constant slope closed curve homotopic to $p\mu + q\lambda$. Consider 
+a canonical solid torus embedded into $\mathbb{R}^3$ and let $m$ be its meridian.
+Consider a homeomorphism that identify curves $\kappa$ and the boundary of $m$, $\partial(m)$.
+This homeomorphism is univocally extensible to identify the boundaries of the thick
+ribbon and of the canonical solid torus, thus closing the toroidal hole: indeed, after
+identifying $m \times [-\zeta,+\zeta]$ (for a small $\zeta >0$) in the solid torus and in the toroidal 
+hole in the 3-manifold what remains to identify are two 3-balls. This has a unique 
+solution up to up to isotopy.
+}
+%\label{fig:General_pq_DehnFilling}
+\label{fig:surgerycoefficientsfromflink}
+\end{center}
+\end{figure} 
+
 For proving the theorem, and this is important in the present work, the fillings used 
 by Lickorish satisfy $q=1$. He call these surgeries {\em honest}.
 Actually, Lickorish's result had been proved 2 years before 
 by A. H. Wallace \cite{wallace1960modifications} by using differential geometry. However
 it was the purely topological flavor of Lickorish's proof that spurred
 the subsequent developments. Also, Lickorish does not state his theorem in this way.
-The form I use for the solid tori is convenient because of its simple relation with bflinks.
+The form I use for the solid tori is convenient because of its simple relation with flinks.
 It is inspired in the lucid account by J. Stillwell of the theorem 
-given in \cite{stillwell1993classical}.
-
-
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=13.0cm]{A.figs/General_pq_DehnFilling.pdf} 
-\caption{\sf Dehn's $(\pm p,q)$-filling of a toroidal hole $T$ and its particular case
-where $q=1$, yielding a well defined bflink (or link) as input for an algorithm to produce
-a 3-manifold:
-suppose that $\frac{\pm p}{q}$ is an irreducible fraction, where the case 
-$q$=0, $p=1$ is permitted. 
-Consider a solid torus in $\mathbb{S}^3$ as the homeomorphic image of 
-$\mathbb{S}^ 1  \times[-\epsilon,+\epsilon]\times[-\delta,+\delta]$, denoted by $T$,
-where $\epsilon$ and $\delta$ are arbitrarily small fixed positive constants. $T$ can be
-changed by ambient isotopy so that for each $s \in \mathbb{S}^1$,
-$T$ restricted to $\{s\} \times [-\epsilon,+\epsilon] \times [-\delta,+\delta]$,
-is a rectangle which is orthogonal to the projection $xy$-plane. Therefore,
-the projection of its restriction to 
-$\mathbb{S}^ 1  \times[-\epsilon,+\epsilon]\times \{\delta\}$ is a blackboard framed
-link whose base link $\lambda$ is defined by the restriction of $T$ to  
-$\mathbb{S}^ 1  \times\{0\} \times \{\delta\}.$ 
-The important fact is that $\lambda$ does not touch the boundary of its immersed band
-forming the projection of the blackboard framed link. Let $\theta$ be
-a curve that bounds a disk in $T$ but not in its boundary, $\partial(T)$.
-The curve $\pm p.\theta + q.\lambda$ is isotopic to a simple curve in $\partial(T)$.
-Map this curve homeomorphically to $m$, a curve in a canonical solid torus $T'$
-in $\mathbb{R}^3$ so that it bounds a disk in $T'$ but not in $\partial(T')$.
-This homeomorphism is univocally extensible to identify $\partial(T)$ and $\partial(T')$
-thus closing the toroidal hole. Note that the whole situation is defined
-by the knot $K \equiv \mathbb{S}^ 1  \times \{0\} \times \{0\}$ and the surgery coeficients
-$(\pm p,q)$. In his original paper Lickorish only use Dehn fillings of type $(\pm p,1)$,
-corresponding to what he calls {\em honesty surgeries}. For such surgeries each component $K$ 
-may be curl-adjusted so as the whole link becomes a bflink where each $\pm p$ is given by the 
-linking number of the boundary components of the corresponding band. 
-This establishes an algorithm to obtain a 
-well defined closed, oriented, connected 3-manifold $\mathbb{M}^3$ 
-from a bflink, or from a blink, as input. By Lickorish's theorem, every such manifold arises
-in this way. Even if the blink is not connected, $\mathbb{M}^3$  is connected: in general,
-it is the connected sum of the manifolds induced by the connected components of the blink
-which induces it.
-}
-\label{fig:General_pq_DehnFilling}
-\end{center}
-\end{figure} 
-
-An {\em hflink} is the base link of a framed link $L_1 \cup \ldots \cup L_k$ endowed with
-the surgery coefficients $(\pm p_1,q_1), \ldots (\pm p_k,q_k)$. 
-A {\em residual bflink} of an hflink,
-or an {\em r-bflink}, is obtained by effecting an ambient isotopy in an hflink so that
-in the projected base link of the hflink all the surgery coefficients 
-satisfy $$\frac{\pm p_i}{q_i}=z_i+\frac{p'_i}{q_i},$$
-where $z_i$ is an integer equal to the linking number of boundary components of
-the $i$-th band of the hflink and $0<p_i<q_i$. Of course this can be achieved only
-by inserting adequate curls.
+given in \cite{stillwell1993classical}. The form of each solid torus to be removed
+from $\mathbb{S}^ 3$ is a thich ribbon 
+$K \times[-\epsilon,+\epsilon] \times[-\delta,+\delta]$, where 
+$K$ is (the image of) a component of the flink, with fixed small positive
+constants $\epsilon>\delta>0$. Each section $k \in K$, 
+$\{k\} \times[-\epsilon,+\epsilon] \times[-\delta,+\delta]$, is a rectangle whose
+$\delta$-sides are parallel to the $z$-axis. Thus the projections of the thick 
+ribbon and the of the ribbon coincide.
 
 \subsubsection{Kirby's famous calculus of framed links}
 In 1978 R. Kirby published his, to become famous, calculus of framed links, \cite{kirby1978calculus}.
@@ -400,10 +416,10 @@ kauffman1991knots}) {\em (or handle sliding)} is non-local and infinite in numbe
 \begin{center}
 \includegraphics[width=14cm]{A.figs/handleslide.pdf} 
 \caption{\sf Kirby's {\em handle slide move}, also known as the {\em band move}. 
-In this work the handle slide move is applied only to bflinks, so there is no issue
+In this work the handle slide move is applied only to flinks, so there is no issue
 about surgery coefficients.
 Given $K$ and $K'$ two distinct components of a
-bflink start by making a close parallel copy of $K'$ in such a way that 
+flink start by making a close parallel copy of $K'$ in such a way that 
 it forms an immersed band with its originator $K$.
 Let $K''$ be the connected sum of $K$ and the copy of $K'$. 
 The connected sum is defined by a em new band which is a
@@ -414,11 +430,14 @@ The new band can be quite complicated because it may wander
 arbitrarily (as long as it misses the link) 
 in $\mathbb{R}^3$ in its way to connecting
 the two components. More details in Kauffman's book, \cite{kauffman1991knots}. 
-In bflink language, this move
-is depicted in all its generality, via the hieroglyph shown in the bottom part of the 
+The property of flinks that made me introduce the concept is that the
+{\bf residual fractions of the flink are invariant under the Kirby's band move.}
+This move then can be depicted in all its generality, 
+via the hieroglyph shown in the bottom part of the 
 Figure. See Section 12.3 of \cite{kauffman1994tlr}. However,
-this hieroglyphic move is non-local because the outside of the hieroglyph changes, and 
-since there are infinite exteriors, there are infinite Kirby's band moves.
+this hieroglyphic move is non-local since the exterior of the hieroglyph changes, and 
+beacause there are infinite exteriors, there are infinite Kirby's band moves. Fenn-Rourke
+reformulation provide trully local moves.
 }
 \label{fig:handleslide}
 \end{center}
@@ -447,7 +466,8 @@ which uses it instead of the direct moves of Kirby.
 \begin{center}
 \includegraphics[width=11.5cm]{A.figs/FennRourkeAndKauffmanMove.pdf} 
 \caption{\sf Fenn-Rourke infinite sequence of blown-down moves 
-and their counterpart in Kauffman's blackboard framed links. These are
+and their counterpart in Kauffman's blackboard framed 
+links. These are an
 infinite sequence of local moves. Cases $n=0$ of these moves replace
 an isolated $\pm 1$-framed component or the unknot with one crossing by nothing.
 Martelli replaced the infinite sequence by the first three and two new simple
@@ -497,17 +517,15 @@ hiding in the Temperley-Lieb algebra the infinite cases of Kirby's band move,
 as pioneered by Lickorish in \cite{lickorish1991three}. 
 See also page 144 of the join monography of L. Kauffman and myself, \cite{kauffman1994tlr}.
 Finding such generalization of the WRT-invariants still seems to be a formidable task.
-However, Martelli's theorem and the coin calculus on blinks make it conceivable. 
+However, Martelli's theorem and the coin calculus on blinks makes it conceivable. 
 
-\begin{figure}
+
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=16.5cm]{A.figs/Martelli.pdf} 
-\caption{\sf Martelli's calculus on r-bflinks.
-Each component of the r-bflink is endowed with an irreducible
-fraction $\frac{p}{q}$ assigned to it, $q>p\ge 0$. The surgery 
-coeficients $(p',q)$ of the solid torus obtained by $\delta$-thickening the 
-corresponding ribbon satisfies: $\frac{p'}{q}=z+\frac{p}{q}$, where $z$ is the 
-linking number of the boundary components of the ribbon. Note that for the internal
+\includegraphics[width=16.5cm]{A.figs/Martelli.pdf}
+\caption{\sf 
+Martelli's calculus on flinks:
+Note that for the internal
 components of all the above moves the residual surgery coefficient is 0.
 Martelli' proves that by keeping only
 the blown down of ranks 0, 1 and 2 and replacing all the remaining infinite sequence by two
@@ -526,6 +544,77 @@ appear -90$^{\tiny o}$-rotated relative to this Figure.
 \label{fig:Martelli}
 \end{center}
 \end{figure} 
+
+
+ 
+
+\subsubsection{Unknotting a component}
+Any knot given by an decorated general position projection can be unknotted by a subset of 
+crossing switches: starting in a non-crossing and going along the knot
+make sure that the first passage through a crossing becomes an upper strand
+(by switching the crossing if necessary). The result is clearly a projection of an unknot.
+Let $F$ be a flink and $F_i$ be one of its component which is knotted. It is possible 
+to modify $F$ at the cost of introducing new unknotted components so that $F_i$ becomes
+unknotted and the induced 3-manifold does not change. This is a consequence of the 
+above algorithm to unknot any knot and of Kirby's calculus on flinks, as shown in Fif.
+\ref{fig:switchingcrossing}.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=16.5cm]{A.figs/switchingcrossing.pdf}
+\caption{\sf Switching a crossing at the cost of adding an unknoted component and
+some curls: this is achieved by applying Kirby move 1 and twice Kirby moves 2 as well
+as some isotopies. Note that the residual fractions stay invariant.
+}
+\label{fig:switchingcrossing}
+\end{center}
+\end{figure} 
+
+\subsubsection{Obtaining a 0-flink inducing the same manifold as any input flink}
+Let $F = F_1 \cup F_2 \cup \ldots \cup F_k$ be a flink and let $r'_j$ be the 
+fraction of the surgery coefficients given by the sum of 
+the residual fraction $r_j$ and the writhe of the $j$-th component $F_j$. 
+Let $F_i$ be an unknotted component.
+\begin{lemma}
+\label{theo:twisthomeo}
+The two following operations on a flink $F$ maintain the induced 3-manifold:
+\begin{itemize}
+\item Create or cancell a component with residual fraction $\pm \infty$.
+\item Effect a $t$-full-twist about $F_i$ changing
+judiciously the link and the surgery coefficient fractions $r'_k$'s.
+\subitem The surgery coefficient fractions change as follows:
+\subsubitem Component $F_i$ of the twist: $r_i''=1/(t+(1/r'_i))$
+\subsubitem Other components $F_j$: $r_j''=r'_j + t(\ell kn(F_i,F_j))^2$. 
+\subitem The link changes as follows:
+\subsubitem Effect $t$ positive or negative full twists, according 
+to the $\mp$-sign of $t$, in the cable of parallel lines
+encircled by $F_i$.
+\end{itemize}
+\end{lemma}
+\begin{proof}
+The proof of this result is given in \cite{rolfsen2003knots}.
+\end{proof}
+
+\begin{theorem}
+Given any flink, there exsits a 0-flink inducing the same 3-manifold
+obtainable by a polynomial algorithm in the greater of its 
+residual fraction denominators.
+\end{theorem}
+
+\begin{proof}
+Let $F_i$ be an knotted component of a flink $F$ which have a non-null 
+residual fraction  $\frac{p}{q}$. Switch crossings as in 
+\label{fig:switchingcrossing} so that $F_i$ becomes unknotted,
+with the same residual fraction $\frac{p}{q}$ and respective surgery coefficient fraction
+$\frac{p'}{q}$. If $p'=\pm 1$ then use Lemma \ref{theo:twisthomeo} with $t=\mp q$. The 
+surgery coefficients fraction of $F_i$ becomes $r_i''=1/(t+(1/r'_i))=1/(\mp q+\pm q)=1/0=\infty$. 
+And component $F_i$ can be removed. Let $|p'|>1$. We have 
+$r_i''=1/(t+(1/r'_i))=1/(t+(q/p'))$. Define $t$ to be the integer so that $0<t+q/p'=q'/p'<1$.
+The new surgery coefficient fraction of $F_i$ is $r_i''=p'/q'$, with $q' < q$.
+Repeating the procedure a number of times bounded by $q$ we arrive at $q'=1$ or $q'=0$.
+Observe that the surgery coefficient fractions of the new components are integers and 
+the one of the components $F_j$ linked with $F_i$ change by an integer. Therefore,
+a 0-flink inducing the same 3-manifold arises at the end of the algorithm.
+\end{proof}
 
 \subsection{This work from an epistemological point of view}
 \label{sec:objective}
@@ -610,24 +699,24 @@ $a_3 \equiv A_3$ and $a_4 \equiv A_4$ hold}
 \end{proof}
 
 \begin{proof} ({\bf of Theorem \ref{theo:theorem}})\\
-In Fig. \ref{fig:bflinkandlinktogether} we draw all the moves 
-for the revised Martelli's moves on pairs of distinctly 2-colored bflinks 
+In Fig. \ref{fig:flinkandlinktogether} we draw all the moves 
+for the revised Martelli's moves on pairs of distinctly 2-colored flinks 
 and the respective blinks superimposed. The result follows by removing the 
-bflink moves leaving only the blink moves which are redrawn up to isotopy,
+flink moves leaving only the blink moves which are redrawn up to isotopy,
 in the lower part of the figure.
 \end{proof}
 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.7]{A.figs/bflinkandlinktogether.pdf}
+\includegraphics[scale=0.7]{A.figs/flinkandlinktogether.pdf}
 \caption{\sf Bflink version of Martelli's revised calculus with 
 $a_3$, $a_4$ replacing $A_3$, $A_4$. 
-In the upper part of the figure, distinctly 2-face colored bflinks 
+In the upper part of the figure, distinctly 2-face colored flinks 
 and respective blinks are superimposed implying 
 the moves for the coin calculus in the lower part of the figure, 
 concluding the proof of the Theorem 1.1.}
-\label{fig:bflinkandlinktogether}
+\label{fig:flinkandlinktogether}
 \end{center}
 \end{figure}
 
@@ -680,7 +769,7 @@ and, at the end, the infinite face is $g$.
  \pm \mu_{54},  \pm \mu_{45}, \pm \mu_{66}^{\pm},\pm \mu_{99}^{\pm}\}.$
 \end{corollary}
 \begin{proof}
-We work in the language of bflinks.
+We work in the language of flinks.
 Moves corresponding to $(\pm \mu_{11}^{\pm1})^\star$ and  $(\pm \mu_{33}^{\pm1})^\star$ are redundant 
 because $\pm \mu_{11}^{\pm1}$  $\pm \mu_{33}^{\pm1}$ are self dual. 
 Moves $\pm\mu_{10}^\star$ and  $\pm\mu_{01}^\star$ are implied by a combination of moves 
@@ -749,18 +838,18 @@ from a blink inducing it.
 %\include{refaf}
 
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.12]{A.figs/DSC02309.jpg}
-\caption{\sf Bflink version of Martelli's revised calculus with 
-$a_3$, $a_4$ replacing $A_3$, $A_4$. 
-In the upper part of the figure, distinctly 2-face colored bflinks 
-and respective blinks are superimposed implying 
-the moves for the coin calculus in the lower part of the figure, 
-concluding the proof of the Theorem 1.1.}
-\label{fig:DSC02309}
-\end{center}
-\end{figure}
+% \begin{figure}[H]
+% \begin{center}
+% \includegraphics[scale=0.12]{A.figs/DSC02309.jpg}
+% \caption{\sf Bflink version of Martelli's revised calculus with 
+% $a_3$, $a_4$ replacing $A_3$, $A_4$. 
+% In the upper part of the figure, distinctly 2-face colored flinks 
+% and respective blinks are superimposed implying 
+% the moves for the coin calculus in the lower part of the figure, 
+% concluding the proof of the Theorem 1.1.}
+% \label{fig:DSC02309}
+% \end{center}
+% \end{figure}
 
 
 -----------------------------------
