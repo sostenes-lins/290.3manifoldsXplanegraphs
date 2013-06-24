@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  21 JUN 2013 08:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  24 JUN 2013 09:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,10 +328,10 @@ File: A.figs/distinctblinkssamegraph.pdf Graphic file (type pdf)
 
 <use A.figs/distinctblinkssamegraph.pdf>
 Package pdftex.def Info: A.figs/distinctblinkssamegraph.pdf used on input line 
-84.
+85.
 (pdftex.def)             Requested size: 113.81102pt x 19.14871pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--94
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
@@ -339,7 +339,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--94
 File: A.figs/blinkcalculus.pdf Graphic file (type pdf)
 
 <use A.figs/blinkcalculus.pdf>
-Package pdftex.def Info: A.figs/blinkcalculus.pdf used on input line 95.
+Package pdftex.def Info: A.figs/blinkcalculus.pdf used on input line 96.
 (pdftex.def)             Requested size: 455.24408pt x 270.40878pt.
  [1
 
@@ -348,7 +348,7 @@ egraph.pdf>] [2 <./A.figs/blinkcalculus.pdf>]
 <A.figs/R3S3.pdf, id=29, 304.46147pt x 223.89949pt>
 File: A.figs/R3S3.pdf Graphic file (type pdf)
  <use A.figs/R3S3.pdf>
-Package pdftex.def Info: A.figs/R3S3.pdf used on input line 177.
+Package pdftex.def Info: A.figs/R3S3.pdf used on input line 178.
 (pdftex.def)             Requested size: 256.0748pt x 188.3305pt.
 
 [3 <./A.figs/R3S3.pdf>]
@@ -364,7 +364,7 @@ line 225.
 File: A.figs/knotandframedknot.pdf Graphic file (type pdf)
 
 <use A.figs/knotandframedknot.pdf>
-Package pdftex.def Info: A.figs/knotandframedknot.pdf used on input line 243.
+Package pdftex.def Info: A.figs/knotandframedknot.pdf used on input line 247.
 (pdftex.def)             Requested size: 241.84842pt x 54.72069pt.
 
 <A.figs/plusoneminusonecrossing.pdf, id=40, 304.09248pt x 66.649pt>
@@ -372,54 +372,47 @@ File: A.figs/plusoneminusonecrossing.pdf Graphic file (type pdf)
 
 <use A.figs/plusoneminusonecrossing.pdf>
 Package pdftex.def Info: A.figs/plusoneminusonecrossing.pdf used on input line 
-260.
+264.
 (pdftex.def)             Requested size: 85.35826pt x 18.70836pt.
 
 <A.figs/reidemeistermoves.pdf, id=41, 408.3506pt x 70.60109pt>
 File: A.figs/reidemeistermoves.pdf Graphic file (type pdf)
 
 <use A.figs/reidemeistermoves.pdf>
-Package pdftex.def Info: A.figs/reidemeistermoves.pdf used on input line 266.
+Package pdftex.def Info: A.figs/reidemeistermoves.pdf used on input line 270.
 (pdftex.def)             Requested size: 199.16928pt x 34.43538pt.
  [4 <./A.figs/GettingImmersedBandSameWidth.pdf> <./A.figs/knotandframedknot.pdf
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/knotandframedknot.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
-> <./A.figs/plusoneminusonecrossing.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/plusoneminusonecrossing.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
->]
-! Too many }'s.
-l.301 $\pm 1/0 =\pm \infty$, else $0/1=0$}
-                                          .
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-<A.figs/ribbonmovesimple.pdf, id=49, 129.75995pt x 72.94998pt>
+>] <A.figs/ribbonmovesimple.pdf, id=48, 129.75995pt x 72.94998pt>
 File: A.figs/ribbonmovesimple.pdf Graphic file (type pdf)
 
 <use A.figs/ribbonmovesimple.pdf>
-Package pdftex.def Info: A.figs/ribbonmovesimple.pdf used on input line 305.
+Package pdftex.def Info: A.figs/ribbonmovesimple.pdf used on input line 309.
 (pdftex.def)             Requested size: 71.13188pt x 39.99014pt.
 
-<A.figs/flinkblink.pdf, id=50, 434.42412pt x 159.23416pt>
+<A.figs/flinkblink.pdf, id=49, 434.42412pt x 159.23416pt>
 File: A.figs/flinkblink.pdf Graphic file (type pdf)
 
 <use A.figs/flinkblink.pdf>
-Package pdftex.def Info: A.figs/flinkblink.pdf used on input line 318.
+Package pdftex.def Info: A.figs/flinkblink.pdf used on input line 322.
 (pdftex.def)             Requested size: 426.79134pt x 156.44202pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 336.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 340.
 
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./A.figs/reidemeistermoves.pdf> <./A.figs/ribbonmovesimple.pdf
+ [5 <./A.figs/plusoneminusonecrossing.pdf> <./A.figs/reidemeistermoves.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/reidemeistermoves.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+> <./A.figs/ribbonmovesimple.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/ribbonmovesimple.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
@@ -428,27 +421,24 @@ File: A.figs/surgerycoefficientsfromflink.pdf Graphic file (type pdf)
 
 <use A.figs/surgerycoefficientsfromflink.pdf>
 Package pdftex.def Info: A.figs/surgerycoefficientsfromflink.pdf used on input 
-line 364.
-(pdftex.def)             Requested size: 369.88582pt x 278.50441pt.
+line 368.
+(pdftex.def)             Requested size: 398.33858pt x 299.9309pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./A.figs/flinkblink.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./A.figs/surgerycoefficientsfromflink.pdf>]
+ [6 <./A.figs/flinkblink.pdf>] [7 <./A.figs/surgerycoefficientsfromflink.pdf>]
 <A.figs/handleslide.pdf, id=70, 508.02364pt x 168.93962pt>
 File: A.figs/handleslide.pdf Graphic file (type pdf)
 
 <use A.figs/handleslide.pdf>
-Package pdftex.def Info: A.figs/handleslide.pdf used on input line 417.
+Package pdftex.def Info: A.figs/handleslide.pdf used on input line 421.
 (pdftex.def)             Requested size: 398.33858pt x 132.46837pt.
 
 <A.figs/somenotation.pdf, id=71, 570.08276pt x 119.76024pt>
 File: A.figs/somenotation.pdf Graphic file (type pdf)
 
 <use A.figs/somenotation.pdf>
-Package pdftex.def Info: A.figs/somenotation.pdf used on input line 451.
+Package pdftex.def Info: A.figs/somenotation.pdf used on input line 454.
 (pdftex.def)             Requested size: 469.47046pt x 98.62614pt.
  [8 <./A.figs/handleslide.pdf> <./A.figs/somenotation.pdf
 
@@ -459,47 +449,47 @@ File: A.figs/FennRourkeAndKauffmanMove.pdf Graphic file (type pdf)
 
 <use A.figs/FennRourkeAndKauffmanMove.pdf>
 Package pdftex.def Info: A.figs/FennRourkeAndKauffmanMove.pdf used on input lin
-e 467.
+e 470.
 (pdftex.def)             Requested size: 327.20668pt x 94.56953pt.
  [9 <./A.figs/FennRourkeAndKauffmanMove.pdf>] <A.figs/Martelli.pdf, id=90, 454.
 47345pt x 66.85704pt>
 File: A.figs/Martelli.pdf Graphic file (type pdf)
 
 <use A.figs/Martelli.pdf>
-Package pdftex.def Info: A.figs/Martelli.pdf used on input line 525.
+Package pdftex.def Info: A.figs/Martelli.pdf used on input line 528.
 (pdftex.def)             Requested size: 469.47046pt x 69.06346pt.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 543.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 546.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 543.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 546.
 
 <A.figs/switchingcrossing.pdf, id=91, 572.19533pt x 153.09819pt>
 File: A.figs/switchingcrossing.pdf Graphic file (type pdf)
 
 <use A.figs/switchingcrossing.pdf>
-Package pdftex.def Info: A.figs/switchingcrossing.pdf used on input line 563.
+Package pdftex.def Info: A.figs/switchingcrossing.pdf used on input line 566.
 (pdftex.def)             Requested size: 469.47046pt x 125.61372pt.
  [10 <./A.figs/Martelli.pdf> <./A.figs/switchingcrossing.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/switchingcrossing.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 581.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 585.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 581.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 585.
  [11]
 <A.figs/proofequivalencea3A3a4A4.pdf, id=104, 427.09851pt x 425.7877pt>
 File: A.figs/proofequivalencea3A3a4A4.pdf Graphic file (type pdf)
 
 <use A.figs/proofequivalencea3A3a4A4.pdf>
 Package pdftex.def Info: A.figs/proofequivalencea3A3a4A4.pdf used on input line
- 682.
+ 686.
 (pdftex.def)             Requested size: 398.33858pt x 397.11545pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -509,7 +499,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: A.figs/flinkandlinktogether.pdf Graphic file (type pdf)
 
 <use A.figs/flinkandlinktogether.pdf>
-Package pdftex.def Info: A.figs/flinkandlinktogether.pdf used on input line 712
+Package pdftex.def Info: A.figs/flinkandlinktogether.pdf used on input line 716
 .
 (pdftex.def)             Requested size: 403.9874pt x 574.4028pt.
 
@@ -523,21 +513,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: A.figs/changeexternalface.pdf Graphic file (type pdf)
 
 <use A.figs/changeexternalface.pdf>
-Package pdftex.def Info: A.figs/changeexternalface.pdf used on input line 744.
+Package pdftex.def Info: A.figs/changeexternalface.pdf used on input line 748.
 (pdftex.def)             Requested size: 455.24408pt x 92.61208pt.
 
 <A.figs/whitneytrickproof.pdf, id=121, 334.27383pt x 71.34496pt>
 File: A.figs/whitneytrickproof.pdf Graphic file (type pdf)
 
 <use A.figs/whitneytrickproof.pdf>
-Package pdftex.def Info: A.figs/whitneytrickproof.pdf used on input line 784.
+Package pdftex.def Info: A.figs/whitneytrickproof.pdf used on input line 788.
 (pdftex.def)             Requested size: 128.0374pt x 27.3269pt.
 
 <A.figs/reducedblinkcalculus.pdf, id=122, 514.33775pt x 135.22809pt>
 File: A.figs/reducedblinkcalculus.pdf Graphic file (type pdf)
 
 <use A.figs/reducedblinkcalculus.pdf>
-Package pdftex.def Info: A.figs/reducedblinkcalculus.pdf used on input line 794
+Package pdftex.def Info: A.figs/reducedblinkcalculus.pdf used on input line 798
 .
 (pdftex.def)             Requested size: 478.32918pt x 125.76082pt.
  [15 <./A.figs/changeexternalface.pdf> <./A.figs/whitneytrickproof.pdf
@@ -550,7 +540,7 @@ File: A.figs/prime191Blinks-white-vertices.pdf Graphic file (type pdf)
 
 <use A.figs/prime191Blinks-white-vertices.pdf>
 Package pdftex.def Info: A.figs/prime191Blinks-white-vertices.pdf used on input
- line 810.
+ line 814.
 (pdftex.def)             Requested size: 450.7239pt x 419.23518pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -572,7 +562,7 @@ Here is how much of TeX's memory you used:
  6856 multiletter control sequences out of 15000+200000
  19416 words of font info for 74 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,8n,31p,1784b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,8n,31p,1803b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
@@ -593,7 +583,7 @@ ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 3manifoldsArePlaneGraphs.pdf (19 pages, 1252603 bytes).
+Output written on 3manifoldsArePlaneGraphs.pdf (19 pages, 1276788 bytes).
 PDF statistics:
  434 PDF objects out of 1000 (max. 8388607)
  293 compressed objects within 3 object streams
