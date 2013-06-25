@@ -62,7 +62,7 @@ of closed oriented 3-manifolds are in 1-1 correspondence with specific classes o
 In these classes, two blinks are equivalent if they are linked by a finite sequence of 
 local moves, where each one
 appears in a concrete list of 64 moves: they organize in 8 types,
-each beeing essentlially the same move on 8 simply related configurations. 
+each being essentially the same move on 8 simply related configurations. 
 The size of the list can be substantially
 decreased at the cost of loosing symmetry, just by keeping a very simple move type,
 the {\em ribbon moves} denoted $\pm \mu_{11}^{\pm}$ (which are in principle redundant). 
@@ -127,7 +127,7 @@ The number $k$ of the attachment vertices  satisfies $k\in \{0,1,2,3,4\}$.
  In Section \ref{sec:conclusion} I display a census (no misses, no duplicates) of
  the closed, oriented, connected, prime 3-manifold induced by blinks up to 8 edges.
 
-\section{Motivation and topological preliminaries}
+\section{Motivation, preliminaries and epistemological significance}
 \label{sec:motivationtopprelim}
 \subsection{Motivation}
 
