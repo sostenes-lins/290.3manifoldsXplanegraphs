@@ -41,7 +41,8 @@
 \def\U{\mathcal U}
 \def\Z{\mathbb Z}
 
-\title{Closed, oriented, connected 3-manifolds are equivalence classes of plane graphs
+\title{Closed, oriented, connected 3-manifolds \\ are \\ subtle equivalence 
+classes of plane graphs
 \footnote{2010 Mathematics Subject Classification: 
 05C85 and 05C83 (primary), 57M27 and 57M15 (secondary)}} 
 \author{Sóstenes L. Lins}
@@ -68,10 +69,15 @@ the {\em ribbon moves} denoted $\pm \mu_{11}^{\pm}$ (which are in principle redu
 The inclusion of $\pm \mu_{11}^{\pm}$  implies that
 all the moves corresponding to plane duality (the starred moves), except for $\mu_{20}^\star$
 and $\mu_{02}^\star$, are redundant and the coin calculus is reduced to 36 moves on 36 coins.
-It is in the aegis of this work to find new important connections 
-between 3-manifolds and plane graphs. A {\em fraction decorated link} or a {\em flink}, 
+ A {\em residual fraction link} or a {\em flink}, 
 is a new object which generalizes {\em blackboard-framed link}. 
-It plays an important role in this work.
+It plays an important role in this work. I try to make the topological 
+exposition as complete as possible: about half of the exposition
+deals with the topological preliminaries.
+The objective is to make it easier for
+the combinatorially oriented readers to understand the paper. 
+It is in the aegis of this work to find new important connections 
+between 3-manifolds and plane graphs.
 \end{abstract}
 
 
@@ -89,27 +95,27 @@ This paper proves the following theorem:
 \begin{theorem}
 \label{theo:theorem}
  The classes homeomorphisms of closed oriented connected 3-manifolds are in 1-1 correspondence
- with the equivalence classes of blinks where two blinks are equivalent if they are
- linked by a finite sequence of the local moves where each term is 
+ with the equivalence classes of blinks where two blinks are equivalent if one is obtainable from
+ the other by a finite sequence of the local moves where each term is 
  one of the 64 moves (not necessary distinct) below\\
  \begin{center}
  \includegraphics[width=16cm]{A.figs/blinkcalculus.pdf} 
   \end{center}
   \end{theorem}
 
- There are 64 local configurations of sub-blinks, each named a {\em coin}, 
- divided into 8 families of 8 simply related
- coins and also divided into 32 pairs of left-right coins,
-  A move replaces the left (right) coin of a pair by its right (left) 
- coin. Thus, the number of moves is equal to the number of coins.
- Boundary and internal vertices of the coins are shown as small white disks. 
-  The complementary sub-blink in the exterior a coin is completely arbitrary; 
- its intersection with the corresponding internal coin is a subset of the set of 
- attachment vertices in the boundary of the coin.
- The support of the coins
- are disks, except in the the right coin  
- of $\mu_{20}$, case in which is a pinched disk. 
- The number $k$ of the attachment vertices  satisfies $k\in \{0,1,2,3,4\}$. 
+There are 64 local configurations of sub-blinks, each named a {\em coin}, 
+divided into 8 families of 8 simply related
+coins and also divided into 32 pairs of left-right coins,
+A move replaces the left (right) coin of a pair by its right (left) 
+coin. Thus, the number of moves is equal to the number of coins.
+Boundary and internal vertices of the coins are shown as small white disks. 
+The complementary sub-blink in the exterior a coin is completely arbitrary; 
+its intersection with the corresponding internal coin is a subset of the set of 
+attachment vertices in the boundary of the coin.
+The support of the coins
+are disks, except in the the right coin  
+of $\mu_{20}$, case in which is a pinched disk. 
+The number $k$ of the attachment vertices  satisfies $k\in \{0,1,2,3,4\}$. 
  
  \subsection{Organization of the paper}
  In Section \ref{sec:motivationtopprelim} the motivation, the topological 
@@ -162,7 +168,7 @@ overview of the known results needed.
 \subsubsection{Knots and links into $\mathbb{R}^3$ and into $\mathbb{S}^3$}
 
 A {\em knot $K$} is an embedding of a circle,  $\mathbb{S}^1$, into $\mathbb{R}^3$
-(or $\mathbb{S}^3$, the boundary of a 4-dimensional ball).
+(or into $\mathbb{S}^3$, the boundary of a 4-dimensional ball).
 The {\em unknot} is a knot which is the boundary of a disk.
 A {\em link with $k$ components} is an embedding of a disjoint union of $k$ 
 copies of $\mathbb{S}^1$,
@@ -195,7 +201,9 @@ easy correspondence between the two types is welcome.
 
 Links can be presented with profit by their {\em decorated 
 general position projections} into the $xy$-plane $\mathbb{R}^2$,
-by simply making 0 the $z$-coordinate. Recall that we have already make $w=0$.
+by simply making 0 the $z$-coordinate. As in Fig. \ref{fig:R3S3}, the knot is inside 
+$\mathbb{B}^3 \subset \mathbb{R}^3 $,
+having made the 4th coordinate $w$ equal to 0.
 Here {\em general position} means that 
 in the image of the link there is no triple points and that at each neighborhood of
 a double point is the transversal crossing of two segments of the link, named {\em strands}. 
@@ -204,7 +212,7 @@ of which strand is the upper one, usually by removing a piece of the lower stran
 I use yet another way to decorate the link projections: the images of the link components 
 are thich black curves
 and the upper strands are indicated by a thinner white segment inside the thich 
-black curve at the crossing (see second definition in Fig. \ref{fig:somenotation}).
+black curve at the crossing (see left side of Fig. \ref{fig:knotandframedknot}).
 
 \subsubsection{Framed knots, ribbons, framed links and blackboard-framed links into $\mathbb{R}^3$}
 A {\em framed knot} is an embedding of  
@@ -217,12 +225,10 @@ A {\em framed link} is a collection of ribbons with disjoint images. The ribbons
 that I use are prepared by isotopies so that their projections remain with constant
 width $2\epsilon$. Fig. \ref{fig:GettingImmersedBandSameWidth} 
 shows how to achieve this condition.
-A collection of these constant width ribbons is called 
-a {\em blackboard-framed link}. 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=8.5cm]{A.figs/GettingImmersedBandSameWidth.pdf} 
+\includegraphics[width=6.0cm]{A.figs/GettingImmersedBandSameWidth.pdf} 
 \caption{\sf Getting a constant width immersion of a ribbon projection into $\mathbb{R}^2$. 
 Each 360-degree rotation of the ribbon in the space is ambient isotopic to
 a curl in the ribbon (in two different ways) so as to maintain  
@@ -259,17 +265,17 @@ The isotopy class of a framed link is determined by assigning an
 integer to each component of the link which is equal to the {\em linking number} of the
 two components of the boundary of each of its ribbon oriented in the same way. The linking number 
 can be obtained from an arbitrary decorated general position projection of the oriented band:
-it is half of the algebraic sum of the $(\pm)$-signs of the crossings of distinct boundary components.
-The convention is that
+it is equal to half of the algebraic sum of the $(\pm)$-signs of the 
+crossings of distinct boundary components. The convention is that
 \raisebox{-3mm}{\includegraphics[width=3cm]{A.figs/plusoneminusonecrossing.pdf}}
 The linking number is an invariant, that is, it does not depend on 
 the particular projection used. This is proved by K. Reidemeister in its 1932 book
 on Knot Theory, \cite{reid1932}. He isolates three local moves $r_1, r_2, r_3$ that
 are enough to finitely factor any arbitrary ambient isotopy between two decorated general 
 position projections of the same link:
-\raisebox{-3mm}{\includegraphics[width=7cm]{A.figs/reidemeistermoves.pdf}}. The {\em writhe 
+\raisebox{-3mm}{\includegraphics[width=7cm]{A.figs/reidemeistermoves.pdf}}. The {\em self-writhe 
 of a  projected link component} is the algebraic sum of the signs of the self-crossings
-of that component.
+of that component. 
 
 As a matter of fact, Theorem \ref{theo:theorem} which 
 I proved in this work is the counterpart for 3-manifolds
@@ -286,11 +292,10 @@ of a framed link prepared by isotopy so that
 the base link is projected as a decorated general position one and its ribbons are immersed
 with constant width $2\epsilon$, see Fig. \ref{fig:GettingImmersedBandSameWidth}.  
 Moreover, we adjust the number of curls and their signs 
-(in the base link) so that the framing of each component coincides with the linking number of 
-the two boundary components of the band. The advantage of the blackboard-framed link is that
+(in the base link) so that the self-writhe of each component coincides with the linking number of 
+the two boundary components of its ribbon. The advantage of the blackboard-framed link is that
 we no longer have to worry about assigning numbers to the components. These integer 
-numbers are induced
-by the plane of projection. The importance of this concept was 
+numbers are induced by the plane of projection. The importance of this concept was 
 advocated by L. Kauffman in a number of works, including \cite{kauffman1991knots} and 
 \cite{kauffman1994tlr}. Next, I generalize it.
 
@@ -312,10 +317,12 @@ projections under regular isotopies and ribbon moves. {\em Fraction decorated} m
 decorated and having a residual fraction assigned to each component. A {\em $0$-flink}
 is one so that each component has 0 as its residual fraction. Note that $0$-flink
 and blackboard-framed link are the same concept.
-
-
-
 Fig. \ref{fig:linkblink} shows that there is a 1-1 correspondence between 0-flinks and blinks.
+
+The {\em surgery coefficients $p'$ and $q$ associated to a component of a flink} satisfy
+(by definition) $\frac{p'}{q} = w + \frac{p}{q}$ where $w$ is the self-writhe of the component
+and $\frac{p}{q}$ is its residual fraction.
+
 
 \begin{figure}[H]
 \begin{center}
@@ -342,7 +349,7 @@ complicated 3-manifolds are induced by simple blinks.}
 \end{center}
 \end{figure} 
 
-\subsubsection{Lickorish's groundbreaking result and more link type objects}
+\subsubsection{Lickorish's groundbreaking result}
 In a grounding breaking work (1962),  W.B.R. Lickorish, 
 \cite{lickorish1962representation}, proved that
 any closed, oriented, connected $\mathbb{M}^3$ has inside it a finite number
@@ -396,8 +403,8 @@ by A. H. Wallace \cite{wallace1960modifications} by using differential geometry.
 it was the purely topological flavor of Lickorish's proof that spurred
 the subsequent developments. Also, Lickorish does not state his theorem in this way.
 The form I use for the solid tori is convenient because of its simple relation with flinks.
-It is inspired in the lucid account by J. Stillwell of the theorem 
-given in \cite{stillwell1993classical}. The form of each solid torus to be removed
+It is inspired in the lucid account by J. Stillwell of the Lickorish's theorem 
+given in \cite{stillwell1993classical}. Each each solid torus to be removed
 from $\mathbb{S}^ 3$ is a thich ribbon 
 $K \times[-\epsilon,+\epsilon] \times[-\delta,+\delta]$, where 
 $K$ is (the image of) a component of the flink, with fixed small positive
@@ -468,11 +475,19 @@ which uses it instead of the direct moves of Kirby.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=11.5cm]{A.figs/FennRourkeAndKauffmanMove.pdf} 
-\caption{\sf Fenn-Rourke infinite sequence of blown-down moves 
-and their counterpart in Kauffman's blackboard-framed 
-links. These are an
-infinite sequence of local moves. Cases $n=0$ of these moves replace
-an isolated $\pm 1$-framed component or the unknot with one crossing by nothing.
+\caption{\sf Fenn-Rourke infinite sequence of blown-down moves on fraction decorated
+links into $\mathbb{R}^3$ and 
+their counterpart in terms of flinks, which generalizes 
+Kauffman's blackboard-framed 
+links. By definition,  $\frac{P'}{Q} = (\frac{p'_1}{q_1}, \ldots \frac{p'_n}{q_n})$
+and $\frac{P}{Q} = (\frac{p_1}{q_1}, \ldots \frac{p_n}{q_n})$, where $\frac{p_i'}{q_i}$
+are generalized fractions associated with the $i$-th component of the link
+in $\mathbb{R}^3$ and 
+$\frac{p_i}{q_i}$ is the associated residual fraction 
+of the link projection into $\mathbb{R}^2$. 
+The blown-downs constitute an
+infinite sequence of local moves. The special case $n=0$ of these moves is also
+defined and replace an isolated $\pm 1$-framed component of the unknot with one crossing by nothing.
 Martelli replaced the infinite sequence by the first three and two new simple
 moves $A_3$ and $A_4$, described in Fig. \ref{fig:Martelli}.}
 \label{fig:FennRourkeAndKauffmanMove}
@@ -491,19 +506,19 @@ Rolfsen Lickorish call each of these a
 The proof that we can get any manifold by surgery on integer framed links 
 uses, as a lemma,  the fact that it is possible to
 modify the framed link maintaining the induced 3-manifold so that every component becomes unknotted. 
-A proof of this lemma appears in Rolfsen's book. 
-It also apears in page 137 of Kauffman-Lins monography,
-\cite{kauffman1994tlr}. If a component is unknotted then 
+A proof of this lemma appears \ref{fig:switchingcrossing}. If a component is unknotted then 
 it is simple to modify the link so that each component gets an integer framing, without 
-distub the integrality of the framing of other components. So, without loss of
+distub the integrality of the framing of other components. See Theorem 
+\ref{theo:twisthomeo}. So, without loss of
 generality we may suppose that all the components have finite integers as framings. Kauffman's proceeds
 by adjusting each component by attaching to it a judicious number of curls so that the required framing of
 a component coincides with the algebraic sum of its self-crossings. 
 By specifying that the link is {\em blackboard-framed}, we no longer need the integers to
 specifies the framing. They are a consequence.
-In this work I only use links given by blackboard-framed projections: 
-they are rather close of blinks, which are just purely graph theoretical plane graphs with 
-an edge bipartition.
+In this work I only use only blackboard-framed projections or their generalization, flinks
+Flink is a convenient generalization of blackboard-framed link because
+their residual fractions remain constant in Kirby's calculus, in Fenn-Rourke reformulation,
+and in Martelli's calculus, treated next.
 
 \subsubsection{Martelli's finite calculus on fractionary framed link}
 In an important recent paper B. Martelli \cite{martelli2012finite} 
@@ -514,7 +529,7 @@ to be seen the consequences of Martelli' s result for obtaining new 3-manifold i
 A possible door for obtaining such invariants are generalizations of the combinatorial 
 approach to get WRT-invariants, justified in \cite{kauffman1994tlr} and extensely
 used in \cite{lins1995gca} and in \cite{lins2007blink}. To find such a generalization 
-one has to take advantage of the specific sufficient local Martelli's moves now available 
+one has to take advantage of the specific sufficient local Martelli's calculus now available 
 (or the coin calculus on blinks). The WRT-invariants are obtained by  
 hiding in the Temperley-Lieb algebra the infinite cases of Kirby's band move, 
 as pioneered by Lickorish in \cite{lickorish1991three}. 
@@ -527,22 +542,23 @@ However, Martelli's theorem and the coin calculus on blinks makes it conceivable
 \begin{center}
 \includegraphics[width=16.5cm]{A.figs/Martelli.pdf}
 \caption{\sf 
-Martelli's calculus on flinks:
+Martelli's calculus on flink language:
 Note that for the internal
-components of all the above moves the residual surgery coefficient is 0.
+components of all the above moves the residual fraction are 0.
 Martelli' proves that by keeping only
-the blown down of ranks 0, 1 and 2 and replacing all the remaining infinite sequence by two
-new moves,  2- and 3-cable engulfing (denoted by $A_3$ and $A_4$), a sufficient 
+the blown-down of ranks 0, 1 and 2 and replacing all the remaining infinite sequence by two
+new moves,  which I call 2- and 3-cable engulfing (denoted by $A_3$ and $A_4$), a sufficient 
 calculus for factorizing 
 homeomorphisms between closed oriented and connected 3-manifolds is achieved solely 
-in terms of the above 5 local moves plus the regular isotopies moves and the ribbon move. 
+in terms of the above 5 local moves, their inverses, the regular isotopies moves and the ribbon moves. 
 Moves $A_3$ and $A_4$ do not translate into blink moves
 because their left sides are disconnected. What makes this work possible is the replacement of
 these non-connected configurations by equivalent moves $a_3$ and $a_4$ 
 so that blink translations become available. 
-The equivalence is proved in Fig. \ref{fig:proofequivalencea3A3a4A4} 
+The equivalences $a_3\equiv A_3$ and $a_4\equiv A_4$ are proved in Fig. \ref{fig:proofequivalencea3A3a4A4} 
 where the diagrams for the moves
-appear -90$^{\tiny o}$-rotated relative to this Figure.
+appear right angle rotated relative to this figure. Observe that, in the flink language,
+all the residual fractions of Martelli's calculus remain invariant.
 }
 \label{fig:Martelli}
 \end{center}
@@ -560,7 +576,7 @@ Let $F$ be a flink and $F_i$ be one of its component which is knotted. It is pos
 to modify $F$ at the cost of introducing new unknotted components so that $F_i$ becomes
 unknotted and the induced 3-manifold does not change. This is a consequence of the 
 above algorithm to unknot any knot and of Kirby's calculus on flinks, as shown in Fig.
-\ref{fig:switchingcrossing}, which is adapted from \cite{kauffman1994tlr}.
+\ref{fig:switchingcrossing}, which is adapted to fit the flink language, from \cite{kauffman1994tlr}.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=16.5cm]{A.figs/switchingcrossing.pdf}
@@ -575,11 +591,10 @@ as some isotopies. Note that the residual fractions stay invariant.
 
 \subsubsection{Obtaining a 0-flink inducing the same manifold as any input flink}
 Let $F = F_1 \cup F_2 \cup \ldots \cup F_k$ be a flink and let $r'_j$ be the 
-fraction of the surgery coefficients given by the sum of 
-the residual fraction $r_j$ and the writhe of the $j$-th component $F_j$. 
+fraction of the surgery coefficients given, as already defined, by the sum of 
+the residual fraction $r_j$ and the self-writhe of the $j$-th component $F_j$. 
 Let $F_i$ be an unknotted component.
 \begin{lemma}
-\label{theo:twisthomeo}
 The two following operations on a flink $F$ maintain the induced 3-manifold:
 \begin{itemize}
 \item Create or cancell a component with residual fraction $\pm \infty$.
@@ -599,8 +614,9 @@ The proof of this result is given in \cite{rolfsen2003knots}.
 \end{proof}
 
 \begin{theorem}
+\label{theo:twisthomeo}
 Given any flink, there exsits a 0-flink inducing the same 3-manifold
-obtainable by a polynomial algorithm in the greater of its 
+obtainable by a polynomial algorithm in the product of its 
 residual fraction denominators.
 \end{theorem}
 
@@ -616,8 +632,10 @@ $r_i''=1/(t+(1/r'_i))=1/(t+(q/p'))$. Define $t$ to be the integer so that $0<t+q
 The new surgery coefficient fraction of $F_i$ is $r_i''=p'/q'$, with $q' < q$.
 Repeating the procedure a number of times bounded by $q$ we arrive at $q'=1$ or $q'=0$.
 Observe that the surgery coefficient fractions of the new components are integers and 
-the one of the components $F_j$ linked with $F_i$ change by an integer. Therefore,
-a 0-flink inducing the same 3-manifold arises at the end of the algorithm.
+the one of the components $F_j$ linked with $F_i$ change by an integer. 
+Thus we get to a flink whose all surgery coefficients fractions have $q=1$.
+Therefore, by curl adjusting, a 0-flink inducing the same 3-manifold 
+is obtained.
 \end{proof}
 
 \subsection{This work from an epistemological point of view}
@@ -781,7 +799,8 @@ $\pm \mu_{10}$,  $\pm \mu_{01}$,  $\pm \mu_{11}$ and $(\pm \mu_{11})^{-1}$.
 In particular, all the Reidemeister 2 and 3 moves (regular isotopy) 
 are at our disposal. We can use this fact to change the external face of
 the link diagram to become any chosen adjacent face by using regular isotopy at the cost of creating two 
-curls adjacent in the same component with distinct sign and the same rotation number. Use the the appropriate ribbon move to
+curls adjacent in the same component with distinct sign and the same rotation number. 
+Use the the appropriate ribbon move to
 obtain two curls with the distinct signs and distinct rotation number. Now apply Whitney's trick
 which cancel these opposite curls by using $r_2^{\pm 1}$ and $r_3^{\pm 1}$ moves
 (regular homotopies):
@@ -832,8 +851,12 @@ of to obtain the Kauffman-Lins version (depending upon the Temperley-Lieb algebr
 of the WRT-invariants. They were implemented by different people,
 in non-overlapping times:
 S. Lins (1990-1995), S. Melo (1999-2001) and L. Lins (2006-2007). The results agree.
-The software BLINK which compute these invariants and the above census by exhaustive
-generation of blinks is currently the object of an open source Github project, 
+The software BLINK (\cite{lins2007blink})  
+computes the WRT-invariants and the above census by exhaustive
+generation of blinks. BLINK also draws links and 0-flinks in a grid,
+as a full strength application of network flow theory, using Tamassia's algorithm
+\cite {tamassia1987egg}.
+BLINK is currently the object of an open source Github project, 
 and is available upon request. 
 }
 \label{fig:prime191Blinks-white-vertices}
