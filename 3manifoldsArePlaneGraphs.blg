@@ -3,29 +3,24 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: 3manifoldsArePlaneGraphs.aux
 The style file: plain.bst
 Database file #1: bibtexIndex.bib.bib
-I was expecting a `,' or a `}'---line 1205 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 1315 of file bibtexIndex.bib.bib
  : 
  : @article{joli2012B,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1499 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 1609 of file bibtexIndex.bib.bib
  : 
  : @article{polyak2010minimal,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `)'---line 3451 of file bibtexIndex.bib.bib
- : 
- : }
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 6421 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 6517 of file bibtexIndex.bib.bib
  : 
  : %160
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 You've used 28 entries,
             2118 wiz_defined-function locations,
-            659 strings with 6947 characters,
+            658 strings with 6948 characters,
 and the built_in function-call counts, 7551 in all, are:
 = -- 756
 > -- 231
@@ -64,4 +59,4 @@ warning$ -- 0
 while$ -- 86
 width$ -- 30
 write$ -- 304
-(There were 4 error messages)
+(There were 3 error messages)

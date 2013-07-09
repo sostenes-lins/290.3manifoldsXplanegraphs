@@ -47,12 +47,12 @@ L.~H. Kauffman.
 \newblock {\em Topology}, 26(3):395--407, 1987.
 
 \bibitem{kauffman1991knots}
-L.H. Kauffman.
-\newblock {\em Knots and physics}, volume~1.
+L.~H. Kauffman.
+\newblock {\em Knots and Physics}, volume~1.
 \newblock World Scientific Publishing Company, 1991.
 
 \bibitem{kauffman1994tlr}
-L.H. Kauffman and S.~L. Lins.
+L.~H. Kauffman and S.~L. Lins.
 \newblock {Temperley-Lieb Recoupling Theory and Invariants of 3-manifolds}.
 \newblock {\em Annals of Mathematical Studies, Princeton University Press},
   134:1--296, 1994.
@@ -82,7 +82,7 @@ W.~B.~R. Lickorish.
 L.~D. Lins.
 \newblock Blink: a language to view, recognize, classify and manipulate
   3{D}-spaces.
-\newblock {\em Arxiv preprint math/0702057}, 2007.
+\newblock {\em \url{http://arxiv.org/arXiv:math/0702057}}, 2007.
 
 \bibitem{lins1995gca}
 S.~L. Lins.
